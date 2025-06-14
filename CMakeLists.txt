@@ -40,10 +40,10 @@ pico_sdk_init()
 
 add_executable(mp3 
     main.cpp
-    oled.cpp
-    audio.cpp
-    fonts/small.cpp
-    fonts/medium.cpp
+    src/oled.cpp
+    src/audio.cpp
+    src/fonts/small.cpp
+    src/fonts/medium.cpp
     )
 
 pico_set_program_name(mp3 "mp3")

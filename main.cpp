@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include "pico/stdlib.h"
 #include "hardware/i2c.h"
-#include "oled.h"
-#include "audio.h"
+#include "src/oled.h"
+#include "src/audio.h"
 
 #define BTN_PIN 7
 
