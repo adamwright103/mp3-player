@@ -44,12 +44,24 @@ int main()
     // // Play the WAV file
     // play_wav("Balance.wav", pio, sm);
 
+    int i = 0;
+    uint8_t sin_data[7][7]{
+        {100, 81, 39, 5, 5, 39, 81},
+        {81, 100, 81, 39, 5, 5, 39},
+        {39, 81, 100, 81, 39, 5, 5},
+        {5, 39, 81, 100, 81, 39, 5},
+        {5, 5, 39, 81, 100, 81, 39},
+        {39, 5, 5, 39, 81, 100, 81},
+        {81, 39, 5, 5, 39, 81, 100}};
+
     while (true)
     {
         oled_battery(battery_level);
         oled_print_artist("Artist Name");
         oled_print_song("Song Title");
+        oled_print_visualiser(sin_data[i]);
+        i = (i + 1) % 7;
 
-        sleep_ms(1000); // Display for 1 second
+        sleep_ms(50);
     }
 }

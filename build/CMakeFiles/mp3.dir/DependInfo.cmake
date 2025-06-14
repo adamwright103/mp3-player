@@ -233,13 +233,13 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c" "CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o" "gcc" "CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o.d"
   "/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c" "CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.o" "gcc" "CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.o.d"
   "/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c" "CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.o" "gcc" "CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.o.d"
-  "/home/adam/Documents/Projects/mp3-player/audio.cpp" "CMakeFiles/mp3.dir/audio.cpp.o" "gcc" "CMakeFiles/mp3.dir/audio.cpp.o.d"
-  "/home/adam/Documents/Projects/mp3-player/fonts/medium.cpp" "CMakeFiles/mp3.dir/fonts/medium.cpp.o" "gcc" "CMakeFiles/mp3.dir/fonts/medium.cpp.o.d"
-  "/home/adam/Documents/Projects/mp3-player/fonts/small.cpp" "CMakeFiles/mp3.dir/fonts/small.cpp.o" "gcc" "CMakeFiles/mp3.dir/fonts/small.cpp.o.d"
   "/home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_audio/audio.cpp" "CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_audio/audio.cpp.o" "gcc" "CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_audio/audio.cpp.o.d"
   "/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp" "CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp.o" "gcc" "CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp.o.d"
   "/home/adam/Documents/Projects/mp3-player/main.cpp" "CMakeFiles/mp3.dir/main.cpp.o" "gcc" "CMakeFiles/mp3.dir/main.cpp.o.d"
-  "/home/adam/Documents/Projects/mp3-player/oled.cpp" "CMakeFiles/mp3.dir/oled.cpp.o" "gcc" "CMakeFiles/mp3.dir/oled.cpp.o.d"
+  "/home/adam/Documents/Projects/mp3-player/src/audio.cpp" "CMakeFiles/mp3.dir/src/audio.cpp.o" "gcc" "CMakeFiles/mp3.dir/src/audio.cpp.o.d"
+  "/home/adam/Documents/Projects/mp3-player/src/fonts/medium.cpp" "CMakeFiles/mp3.dir/src/fonts/medium.cpp.o" "gcc" "CMakeFiles/mp3.dir/src/fonts/medium.cpp.o.d"
+  "/home/adam/Documents/Projects/mp3-player/src/fonts/small.cpp" "CMakeFiles/mp3.dir/src/fonts/small.cpp.o" "gcc" "CMakeFiles/mp3.dir/src/fonts/small.cpp.o.d"
+  "/home/adam/Documents/Projects/mp3-player/src/oled.cpp" "CMakeFiles/mp3.dir/src/oled.cpp.o" "gcc" "CMakeFiles/mp3.dir/src/oled.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -13,7 +13,7 @@ enum OledPage : uint8_t
   PAGE_4,
   PAGE_5,
   PAGE_6,
-  PAGE_7
+  PAGE_7,
 };
 
 // Initializes I2C for OLED display
@@ -45,5 +45,8 @@ void oled_print_artist(const char *str);
 
 // prints the song name on the OLED display
 void oled_print_song(const char *str);
+
+// prints a visualiser on the OLED display
+void oled_print_visualiser(uint8_t data[7]);
 
 #endif

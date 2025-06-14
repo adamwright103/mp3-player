@@ -179,3 +179,38 @@ void oled_print_song(const char *str)
   oled_display(PAGE_5);
   oled_display(PAGE_6);
 }
+
+// prints 7 vertical bars on pages 1 2 3 4 with heights based on data
+void oled_print_visualiser(uint8_t data[7])
+{
+  for (uint8_t page = PAGE_1; page <= PAGE_4; page++)
+  {
+    oled_clear((OledPage)page);
+  }
+
+  for (uint8_t i = 0; i < 7; i++)
+  {
+    // height is in range 4-30
+    uint8_t height = data[i] * 30 / 100;
+    height = height < 4 ? 4 : height;
+
+    uint8_t start_col = 4 + i * (14 + 4); // 14px wide bar + 4px gap
+
+    for (uint8_t col = 0; col < 14; col++) // Draw 14px wide bar
+    {
+      for (uint8_t row = 0; row < height; row++)
+      {
+        uint8_t from_bottom = 31 - row; // 32 pixels total, so index 0 = bottom
+        uint8_t page = from_bottom / 8;
+        uint8_t bit = 1 << (from_bottom % 8);
+        buffer[WIDTH * (PAGE_1 + page) + start_col + col] |= bit;
+      }
+    }
+  }
+
+  // Update pages 1 to 4
+  oled_display(PAGE_1);
+  oled_display(PAGE_2);
+  oled_display(PAGE_3);
+  oled_display(PAGE_4);
+}

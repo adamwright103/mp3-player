@@ -86,61 +86,61 @@ CMakeFiles/mp3.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mp3.dir/main.cpp.s"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adam/Documents/Projects/mp3-player/main.cpp -o CMakeFiles/mp3.dir/main.cpp.s
 
-CMakeFiles/mp3.dir/oled.cpp.o: CMakeFiles/mp3.dir/flags.make
-CMakeFiles/mp3.dir/oled.cpp.o: /home/adam/Documents/Projects/mp3-player/oled.cpp
-CMakeFiles/mp3.dir/oled.cpp.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/mp3.dir/oled.cpp.o"
-	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mp3.dir/oled.cpp.o -MF CMakeFiles/mp3.dir/oled.cpp.o.d -o CMakeFiles/mp3.dir/oled.cpp.o -c /home/adam/Documents/Projects/mp3-player/oled.cpp
+CMakeFiles/mp3.dir/src/oled.cpp.o: CMakeFiles/mp3.dir/flags.make
+CMakeFiles/mp3.dir/src/oled.cpp.o: /home/adam/Documents/Projects/mp3-player/src/oled.cpp
+CMakeFiles/mp3.dir/src/oled.cpp.o: CMakeFiles/mp3.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/mp3.dir/src/oled.cpp.o"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mp3.dir/src/oled.cpp.o -MF CMakeFiles/mp3.dir/src/oled.cpp.o.d -o CMakeFiles/mp3.dir/src/oled.cpp.o -c /home/adam/Documents/Projects/mp3-player/src/oled.cpp
 
-CMakeFiles/mp3.dir/oled.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mp3.dir/oled.cpp.i"
-	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adam/Documents/Projects/mp3-player/oled.cpp > CMakeFiles/mp3.dir/oled.cpp.i
+CMakeFiles/mp3.dir/src/oled.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mp3.dir/src/oled.cpp.i"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adam/Documents/Projects/mp3-player/src/oled.cpp > CMakeFiles/mp3.dir/src/oled.cpp.i
 
-CMakeFiles/mp3.dir/oled.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mp3.dir/oled.cpp.s"
-	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adam/Documents/Projects/mp3-player/oled.cpp -o CMakeFiles/mp3.dir/oled.cpp.s
+CMakeFiles/mp3.dir/src/oled.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mp3.dir/src/oled.cpp.s"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adam/Documents/Projects/mp3-player/src/oled.cpp -o CMakeFiles/mp3.dir/src/oled.cpp.s
 
-CMakeFiles/mp3.dir/audio.cpp.o: CMakeFiles/mp3.dir/flags.make
-CMakeFiles/mp3.dir/audio.cpp.o: /home/adam/Documents/Projects/mp3-player/audio.cpp
-CMakeFiles/mp3.dir/audio.cpp.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/mp3.dir/audio.cpp.o"
-	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mp3.dir/audio.cpp.o -MF CMakeFiles/mp3.dir/audio.cpp.o.d -o CMakeFiles/mp3.dir/audio.cpp.o -c /home/adam/Documents/Projects/mp3-player/audio.cpp
+CMakeFiles/mp3.dir/src/audio.cpp.o: CMakeFiles/mp3.dir/flags.make
+CMakeFiles/mp3.dir/src/audio.cpp.o: /home/adam/Documents/Projects/mp3-player/src/audio.cpp
+CMakeFiles/mp3.dir/src/audio.cpp.o: CMakeFiles/mp3.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/mp3.dir/src/audio.cpp.o"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mp3.dir/src/audio.cpp.o -MF CMakeFiles/mp3.dir/src/audio.cpp.o.d -o CMakeFiles/mp3.dir/src/audio.cpp.o -c /home/adam/Documents/Projects/mp3-player/src/audio.cpp
 
-CMakeFiles/mp3.dir/audio.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mp3.dir/audio.cpp.i"
-	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adam/Documents/Projects/mp3-player/audio.cpp > CMakeFiles/mp3.dir/audio.cpp.i
+CMakeFiles/mp3.dir/src/audio.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mp3.dir/src/audio.cpp.i"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adam/Documents/Projects/mp3-player/src/audio.cpp > CMakeFiles/mp3.dir/src/audio.cpp.i
 
-CMakeFiles/mp3.dir/audio.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mp3.dir/audio.cpp.s"
-	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adam/Documents/Projects/mp3-player/audio.cpp -o CMakeFiles/mp3.dir/audio.cpp.s
+CMakeFiles/mp3.dir/src/audio.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mp3.dir/src/audio.cpp.s"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adam/Documents/Projects/mp3-player/src/audio.cpp -o CMakeFiles/mp3.dir/src/audio.cpp.s
 
-CMakeFiles/mp3.dir/fonts/small.cpp.o: CMakeFiles/mp3.dir/flags.make
-CMakeFiles/mp3.dir/fonts/small.cpp.o: /home/adam/Documents/Projects/mp3-player/fonts/small.cpp
-CMakeFiles/mp3.dir/fonts/small.cpp.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/mp3.dir/fonts/small.cpp.o"
-	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mp3.dir/fonts/small.cpp.o -MF CMakeFiles/mp3.dir/fonts/small.cpp.o.d -o CMakeFiles/mp3.dir/fonts/small.cpp.o -c /home/adam/Documents/Projects/mp3-player/fonts/small.cpp
+CMakeFiles/mp3.dir/src/fonts/small.cpp.o: CMakeFiles/mp3.dir/flags.make
+CMakeFiles/mp3.dir/src/fonts/small.cpp.o: /home/adam/Documents/Projects/mp3-player/src/fonts/small.cpp
+CMakeFiles/mp3.dir/src/fonts/small.cpp.o: CMakeFiles/mp3.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/mp3.dir/src/fonts/small.cpp.o"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mp3.dir/src/fonts/small.cpp.o -MF CMakeFiles/mp3.dir/src/fonts/small.cpp.o.d -o CMakeFiles/mp3.dir/src/fonts/small.cpp.o -c /home/adam/Documents/Projects/mp3-player/src/fonts/small.cpp
 
-CMakeFiles/mp3.dir/fonts/small.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mp3.dir/fonts/small.cpp.i"
-	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adam/Documents/Projects/mp3-player/fonts/small.cpp > CMakeFiles/mp3.dir/fonts/small.cpp.i
+CMakeFiles/mp3.dir/src/fonts/small.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mp3.dir/src/fonts/small.cpp.i"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adam/Documents/Projects/mp3-player/src/fonts/small.cpp > CMakeFiles/mp3.dir/src/fonts/small.cpp.i
 
-CMakeFiles/mp3.dir/fonts/small.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mp3.dir/fonts/small.cpp.s"
-	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adam/Documents/Projects/mp3-player/fonts/small.cpp -o CMakeFiles/mp3.dir/fonts/small.cpp.s
+CMakeFiles/mp3.dir/src/fonts/small.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mp3.dir/src/fonts/small.cpp.s"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adam/Documents/Projects/mp3-player/src/fonts/small.cpp -o CMakeFiles/mp3.dir/src/fonts/small.cpp.s
 
-CMakeFiles/mp3.dir/fonts/medium.cpp.o: CMakeFiles/mp3.dir/flags.make
-CMakeFiles/mp3.dir/fonts/medium.cpp.o: /home/adam/Documents/Projects/mp3-player/fonts/medium.cpp
-CMakeFiles/mp3.dir/fonts/medium.cpp.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/mp3.dir/fonts/medium.cpp.o"
-	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mp3.dir/fonts/medium.cpp.o -MF CMakeFiles/mp3.dir/fonts/medium.cpp.o.d -o CMakeFiles/mp3.dir/fonts/medium.cpp.o -c /home/adam/Documents/Projects/mp3-player/fonts/medium.cpp
+CMakeFiles/mp3.dir/src/fonts/medium.cpp.o: CMakeFiles/mp3.dir/flags.make
+CMakeFiles/mp3.dir/src/fonts/medium.cpp.o: /home/adam/Documents/Projects/mp3-player/src/fonts/medium.cpp
+CMakeFiles/mp3.dir/src/fonts/medium.cpp.o: CMakeFiles/mp3.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/mp3.dir/src/fonts/medium.cpp.o"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mp3.dir/src/fonts/medium.cpp.o -MF CMakeFiles/mp3.dir/src/fonts/medium.cpp.o.d -o CMakeFiles/mp3.dir/src/fonts/medium.cpp.o -c /home/adam/Documents/Projects/mp3-player/src/fonts/medium.cpp
 
-CMakeFiles/mp3.dir/fonts/medium.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mp3.dir/fonts/medium.cpp.i"
-	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adam/Documents/Projects/mp3-player/fonts/medium.cpp > CMakeFiles/mp3.dir/fonts/medium.cpp.i
+CMakeFiles/mp3.dir/src/fonts/medium.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mp3.dir/src/fonts/medium.cpp.i"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adam/Documents/Projects/mp3-player/src/fonts/medium.cpp > CMakeFiles/mp3.dir/src/fonts/medium.cpp.i
 
-CMakeFiles/mp3.dir/fonts/medium.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mp3.dir/fonts/medium.cpp.s"
-	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adam/Documents/Projects/mp3-player/fonts/medium.cpp -o CMakeFiles/mp3.dir/fonts/medium.cpp.s
+CMakeFiles/mp3.dir/src/fonts/medium.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mp3.dir/src/fonts/medium.cpp.s"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adam/Documents/Projects/mp3-player/src/fonts/medium.cpp -o CMakeFiles/mp3.dir/src/fonts/medium.cpp.s
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c
@@ -1351,10 +1351,10 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c
 # Object files for target mp3
 mp3_OBJECTS = \
 "CMakeFiles/mp3.dir/main.cpp.o" \
-"CMakeFiles/mp3.dir/oled.cpp.o" \
-"CMakeFiles/mp3.dir/audio.cpp.o" \
-"CMakeFiles/mp3.dir/fonts/small.cpp.o" \
-"CMakeFiles/mp3.dir/fonts/medium.cpp.o" \
+"CMakeFiles/mp3.dir/src/oled.cpp.o" \
+"CMakeFiles/mp3.dir/src/audio.cpp.o" \
+"CMakeFiles/mp3.dir/src/fonts/small.cpp.o" \
+"CMakeFiles/mp3.dir/src/fonts/medium.cpp.o" \
 "CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.o" \
 "CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c.o" \
 "CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.c.o" \
@@ -1447,10 +1447,10 @@ mp3_OBJECTS = \
 mp3_EXTERNAL_OBJECTS =
 
 mp3.elf: CMakeFiles/mp3.dir/main.cpp.o
-mp3.elf: CMakeFiles/mp3.dir/oled.cpp.o
-mp3.elf: CMakeFiles/mp3.dir/audio.cpp.o
-mp3.elf: CMakeFiles/mp3.dir/fonts/small.cpp.o
-mp3.elf: CMakeFiles/mp3.dir/fonts/medium.cpp.o
+mp3.elf: CMakeFiles/mp3.dir/src/oled.cpp.o
+mp3.elf: CMakeFiles/mp3.dir/src/audio.cpp.o
+mp3.elf: CMakeFiles/mp3.dir/src/fonts/small.cpp.o
+mp3.elf: CMakeFiles/mp3.dir/src/fonts/medium.cpp.o
 mp3.elf: CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.o
 mp3.elf: CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c.o
 mp3.elf: CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.c.o

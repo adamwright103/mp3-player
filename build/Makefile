@@ -259,78 +259,6 @@ pico_scanvideo_dpi_timing_pio_h/fast:
 	$(MAKE) $(MAKESILENT) -f pico_extras/src/rp2_common/pico_scanvideo_dpi/CMakeFiles/pico_scanvideo_dpi_timing_pio_h.dir/build.make pico_extras/src/rp2_common/pico_scanvideo_dpi/CMakeFiles/pico_scanvideo_dpi_timing_pio_h.dir/build
 .PHONY : pico_scanvideo_dpi_timing_pio_h/fast
 
-audio.o: audio.cpp.o
-.PHONY : audio.o
-
-# target to build an object file
-audio.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/audio.cpp.o
-.PHONY : audio.cpp.o
-
-audio.i: audio.cpp.i
-.PHONY : audio.i
-
-# target to preprocess a source file
-audio.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/audio.cpp.i
-.PHONY : audio.cpp.i
-
-audio.s: audio.cpp.s
-.PHONY : audio.s
-
-# target to generate assembly for a file
-audio.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/audio.cpp.s
-.PHONY : audio.cpp.s
-
-fonts/medium.o: fonts/medium.cpp.o
-.PHONY : fonts/medium.o
-
-# target to build an object file
-fonts/medium.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/fonts/medium.cpp.o
-.PHONY : fonts/medium.cpp.o
-
-fonts/medium.i: fonts/medium.cpp.i
-.PHONY : fonts/medium.i
-
-# target to preprocess a source file
-fonts/medium.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/fonts/medium.cpp.i
-.PHONY : fonts/medium.cpp.i
-
-fonts/medium.s: fonts/medium.cpp.s
-.PHONY : fonts/medium.s
-
-# target to generate assembly for a file
-fonts/medium.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/fonts/medium.cpp.s
-.PHONY : fonts/medium.cpp.s
-
-fonts/small.o: fonts/small.cpp.o
-.PHONY : fonts/small.o
-
-# target to build an object file
-fonts/small.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/fonts/small.cpp.o
-.PHONY : fonts/small.cpp.o
-
-fonts/small.i: fonts/small.cpp.i
-.PHONY : fonts/small.i
-
-# target to preprocess a source file
-fonts/small.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/fonts/small.cpp.i
-.PHONY : fonts/small.cpp.i
-
-fonts/small.s: fonts/small.cpp.s
-.PHONY : fonts/small.s
-
-# target to generate assembly for a file
-fonts/small.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/fonts/small.cpp.s
-.PHONY : fonts/small.cpp.s
-
 home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_audio/audio.o: home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_audio/audio.cpp.o
 .PHONY : home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_audio/audio.o
 
@@ -2251,29 +2179,101 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-oled.o: oled.cpp.o
-.PHONY : oled.o
+src/audio.o: src/audio.cpp.o
+.PHONY : src/audio.o
 
 # target to build an object file
-oled.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/oled.cpp.o
-.PHONY : oled.cpp.o
+src/audio.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/src/audio.cpp.o
+.PHONY : src/audio.cpp.o
 
-oled.i: oled.cpp.i
-.PHONY : oled.i
+src/audio.i: src/audio.cpp.i
+.PHONY : src/audio.i
 
 # target to preprocess a source file
-oled.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/oled.cpp.i
-.PHONY : oled.cpp.i
+src/audio.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/src/audio.cpp.i
+.PHONY : src/audio.cpp.i
 
-oled.s: oled.cpp.s
-.PHONY : oled.s
+src/audio.s: src/audio.cpp.s
+.PHONY : src/audio.s
 
 # target to generate assembly for a file
-oled.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/oled.cpp.s
-.PHONY : oled.cpp.s
+src/audio.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/src/audio.cpp.s
+.PHONY : src/audio.cpp.s
+
+src/fonts/medium.o: src/fonts/medium.cpp.o
+.PHONY : src/fonts/medium.o
+
+# target to build an object file
+src/fonts/medium.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/src/fonts/medium.cpp.o
+.PHONY : src/fonts/medium.cpp.o
+
+src/fonts/medium.i: src/fonts/medium.cpp.i
+.PHONY : src/fonts/medium.i
+
+# target to preprocess a source file
+src/fonts/medium.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/src/fonts/medium.cpp.i
+.PHONY : src/fonts/medium.cpp.i
+
+src/fonts/medium.s: src/fonts/medium.cpp.s
+.PHONY : src/fonts/medium.s
+
+# target to generate assembly for a file
+src/fonts/medium.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/src/fonts/medium.cpp.s
+.PHONY : src/fonts/medium.cpp.s
+
+src/fonts/small.o: src/fonts/small.cpp.o
+.PHONY : src/fonts/small.o
+
+# target to build an object file
+src/fonts/small.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/src/fonts/small.cpp.o
+.PHONY : src/fonts/small.cpp.o
+
+src/fonts/small.i: src/fonts/small.cpp.i
+.PHONY : src/fonts/small.i
+
+# target to preprocess a source file
+src/fonts/small.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/src/fonts/small.cpp.i
+.PHONY : src/fonts/small.cpp.i
+
+src/fonts/small.s: src/fonts/small.cpp.s
+.PHONY : src/fonts/small.s
+
+# target to generate assembly for a file
+src/fonts/small.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/src/fonts/small.cpp.s
+.PHONY : src/fonts/small.cpp.s
+
+src/oled.o: src/oled.cpp.o
+.PHONY : src/oled.o
+
+# target to build an object file
+src/oled.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/src/oled.cpp.o
+.PHONY : src/oled.cpp.o
+
+src/oled.i: src/oled.cpp.i
+.PHONY : src/oled.i
+
+# target to preprocess a source file
+src/oled.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/src/oled.cpp.i
+.PHONY : src/oled.cpp.i
+
+src/oled.s: src/oled.cpp.s
+.PHONY : src/oled.s
+
+# target to generate assembly for a file
+src/oled.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/src/oled.cpp.s
+.PHONY : src/oled.cpp.s
 
 # Help Target
 help:
@@ -2294,15 +2294,6 @@ help:
 	@echo "... bs2_default"
 	@echo "... bs2_default_library"
 	@echo "... mp3"
-	@echo "... audio.o"
-	@echo "... audio.i"
-	@echo "... audio.s"
-	@echo "... fonts/medium.o"
-	@echo "... fonts/medium.i"
-	@echo "... fonts/medium.s"
-	@echo "... fonts/small.o"
-	@echo "... fonts/small.i"
-	@echo "... fonts/small.s"
 	@echo "... home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_audio/audio.o"
 	@echo "... home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_audio/audio.i"
 	@echo "... home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_audio/audio.s"
@@ -2543,9 +2534,18 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... oled.o"
-	@echo "... oled.i"
-	@echo "... oled.s"
+	@echo "... src/audio.o"
+	@echo "... src/audio.i"
+	@echo "... src/audio.s"
+	@echo "... src/fonts/medium.o"
+	@echo "... src/fonts/medium.i"
+	@echo "... src/fonts/medium.s"
+	@echo "... src/fonts/small.o"
+	@echo "... src/fonts/small.i"
+	@echo "... src/fonts/small.s"
+	@echo "... src/oled.o"
+	@echo "... src/oled.i"
+	@echo "... src/oled.s"
 .PHONY : help
 
 
