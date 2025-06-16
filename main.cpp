@@ -5,14 +5,18 @@
 #include "src/audio.h"
 
 #define BTN_PIN 7
+#define DEBOUNCE_TIME_MS 150
 
 volatile int battery_level = 100;
 volatile int name = 0;
+volatile bool button_enabled = true; // Flag to enable/disable button
 
 void button_callback(uint gpio, uint32_t events)
 {
-    if (gpio != BTN_PIN)
+    if (gpio != BTN_PIN || !button_enabled)
         return;
+
+    button_enabled = false;
     name = (name + 1) % 7;
 
     battery_level -= 10;
@@ -20,6 +24,11 @@ void button_callback(uint gpio, uint32_t events)
     {
         battery_level = 100;
     }
+
+    add_alarm_in_ms(DEBOUNCE_TIME_MS, [](alarm_id_t, void *) -> int64_t
+                    {
+        button_enabled = true;
+        return 0; }, nullptr, false);
 }
 
 int main()
@@ -66,21 +75,23 @@ int main()
         "Artist G with the longest name imaginable"};
 
     const char *song_titles[7] = {
-        "Song 1",
-        "Song 2 with title",
-        "Song 3 with longer title",
-        "Song 4 with a very long title",
-        "Song 5 with an extremely long title",
-        "Song 6 with a ridiculously long title",
-        "Song 7 with the longest title imaginable"};
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"};
+
+    uint16_t offset = 0;
 
     while (true)
     {
         oled_battery(battery_level);
-        oled_print_artist(artist_names[name]);
-        oled_print_song(song_titles[name]);
-        oled_print_visualiser(sin_data[i]);
-        i = (i + 1) % 7;
+        oled_print_artist(artist_names[name], offset);
+        oled_print_song(song_titles[name], offset);
+        oled_print_visualiser(sin_data[offset % 7]);
+        offset++;
 
         sleep_ms(50);
     }

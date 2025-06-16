@@ -15,6 +15,7 @@ using namespace std;
 #define OLED_CLK_FREQ 400 * 1000
 #define WIDTH 128
 #define HEIGHT 64
+#define SCROLL_DELAY_MS 100
 
 // Display buffer: 8 pages of 128 bytes
 uint8_t buffer[WIDTH * HEIGHT / 8];
@@ -125,35 +126,56 @@ void oled_battery(uint8_t percent)
 }
 
 // prints artists name centered on page 7
-void oled_print_artist(const char *str)
+void oled_print_artist(const char *str, uint16_t offset)
 {
-  // if a string is too long, we trucate with an elipse overiding ascii 127 (del)
   const int max_chars = WIDTH / FONT_WIDTH_S;
-  char truncated_str[max_chars + 1];
 
-  if (strlen(str) > max_chars)
-  {
-    strncpy(truncated_str, str, max_chars - 1);
-    truncated_str[max_chars - 1] = '\x7F';
-    truncated_str[max_chars] = '\0';
-    str = truncated_str;
-  }
-
-  int start_col = (WIDTH - strlen(str) * FONT_WIDTH_S) / 2; // Center the text
+  const unsigned int str_len = strlen(str);
 
   oled_clear(PAGE_7);
+
+  // string is short enough so printing centered
+  if (str_len <= max_chars)
+  {
+    uint8_t start_col = (WIDTH - str_len * FONT_WIDTH_S) / 2; // Center the text
+
+    const char *ptr = str;
+    while (*ptr)
+    {
+      const uint8_t *char_bitmap = getCharBitmapS(*ptr);
+      if (char_bitmap)
+      {
+        for (uint8_t col = 0; col < FONT_WIDTH_S; col++)
+        {
+          buffer[WIDTH * PAGE_7 + start_col + (ptr - str) * FONT_WIDTH_S + col] = char_bitmap[col];
+        }
+      }
+      ptr++;
+    }
+
+    oled_display(PAGE_7);
+    return;
+  }
+
+  // for scrolling, we let the screen stay at start and end for 20 cycles (20 * 50ms = 1s)
+  uint16_t modulo = str_len * FONT_WIDTH_S - WIDTH;
+  offset = offset % (modulo + 30);
+  offset = offset < 20 ? 0 : offset - 20;
+  offset = offset < modulo ? offset : modulo;
 
   const char *ptr = str;
   while (*ptr)
   {
     const uint8_t *char_bitmap = getCharBitmapS(*ptr);
-    if (char_bitmap)
+    for (uint8_t col = 0; col < FONT_WIDTH_S; col++)
     {
-      for (int col = 0; col < FONT_WIDTH_S; col++)
+      int col_pos = (ptr - str) * FONT_WIDTH_S + col - offset;
+      if (col_pos >= 0 && col_pos < WIDTH)
       {
-        buffer[WIDTH * PAGE_7 + start_col + (ptr - str) * FONT_WIDTH_S + col] = char_bitmap[col];
+        buffer[WIDTH * PAGE_7 + col_pos] = char_bitmap[col];
       }
     }
+
     ptr++;
   }
 
@@ -161,24 +183,47 @@ void oled_print_artist(const char *str)
 }
 
 // prints song name centered on pages 5 and 6
-void oled_print_song(const char *str)
+void oled_print_song(const char *str, uint16_t offset)
 {
-  // if a string is too long, we trucate with an elipse overiding ascii 127 (del)
   const int max_chars = WIDTH / FONT_WIDTH_M;
-  char truncated_str[max_chars + 1];
-
-  if (strlen(str) > max_chars)
-  {
-    strncpy(truncated_str, str, max_chars - 1);
-    truncated_str[max_chars - 1] = '\x7F';
-    truncated_str[max_chars] = '\0';
-    str = truncated_str;
-  }
-
-  int start_col = (WIDTH - strlen(str) * FONT_WIDTH_M) / 2; // Center the text
+  unsigned int str_len = strlen(str);
 
   oled_clear(PAGE_5);
   oled_clear(PAGE_6);
+
+  // string is short enough so printing centered
+  if (str_len <= max_chars)
+  {
+    uint8_t start_col = (WIDTH - str_len * FONT_WIDTH_M) / 2; // Center the text
+
+    const char *ptr = str;
+    while (*ptr)
+    {
+      const uint16_t *char_bitmap = getCharBitmapM(*ptr);
+      if (char_bitmap)
+      {
+        for (uint8_t col = 0; col < FONT_WIDTH_M; col++)
+        {
+          // writing top half of the character to page 5
+          buffer[WIDTH * PAGE_5 + start_col + (ptr - str) * FONT_WIDTH_M + col] = char_bitmap[col];
+
+          // writing the bottom half of the character to page 6
+          buffer[WIDTH * PAGE_6 + start_col + (ptr - str) * FONT_WIDTH_M + col] = char_bitmap[col] >> 8;
+        }
+      }
+      ptr++;
+    }
+
+    oled_display(PAGE_5);
+    oled_display(PAGE_6);
+    return;
+  }
+
+  // for scrolling, we let the screen stay at start and end for 20 cycles (20 * 50ms = 1s)
+  uint16_t modulo = str_len * FONT_WIDTH_M - WIDTH;
+  offset = offset % (modulo + 30);
+  offset = offset < 20 ? 0 : offset - 20;
+  offset = offset < modulo ? offset : modulo;
 
   const char *ptr = str;
   while (*ptr)
@@ -186,13 +231,17 @@ void oled_print_song(const char *str)
     const uint16_t *char_bitmap = getCharBitmapM(*ptr);
     if (char_bitmap)
     {
-      for (int col = 0; col < FONT_WIDTH_M; col++)
+      for (uint8_t col = 0; col < FONT_WIDTH_M; col++)
       {
-        // writing top half of the character to page 5
-        buffer[WIDTH * PAGE_5 + start_col + (ptr - str) * FONT_WIDTH_M + col] = char_bitmap[col];
+        int col_pos = (ptr - str) * FONT_WIDTH_M + col - offset;
+        if (col_pos >= 0 && col_pos < WIDTH)
+        {
+          // writing top half of the character to page 5
+          buffer[WIDTH * PAGE_5 + col_pos] = char_bitmap[col];
 
-        // writing the bottom half of the character to page 6
-        buffer[WIDTH * PAGE_6 + start_col + (ptr - str) * FONT_WIDTH_M + col] = char_bitmap[col] >> 8;
+          // writing the bottom half of the character to page 6
+          buffer[WIDTH * PAGE_6 + col_pos] = char_bitmap[col] >> 8;
+        }
       }
     }
     ptr++;

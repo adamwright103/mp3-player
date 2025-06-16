@@ -41,10 +41,10 @@ void oled_clear(OledPage page);
 void oled_battery(uint8_t percent);
 
 // prints the artist name on the OLED display
-void oled_print_artist(const char *str);
+void oled_print_artist(const char *str, uint16_t offset);
 
 // prints the song name on the OLED display
-void oled_print_song(const char *str);
+void oled_print_song(const char *str, uint16_t offset);
 
 // prints a visualiser on the OLED display
 void oled_print_visualiser(uint8_t data[7]);
