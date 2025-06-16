@@ -127,8 +127,19 @@ void oled_battery(uint8_t percent)
 // prints artists name centered on page 7
 void oled_print_artist(const char *str)
 {
-  int str_len = strlen(str);
-  int start_col = (WIDTH - str_len * FONT_WIDTH_S) / 2; // Center the text
+  // if a string is too long, we trucate with an elipse overiding ascii 127 (del)
+  const int max_chars = WIDTH / FONT_WIDTH_S;
+  char truncated_str[max_chars + 1];
+
+  if (strlen(str) > max_chars)
+  {
+    strncpy(truncated_str, str, max_chars - 1);
+    truncated_str[max_chars - 1] = '\x7F';
+    truncated_str[max_chars] = '\0';
+    str = truncated_str;
+  }
+
+  int start_col = (WIDTH - strlen(str) * FONT_WIDTH_S) / 2; // Center the text
 
   oled_clear(PAGE_7);
 
@@ -152,8 +163,19 @@ void oled_print_artist(const char *str)
 // prints song name centered on pages 5 and 6
 void oled_print_song(const char *str)
 {
-  int str_len = strlen(str);
-  int start_col = (WIDTH - str_len * FONT_WIDTH_M) / 2; // Center the text
+  // if a string is too long, we trucate with an elipse overiding ascii 127 (del)
+  const int max_chars = WIDTH / FONT_WIDTH_M;
+  char truncated_str[max_chars + 1];
+
+  if (strlen(str) > max_chars)
+  {
+    strncpy(truncated_str, str, max_chars - 1);
+    truncated_str[max_chars - 1] = '\x7F';
+    truncated_str[max_chars] = '\0';
+    str = truncated_str;
+  }
+
+  int start_col = (WIDTH - strlen(str) * FONT_WIDTH_M) / 2; // Center the text
 
   oled_clear(PAGE_5);
   oled_clear(PAGE_6);

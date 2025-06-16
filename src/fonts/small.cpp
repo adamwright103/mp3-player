@@ -101,12 +101,13 @@ static const uint8_t fontData[FONT_NUM_CHARS_S][FONT_WIDTH_S] = {
     {0x00, 0x00, 0x00, 0xff, 0x00, 0x00}, // |
     {0x00, 0x00, 0x82, 0x7c, 0x10, 0x00}, // }
     {0x00, 0x00, 0x06, 0x09, 0x09, 0x06}, // ~
+    {0x00, 0x80, 0x00, 0x80, 0x00, 0x80}  // special ...
 };
 
 // Get bitmap for character
 const uint8_t *getCharBitmapS(char c)
 {
-    if (c < ' ' || c > '~')
+    if (c < ' ' || c > '\177')
         return NULL; // unsupported
     return fontData[c - ' '];
 }

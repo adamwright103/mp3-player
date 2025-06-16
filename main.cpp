@@ -7,11 +7,13 @@
 #define BTN_PIN 7
 
 volatile int battery_level = 100;
+volatile int name = 0;
 
 void button_callback(uint gpio, uint32_t events)
 {
     if (gpio != BTN_PIN)
         return;
+    name = (name + 1) % 7;
 
     battery_level -= 10;
     if (battery_level < 0)
@@ -54,11 +56,29 @@ int main()
         {39, 5, 5, 39, 81, 100, 81},
         {81, 39, 5, 5, 39, 81, 100}};
 
+    const char *artist_names[7] = {
+        "Artist A",
+        "Artist B with name",
+        "Artist C with longer name",
+        "Artist D with a very long name",
+        "Artist E with an extremely long name",
+        "Artist F with a ridiculously long name",
+        "Artist G with the longest name imaginable"};
+
+    const char *song_titles[7] = {
+        "Song 1",
+        "Song 2 with title",
+        "Song 3 with longer title",
+        "Song 4 with a very long title",
+        "Song 5 with an extremely long title",
+        "Song 6 with a ridiculously long title",
+        "Song 7 with the longest title imaginable"};
+
     while (true)
     {
         oled_battery(battery_level);
-        oled_print_artist("Artist Name");
-        oled_print_song("Song Title");
+        oled_print_artist(artist_names[name]);
+        oled_print_song(song_titles[name]);
         oled_print_visualiser(sin_data[i]);
         i = (i + 1) % 7;
 
