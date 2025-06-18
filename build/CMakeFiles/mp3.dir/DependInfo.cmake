@@ -97,6 +97,9 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/home/adam/.pico-sdk/sdk/2.1.1/extras/src/rp2_common/pico_audio_i2s/include"
   "/home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_audio/include"
   "/home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_util_buffer/include"
+  "/home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/ff15/source"
+  "/home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/sd_driver"
+  "/home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/include"
   "/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_stdlib_headers/include"
   "/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/include"
   "/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_base_headers/include"
@@ -156,6 +159,8 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_dma/include"
   "/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pio/include"
   "/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/include"
+  "/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_spi/include"
+  "/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_rtc/include"
   )
 
 # The set of dependency files which are needed:
@@ -200,6 +205,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c" "CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c.o" "gcc" "CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c.o.d"
   "/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pio/pio.c" "CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pio/pio.c.o" "gcc" "CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pio/pio.c.o.d"
   "/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c" "CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c.o" "gcc" "CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c.o.d"
+  "/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_rtc/rtc.c" "CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_rtc/rtc.c.o" "gcc" "CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_rtc/rtc.c.o.d"
+  "/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_spi/spi.c" "CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_spi/spi.c.o" "gcc" "CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_spi/spi.c.o.d"
   "/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.c" "CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.c.o" "gcc" "CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.c.o.d"
   "/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c" "CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o" "gcc" "CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o.d"
   "/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.c" "CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.c.o" "gcc" "CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.c.o.d"
@@ -233,6 +240,20 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c" "CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o" "gcc" "CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o.d"
   "/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c" "CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.o" "gcc" "CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.o.d"
   "/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c" "CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.o" "gcc" "CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.o.d"
+  "/home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/ff15/source/ff.c" "CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ff.c.o" "gcc" "CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ff.c.o.d"
+  "/home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/ff15/source/ffsystem.c" "CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ffsystem.c.o" "gcc" "CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ffsystem.c.o.d"
+  "/home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/ff15/source/ffunicode.c" "CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ffunicode.c.o" "gcc" "CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ffunicode.c.o.d"
+  "/home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/sd_driver/crc.c" "CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/crc.c.o" "gcc" "CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/crc.c.o.d"
+  "/home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/sd_driver/demo_logging.c" "CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/demo_logging.c.o" "gcc" "CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/demo_logging.c.o.d"
+  "/home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/sd_driver/sd_card.c" "CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/sd_card.c.o" "gcc" "CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/sd_card.c.o.d"
+  "/home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/sd_driver/sd_spi.c" "CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/sd_spi.c.o" "gcc" "CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/sd_spi.c.o.d"
+  "/home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/sd_driver/spi.c" "CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/spi.c.o" "gcc" "CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/spi.c.o.d"
+  "/home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/src/f_util.c" "CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/f_util.c.o" "gcc" "CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/f_util.c.o.d"
+  "/home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/src/ff_stdio.c" "CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/ff_stdio.c.o" "gcc" "CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/ff_stdio.c.o.d"
+  "/home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/src/glue.c" "CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/glue.c.o" "gcc" "CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/glue.c.o.d"
+  "/home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/src/my_debug.c" "CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/my_debug.c.o" "gcc" "CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/my_debug.c.o.d"
+  "/home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/src/rtc.c" "CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/rtc.c.o" "gcc" "CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/rtc.c.o.d"
+  "/home/adam/Documents/Projects/mp3-player/src/hw_config.c" "CMakeFiles/mp3.dir/src/hw_config.c.o" "gcc" "CMakeFiles/mp3.dir/src/hw_config.c.o.d"
   "/home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_audio/audio.cpp" "CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_audio/audio.cpp.o" "gcc" "CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_audio/audio.cpp.o.d"
   "/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp" "CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp.o" "gcc" "CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp.o.d"
   "/home/adam/Documents/Projects/mp3-player/main.cpp" "CMakeFiles/mp3.dir/main.cpp.o" "gcc" "CMakeFiles/mp3.dir/main.cpp.o.d"
@@ -240,6 +261,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/adam/Documents/Projects/mp3-player/src/fonts/medium.cpp" "CMakeFiles/mp3.dir/src/fonts/medium.cpp.o" "gcc" "CMakeFiles/mp3.dir/src/fonts/medium.cpp.o.d"
   "/home/adam/Documents/Projects/mp3-player/src/fonts/small.cpp" "CMakeFiles/mp3.dir/src/fonts/small.cpp.o" "gcc" "CMakeFiles/mp3.dir/src/fonts/small.cpp.o.d"
   "/home/adam/Documents/Projects/mp3-player/src/oled.cpp" "CMakeFiles/mp3.dir/src/oled.cpp.o" "gcc" "CMakeFiles/mp3.dir/src/oled.cpp.o.d"
+  "/home/adam/Documents/Projects/mp3-player/src/sdcard.cpp" "CMakeFiles/mp3.dir/src/sdcard.cpp.o" "gcc" "CMakeFiles/mp3.dir/src/sdcard.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

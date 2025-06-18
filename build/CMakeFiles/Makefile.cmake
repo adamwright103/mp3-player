@@ -188,6 +188,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.31.5/CMakeCCompiler.cmake"
   "CMakeFiles/3.31.5/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.31.5/CMakeSystem.cmake"
+  "/home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/CMakeLists.txt"
   "/home/adam/Documents/Projects/mp3-player/pico_extras_import.cmake"
   "/home/adam/Documents/Projects/mp3-player/pico_sdk_import.cmake"
   )
@@ -320,6 +321,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "pico_extras/src/rp2_common/usb_device/CMakeFiles/CMakeDirectoryInformation.cmake"
   "pico_extras/src/rp2_common/usb_device_msc/CMakeFiles/CMakeDirectoryInformation.cmake"
   "pico-sdk/docs/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "build/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:

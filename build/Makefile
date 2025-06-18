@@ -1267,6 +1267,54 @@ home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c.s
 .PHONY : home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c.s
 
+home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_rtc/rtc.o: home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_rtc/rtc.c.o
+.PHONY : home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_rtc/rtc.o
+
+# target to build an object file
+home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_rtc/rtc.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_rtc/rtc.c.o
+.PHONY : home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_rtc/rtc.c.o
+
+home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_rtc/rtc.i: home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_rtc/rtc.c.i
+.PHONY : home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_rtc/rtc.i
+
+# target to preprocess a source file
+home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_rtc/rtc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_rtc/rtc.c.i
+.PHONY : home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_rtc/rtc.c.i
+
+home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_rtc/rtc.s: home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_rtc/rtc.c.s
+.PHONY : home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_rtc/rtc.s
+
+# target to generate assembly for a file
+home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_rtc/rtc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_rtc/rtc.c.s
+.PHONY : home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_rtc/rtc.c.s
+
+home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_spi/spi.o: home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_spi/spi.c.o
+.PHONY : home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_spi/spi.o
+
+# target to build an object file
+home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_spi/spi.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_spi/spi.c.o
+.PHONY : home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_spi/spi.c.o
+
+home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_spi/spi.i: home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_spi/spi.c.i
+.PHONY : home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_spi/spi.i
+
+# target to preprocess a source file
+home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_spi/spi.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_spi/spi.c.i
+.PHONY : home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_spi/spi.c.i
+
+home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_spi/spi.s: home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_spi/spi.c.s
+.PHONY : home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_spi/spi.s
+
+# target to generate assembly for a file
+home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_spi/spi.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_spi/spi.c.s
+.PHONY : home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_spi/spi.c.s
+
 home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.o: home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.c.o
 .PHONY : home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.o
 
@@ -2155,6 +2203,318 @@ home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.s
 .PHONY : home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.s
 
+lib/FatFs/FatFs_SPI/ff15/source/ff.o: lib/FatFs/FatFs_SPI/ff15/source/ff.c.o
+.PHONY : lib/FatFs/FatFs_SPI/ff15/source/ff.o
+
+# target to build an object file
+lib/FatFs/FatFs_SPI/ff15/source/ff.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ff.c.o
+.PHONY : lib/FatFs/FatFs_SPI/ff15/source/ff.c.o
+
+lib/FatFs/FatFs_SPI/ff15/source/ff.i: lib/FatFs/FatFs_SPI/ff15/source/ff.c.i
+.PHONY : lib/FatFs/FatFs_SPI/ff15/source/ff.i
+
+# target to preprocess a source file
+lib/FatFs/FatFs_SPI/ff15/source/ff.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ff.c.i
+.PHONY : lib/FatFs/FatFs_SPI/ff15/source/ff.c.i
+
+lib/FatFs/FatFs_SPI/ff15/source/ff.s: lib/FatFs/FatFs_SPI/ff15/source/ff.c.s
+.PHONY : lib/FatFs/FatFs_SPI/ff15/source/ff.s
+
+# target to generate assembly for a file
+lib/FatFs/FatFs_SPI/ff15/source/ff.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ff.c.s
+.PHONY : lib/FatFs/FatFs_SPI/ff15/source/ff.c.s
+
+lib/FatFs/FatFs_SPI/ff15/source/ffsystem.o: lib/FatFs/FatFs_SPI/ff15/source/ffsystem.c.o
+.PHONY : lib/FatFs/FatFs_SPI/ff15/source/ffsystem.o
+
+# target to build an object file
+lib/FatFs/FatFs_SPI/ff15/source/ffsystem.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ffsystem.c.o
+.PHONY : lib/FatFs/FatFs_SPI/ff15/source/ffsystem.c.o
+
+lib/FatFs/FatFs_SPI/ff15/source/ffsystem.i: lib/FatFs/FatFs_SPI/ff15/source/ffsystem.c.i
+.PHONY : lib/FatFs/FatFs_SPI/ff15/source/ffsystem.i
+
+# target to preprocess a source file
+lib/FatFs/FatFs_SPI/ff15/source/ffsystem.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ffsystem.c.i
+.PHONY : lib/FatFs/FatFs_SPI/ff15/source/ffsystem.c.i
+
+lib/FatFs/FatFs_SPI/ff15/source/ffsystem.s: lib/FatFs/FatFs_SPI/ff15/source/ffsystem.c.s
+.PHONY : lib/FatFs/FatFs_SPI/ff15/source/ffsystem.s
+
+# target to generate assembly for a file
+lib/FatFs/FatFs_SPI/ff15/source/ffsystem.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ffsystem.c.s
+.PHONY : lib/FatFs/FatFs_SPI/ff15/source/ffsystem.c.s
+
+lib/FatFs/FatFs_SPI/ff15/source/ffunicode.o: lib/FatFs/FatFs_SPI/ff15/source/ffunicode.c.o
+.PHONY : lib/FatFs/FatFs_SPI/ff15/source/ffunicode.o
+
+# target to build an object file
+lib/FatFs/FatFs_SPI/ff15/source/ffunicode.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ffunicode.c.o
+.PHONY : lib/FatFs/FatFs_SPI/ff15/source/ffunicode.c.o
+
+lib/FatFs/FatFs_SPI/ff15/source/ffunicode.i: lib/FatFs/FatFs_SPI/ff15/source/ffunicode.c.i
+.PHONY : lib/FatFs/FatFs_SPI/ff15/source/ffunicode.i
+
+# target to preprocess a source file
+lib/FatFs/FatFs_SPI/ff15/source/ffunicode.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ffunicode.c.i
+.PHONY : lib/FatFs/FatFs_SPI/ff15/source/ffunicode.c.i
+
+lib/FatFs/FatFs_SPI/ff15/source/ffunicode.s: lib/FatFs/FatFs_SPI/ff15/source/ffunicode.c.s
+.PHONY : lib/FatFs/FatFs_SPI/ff15/source/ffunicode.s
+
+# target to generate assembly for a file
+lib/FatFs/FatFs_SPI/ff15/source/ffunicode.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ffunicode.c.s
+.PHONY : lib/FatFs/FatFs_SPI/ff15/source/ffunicode.c.s
+
+lib/FatFs/FatFs_SPI/sd_driver/crc.o: lib/FatFs/FatFs_SPI/sd_driver/crc.c.o
+.PHONY : lib/FatFs/FatFs_SPI/sd_driver/crc.o
+
+# target to build an object file
+lib/FatFs/FatFs_SPI/sd_driver/crc.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/crc.c.o
+.PHONY : lib/FatFs/FatFs_SPI/sd_driver/crc.c.o
+
+lib/FatFs/FatFs_SPI/sd_driver/crc.i: lib/FatFs/FatFs_SPI/sd_driver/crc.c.i
+.PHONY : lib/FatFs/FatFs_SPI/sd_driver/crc.i
+
+# target to preprocess a source file
+lib/FatFs/FatFs_SPI/sd_driver/crc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/crc.c.i
+.PHONY : lib/FatFs/FatFs_SPI/sd_driver/crc.c.i
+
+lib/FatFs/FatFs_SPI/sd_driver/crc.s: lib/FatFs/FatFs_SPI/sd_driver/crc.c.s
+.PHONY : lib/FatFs/FatFs_SPI/sd_driver/crc.s
+
+# target to generate assembly for a file
+lib/FatFs/FatFs_SPI/sd_driver/crc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/crc.c.s
+.PHONY : lib/FatFs/FatFs_SPI/sd_driver/crc.c.s
+
+lib/FatFs/FatFs_SPI/sd_driver/demo_logging.o: lib/FatFs/FatFs_SPI/sd_driver/demo_logging.c.o
+.PHONY : lib/FatFs/FatFs_SPI/sd_driver/demo_logging.o
+
+# target to build an object file
+lib/FatFs/FatFs_SPI/sd_driver/demo_logging.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/demo_logging.c.o
+.PHONY : lib/FatFs/FatFs_SPI/sd_driver/demo_logging.c.o
+
+lib/FatFs/FatFs_SPI/sd_driver/demo_logging.i: lib/FatFs/FatFs_SPI/sd_driver/demo_logging.c.i
+.PHONY : lib/FatFs/FatFs_SPI/sd_driver/demo_logging.i
+
+# target to preprocess a source file
+lib/FatFs/FatFs_SPI/sd_driver/demo_logging.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/demo_logging.c.i
+.PHONY : lib/FatFs/FatFs_SPI/sd_driver/demo_logging.c.i
+
+lib/FatFs/FatFs_SPI/sd_driver/demo_logging.s: lib/FatFs/FatFs_SPI/sd_driver/demo_logging.c.s
+.PHONY : lib/FatFs/FatFs_SPI/sd_driver/demo_logging.s
+
+# target to generate assembly for a file
+lib/FatFs/FatFs_SPI/sd_driver/demo_logging.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/demo_logging.c.s
+.PHONY : lib/FatFs/FatFs_SPI/sd_driver/demo_logging.c.s
+
+lib/FatFs/FatFs_SPI/sd_driver/sd_card.o: lib/FatFs/FatFs_SPI/sd_driver/sd_card.c.o
+.PHONY : lib/FatFs/FatFs_SPI/sd_driver/sd_card.o
+
+# target to build an object file
+lib/FatFs/FatFs_SPI/sd_driver/sd_card.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/sd_card.c.o
+.PHONY : lib/FatFs/FatFs_SPI/sd_driver/sd_card.c.o
+
+lib/FatFs/FatFs_SPI/sd_driver/sd_card.i: lib/FatFs/FatFs_SPI/sd_driver/sd_card.c.i
+.PHONY : lib/FatFs/FatFs_SPI/sd_driver/sd_card.i
+
+# target to preprocess a source file
+lib/FatFs/FatFs_SPI/sd_driver/sd_card.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/sd_card.c.i
+.PHONY : lib/FatFs/FatFs_SPI/sd_driver/sd_card.c.i
+
+lib/FatFs/FatFs_SPI/sd_driver/sd_card.s: lib/FatFs/FatFs_SPI/sd_driver/sd_card.c.s
+.PHONY : lib/FatFs/FatFs_SPI/sd_driver/sd_card.s
+
+# target to generate assembly for a file
+lib/FatFs/FatFs_SPI/sd_driver/sd_card.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/sd_card.c.s
+.PHONY : lib/FatFs/FatFs_SPI/sd_driver/sd_card.c.s
+
+lib/FatFs/FatFs_SPI/sd_driver/sd_spi.o: lib/FatFs/FatFs_SPI/sd_driver/sd_spi.c.o
+.PHONY : lib/FatFs/FatFs_SPI/sd_driver/sd_spi.o
+
+# target to build an object file
+lib/FatFs/FatFs_SPI/sd_driver/sd_spi.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/sd_spi.c.o
+.PHONY : lib/FatFs/FatFs_SPI/sd_driver/sd_spi.c.o
+
+lib/FatFs/FatFs_SPI/sd_driver/sd_spi.i: lib/FatFs/FatFs_SPI/sd_driver/sd_spi.c.i
+.PHONY : lib/FatFs/FatFs_SPI/sd_driver/sd_spi.i
+
+# target to preprocess a source file
+lib/FatFs/FatFs_SPI/sd_driver/sd_spi.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/sd_spi.c.i
+.PHONY : lib/FatFs/FatFs_SPI/sd_driver/sd_spi.c.i
+
+lib/FatFs/FatFs_SPI/sd_driver/sd_spi.s: lib/FatFs/FatFs_SPI/sd_driver/sd_spi.c.s
+.PHONY : lib/FatFs/FatFs_SPI/sd_driver/sd_spi.s
+
+# target to generate assembly for a file
+lib/FatFs/FatFs_SPI/sd_driver/sd_spi.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/sd_spi.c.s
+.PHONY : lib/FatFs/FatFs_SPI/sd_driver/sd_spi.c.s
+
+lib/FatFs/FatFs_SPI/sd_driver/spi.o: lib/FatFs/FatFs_SPI/sd_driver/spi.c.o
+.PHONY : lib/FatFs/FatFs_SPI/sd_driver/spi.o
+
+# target to build an object file
+lib/FatFs/FatFs_SPI/sd_driver/spi.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/spi.c.o
+.PHONY : lib/FatFs/FatFs_SPI/sd_driver/spi.c.o
+
+lib/FatFs/FatFs_SPI/sd_driver/spi.i: lib/FatFs/FatFs_SPI/sd_driver/spi.c.i
+.PHONY : lib/FatFs/FatFs_SPI/sd_driver/spi.i
+
+# target to preprocess a source file
+lib/FatFs/FatFs_SPI/sd_driver/spi.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/spi.c.i
+.PHONY : lib/FatFs/FatFs_SPI/sd_driver/spi.c.i
+
+lib/FatFs/FatFs_SPI/sd_driver/spi.s: lib/FatFs/FatFs_SPI/sd_driver/spi.c.s
+.PHONY : lib/FatFs/FatFs_SPI/sd_driver/spi.s
+
+# target to generate assembly for a file
+lib/FatFs/FatFs_SPI/sd_driver/spi.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/spi.c.s
+.PHONY : lib/FatFs/FatFs_SPI/sd_driver/spi.c.s
+
+lib/FatFs/FatFs_SPI/src/f_util.o: lib/FatFs/FatFs_SPI/src/f_util.c.o
+.PHONY : lib/FatFs/FatFs_SPI/src/f_util.o
+
+# target to build an object file
+lib/FatFs/FatFs_SPI/src/f_util.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/f_util.c.o
+.PHONY : lib/FatFs/FatFs_SPI/src/f_util.c.o
+
+lib/FatFs/FatFs_SPI/src/f_util.i: lib/FatFs/FatFs_SPI/src/f_util.c.i
+.PHONY : lib/FatFs/FatFs_SPI/src/f_util.i
+
+# target to preprocess a source file
+lib/FatFs/FatFs_SPI/src/f_util.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/f_util.c.i
+.PHONY : lib/FatFs/FatFs_SPI/src/f_util.c.i
+
+lib/FatFs/FatFs_SPI/src/f_util.s: lib/FatFs/FatFs_SPI/src/f_util.c.s
+.PHONY : lib/FatFs/FatFs_SPI/src/f_util.s
+
+# target to generate assembly for a file
+lib/FatFs/FatFs_SPI/src/f_util.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/f_util.c.s
+.PHONY : lib/FatFs/FatFs_SPI/src/f_util.c.s
+
+lib/FatFs/FatFs_SPI/src/ff_stdio.o: lib/FatFs/FatFs_SPI/src/ff_stdio.c.o
+.PHONY : lib/FatFs/FatFs_SPI/src/ff_stdio.o
+
+# target to build an object file
+lib/FatFs/FatFs_SPI/src/ff_stdio.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/ff_stdio.c.o
+.PHONY : lib/FatFs/FatFs_SPI/src/ff_stdio.c.o
+
+lib/FatFs/FatFs_SPI/src/ff_stdio.i: lib/FatFs/FatFs_SPI/src/ff_stdio.c.i
+.PHONY : lib/FatFs/FatFs_SPI/src/ff_stdio.i
+
+# target to preprocess a source file
+lib/FatFs/FatFs_SPI/src/ff_stdio.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/ff_stdio.c.i
+.PHONY : lib/FatFs/FatFs_SPI/src/ff_stdio.c.i
+
+lib/FatFs/FatFs_SPI/src/ff_stdio.s: lib/FatFs/FatFs_SPI/src/ff_stdio.c.s
+.PHONY : lib/FatFs/FatFs_SPI/src/ff_stdio.s
+
+# target to generate assembly for a file
+lib/FatFs/FatFs_SPI/src/ff_stdio.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/ff_stdio.c.s
+.PHONY : lib/FatFs/FatFs_SPI/src/ff_stdio.c.s
+
+lib/FatFs/FatFs_SPI/src/glue.o: lib/FatFs/FatFs_SPI/src/glue.c.o
+.PHONY : lib/FatFs/FatFs_SPI/src/glue.o
+
+# target to build an object file
+lib/FatFs/FatFs_SPI/src/glue.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/glue.c.o
+.PHONY : lib/FatFs/FatFs_SPI/src/glue.c.o
+
+lib/FatFs/FatFs_SPI/src/glue.i: lib/FatFs/FatFs_SPI/src/glue.c.i
+.PHONY : lib/FatFs/FatFs_SPI/src/glue.i
+
+# target to preprocess a source file
+lib/FatFs/FatFs_SPI/src/glue.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/glue.c.i
+.PHONY : lib/FatFs/FatFs_SPI/src/glue.c.i
+
+lib/FatFs/FatFs_SPI/src/glue.s: lib/FatFs/FatFs_SPI/src/glue.c.s
+.PHONY : lib/FatFs/FatFs_SPI/src/glue.s
+
+# target to generate assembly for a file
+lib/FatFs/FatFs_SPI/src/glue.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/glue.c.s
+.PHONY : lib/FatFs/FatFs_SPI/src/glue.c.s
+
+lib/FatFs/FatFs_SPI/src/my_debug.o: lib/FatFs/FatFs_SPI/src/my_debug.c.o
+.PHONY : lib/FatFs/FatFs_SPI/src/my_debug.o
+
+# target to build an object file
+lib/FatFs/FatFs_SPI/src/my_debug.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/my_debug.c.o
+.PHONY : lib/FatFs/FatFs_SPI/src/my_debug.c.o
+
+lib/FatFs/FatFs_SPI/src/my_debug.i: lib/FatFs/FatFs_SPI/src/my_debug.c.i
+.PHONY : lib/FatFs/FatFs_SPI/src/my_debug.i
+
+# target to preprocess a source file
+lib/FatFs/FatFs_SPI/src/my_debug.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/my_debug.c.i
+.PHONY : lib/FatFs/FatFs_SPI/src/my_debug.c.i
+
+lib/FatFs/FatFs_SPI/src/my_debug.s: lib/FatFs/FatFs_SPI/src/my_debug.c.s
+.PHONY : lib/FatFs/FatFs_SPI/src/my_debug.s
+
+# target to generate assembly for a file
+lib/FatFs/FatFs_SPI/src/my_debug.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/my_debug.c.s
+.PHONY : lib/FatFs/FatFs_SPI/src/my_debug.c.s
+
+lib/FatFs/FatFs_SPI/src/rtc.o: lib/FatFs/FatFs_SPI/src/rtc.c.o
+.PHONY : lib/FatFs/FatFs_SPI/src/rtc.o
+
+# target to build an object file
+lib/FatFs/FatFs_SPI/src/rtc.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/rtc.c.o
+.PHONY : lib/FatFs/FatFs_SPI/src/rtc.c.o
+
+lib/FatFs/FatFs_SPI/src/rtc.i: lib/FatFs/FatFs_SPI/src/rtc.c.i
+.PHONY : lib/FatFs/FatFs_SPI/src/rtc.i
+
+# target to preprocess a source file
+lib/FatFs/FatFs_SPI/src/rtc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/rtc.c.i
+.PHONY : lib/FatFs/FatFs_SPI/src/rtc.c.i
+
+lib/FatFs/FatFs_SPI/src/rtc.s: lib/FatFs/FatFs_SPI/src/rtc.c.s
+.PHONY : lib/FatFs/FatFs_SPI/src/rtc.s
+
+# target to generate assembly for a file
+lib/FatFs/FatFs_SPI/src/rtc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/rtc.c.s
+.PHONY : lib/FatFs/FatFs_SPI/src/rtc.c.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -2251,6 +2611,30 @@ src/fonts/small.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/src/fonts/small.cpp.s
 .PHONY : src/fonts/small.cpp.s
 
+src/hw_config.o: src/hw_config.c.o
+.PHONY : src/hw_config.o
+
+# target to build an object file
+src/hw_config.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/src/hw_config.c.o
+.PHONY : src/hw_config.c.o
+
+src/hw_config.i: src/hw_config.c.i
+.PHONY : src/hw_config.i
+
+# target to preprocess a source file
+src/hw_config.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/src/hw_config.c.i
+.PHONY : src/hw_config.c.i
+
+src/hw_config.s: src/hw_config.c.s
+.PHONY : src/hw_config.s
+
+# target to generate assembly for a file
+src/hw_config.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/src/hw_config.c.s
+.PHONY : src/hw_config.c.s
+
 src/oled.o: src/oled.cpp.o
 .PHONY : src/oled.o
 
@@ -2274,6 +2658,30 @@ src/oled.s: src/oled.cpp.s
 src/oled.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/src/oled.cpp.s
 .PHONY : src/oled.cpp.s
+
+src/sdcard.o: src/sdcard.cpp.o
+.PHONY : src/sdcard.o
+
+# target to build an object file
+src/sdcard.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/src/sdcard.cpp.o
+.PHONY : src/sdcard.cpp.o
+
+src/sdcard.i: src/sdcard.cpp.i
+.PHONY : src/sdcard.i
+
+# target to preprocess a source file
+src/sdcard.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/src/sdcard.cpp.i
+.PHONY : src/sdcard.cpp.i
+
+src/sdcard.s: src/sdcard.cpp.s
+.PHONY : src/sdcard.s
+
+# target to generate assembly for a file
+src/sdcard.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp3.dir/build.make CMakeFiles/mp3.dir/src/sdcard.cpp.s
+.PHONY : src/sdcard.cpp.s
 
 # Help Target
 help:
@@ -2420,6 +2828,12 @@ help:
 	@echo "... home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.o"
 	@echo "... home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.i"
 	@echo "... home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.s"
+	@echo "... home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_rtc/rtc.o"
+	@echo "... home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_rtc/rtc.i"
+	@echo "... home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_rtc/rtc.s"
+	@echo "... home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_spi/spi.o"
+	@echo "... home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_spi/spi.i"
+	@echo "... home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_spi/spi.s"
 	@echo "... home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.o"
 	@echo "... home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.i"
 	@echo "... home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.s"
@@ -2531,6 +2945,45 @@ help:
 	@echo "... home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.o"
 	@echo "... home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.i"
 	@echo "... home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.s"
+	@echo "... lib/FatFs/FatFs_SPI/ff15/source/ff.o"
+	@echo "... lib/FatFs/FatFs_SPI/ff15/source/ff.i"
+	@echo "... lib/FatFs/FatFs_SPI/ff15/source/ff.s"
+	@echo "... lib/FatFs/FatFs_SPI/ff15/source/ffsystem.o"
+	@echo "... lib/FatFs/FatFs_SPI/ff15/source/ffsystem.i"
+	@echo "... lib/FatFs/FatFs_SPI/ff15/source/ffsystem.s"
+	@echo "... lib/FatFs/FatFs_SPI/ff15/source/ffunicode.o"
+	@echo "... lib/FatFs/FatFs_SPI/ff15/source/ffunicode.i"
+	@echo "... lib/FatFs/FatFs_SPI/ff15/source/ffunicode.s"
+	@echo "... lib/FatFs/FatFs_SPI/sd_driver/crc.o"
+	@echo "... lib/FatFs/FatFs_SPI/sd_driver/crc.i"
+	@echo "... lib/FatFs/FatFs_SPI/sd_driver/crc.s"
+	@echo "... lib/FatFs/FatFs_SPI/sd_driver/demo_logging.o"
+	@echo "... lib/FatFs/FatFs_SPI/sd_driver/demo_logging.i"
+	@echo "... lib/FatFs/FatFs_SPI/sd_driver/demo_logging.s"
+	@echo "... lib/FatFs/FatFs_SPI/sd_driver/sd_card.o"
+	@echo "... lib/FatFs/FatFs_SPI/sd_driver/sd_card.i"
+	@echo "... lib/FatFs/FatFs_SPI/sd_driver/sd_card.s"
+	@echo "... lib/FatFs/FatFs_SPI/sd_driver/sd_spi.o"
+	@echo "... lib/FatFs/FatFs_SPI/sd_driver/sd_spi.i"
+	@echo "... lib/FatFs/FatFs_SPI/sd_driver/sd_spi.s"
+	@echo "... lib/FatFs/FatFs_SPI/sd_driver/spi.o"
+	@echo "... lib/FatFs/FatFs_SPI/sd_driver/spi.i"
+	@echo "... lib/FatFs/FatFs_SPI/sd_driver/spi.s"
+	@echo "... lib/FatFs/FatFs_SPI/src/f_util.o"
+	@echo "... lib/FatFs/FatFs_SPI/src/f_util.i"
+	@echo "... lib/FatFs/FatFs_SPI/src/f_util.s"
+	@echo "... lib/FatFs/FatFs_SPI/src/ff_stdio.o"
+	@echo "... lib/FatFs/FatFs_SPI/src/ff_stdio.i"
+	@echo "... lib/FatFs/FatFs_SPI/src/ff_stdio.s"
+	@echo "... lib/FatFs/FatFs_SPI/src/glue.o"
+	@echo "... lib/FatFs/FatFs_SPI/src/glue.i"
+	@echo "... lib/FatFs/FatFs_SPI/src/glue.s"
+	@echo "... lib/FatFs/FatFs_SPI/src/my_debug.o"
+	@echo "... lib/FatFs/FatFs_SPI/src/my_debug.i"
+	@echo "... lib/FatFs/FatFs_SPI/src/my_debug.s"
+	@echo "... lib/FatFs/FatFs_SPI/src/rtc.o"
+	@echo "... lib/FatFs/FatFs_SPI/src/rtc.i"
+	@echo "... lib/FatFs/FatFs_SPI/src/rtc.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -2543,9 +2996,15 @@ help:
 	@echo "... src/fonts/small.o"
 	@echo "... src/fonts/small.i"
 	@echo "... src/fonts/small.s"
+	@echo "... src/hw_config.o"
+	@echo "... src/hw_config.i"
+	@echo "... src/hw_config.s"
 	@echo "... src/oled.o"
 	@echo "... src/oled.i"
 	@echo "... src/oled.s"
+	@echo "... src/sdcard.o"
+	@echo "... src/sdcard.i"
+	@echo "... src/sdcard.s"
 .PHONY : help
 
 

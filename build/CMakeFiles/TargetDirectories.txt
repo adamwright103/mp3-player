@@ -239,3 +239,5 @@
 /home/adam/Documents/Projects/mp3-player/build/pico_extras/src/rp2_common/usb_device_msc/CMakeFiles/rebuild_cache.dir
 /home/adam/Documents/Projects/mp3-player/build/pico-sdk/docs/CMakeFiles/edit_cache.dir
 /home/adam/Documents/Projects/mp3-player/build/pico-sdk/docs/CMakeFiles/rebuild_cache.dir
+/home/adam/Documents/Projects/mp3-player/build/build/CMakeFiles/edit_cache.dir
+/home/adam/Documents/Projects/mp3-player/build/build/CMakeFiles/rebuild_cache.dir

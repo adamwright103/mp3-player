@@ -114,10 +114,38 @@ CMakeFiles/mp3.dir/src/audio.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mp3.dir/src/audio.cpp.s"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adam/Documents/Projects/mp3-player/src/audio.cpp -o CMakeFiles/mp3.dir/src/audio.cpp.s
 
+CMakeFiles/mp3.dir/src/sdcard.cpp.o: CMakeFiles/mp3.dir/flags.make
+CMakeFiles/mp3.dir/src/sdcard.cpp.o: /home/adam/Documents/Projects/mp3-player/src/sdcard.cpp
+CMakeFiles/mp3.dir/src/sdcard.cpp.o: CMakeFiles/mp3.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/mp3.dir/src/sdcard.cpp.o"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mp3.dir/src/sdcard.cpp.o -MF CMakeFiles/mp3.dir/src/sdcard.cpp.o.d -o CMakeFiles/mp3.dir/src/sdcard.cpp.o -c /home/adam/Documents/Projects/mp3-player/src/sdcard.cpp
+
+CMakeFiles/mp3.dir/src/sdcard.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mp3.dir/src/sdcard.cpp.i"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adam/Documents/Projects/mp3-player/src/sdcard.cpp > CMakeFiles/mp3.dir/src/sdcard.cpp.i
+
+CMakeFiles/mp3.dir/src/sdcard.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mp3.dir/src/sdcard.cpp.s"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adam/Documents/Projects/mp3-player/src/sdcard.cpp -o CMakeFiles/mp3.dir/src/sdcard.cpp.s
+
+CMakeFiles/mp3.dir/src/hw_config.c.o: CMakeFiles/mp3.dir/flags.make
+CMakeFiles/mp3.dir/src/hw_config.c.o: /home/adam/Documents/Projects/mp3-player/src/hw_config.c
+CMakeFiles/mp3.dir/src/hw_config.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/mp3.dir/src/hw_config.c.o"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/src/hw_config.c.o -MF CMakeFiles/mp3.dir/src/hw_config.c.o.d -o CMakeFiles/mp3.dir/src/hw_config.c.o -c /home/adam/Documents/Projects/mp3-player/src/hw_config.c
+
+CMakeFiles/mp3.dir/src/hw_config.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mp3.dir/src/hw_config.c.i"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/adam/Documents/Projects/mp3-player/src/hw_config.c > CMakeFiles/mp3.dir/src/hw_config.c.i
+
+CMakeFiles/mp3.dir/src/hw_config.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mp3.dir/src/hw_config.c.s"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/adam/Documents/Projects/mp3-player/src/hw_config.c -o CMakeFiles/mp3.dir/src/hw_config.c.s
+
 CMakeFiles/mp3.dir/src/fonts/small.cpp.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/src/fonts/small.cpp.o: /home/adam/Documents/Projects/mp3-player/src/fonts/small.cpp
 CMakeFiles/mp3.dir/src/fonts/small.cpp.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/mp3.dir/src/fonts/small.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/mp3.dir/src/fonts/small.cpp.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mp3.dir/src/fonts/small.cpp.o -MF CMakeFiles/mp3.dir/src/fonts/small.cpp.o.d -o CMakeFiles/mp3.dir/src/fonts/small.cpp.o -c /home/adam/Documents/Projects/mp3-player/src/fonts/small.cpp
 
 CMakeFiles/mp3.dir/src/fonts/small.cpp.i: cmake_force
@@ -131,7 +159,7 @@ CMakeFiles/mp3.dir/src/fonts/small.cpp.s: cmake_force
 CMakeFiles/mp3.dir/src/fonts/medium.cpp.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/src/fonts/medium.cpp.o: /home/adam/Documents/Projects/mp3-player/src/fonts/medium.cpp
 CMakeFiles/mp3.dir/src/fonts/medium.cpp.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/mp3.dir/src/fonts/medium.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/mp3.dir/src/fonts/medium.cpp.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mp3.dir/src/fonts/medium.cpp.o -MF CMakeFiles/mp3.dir/src/fonts/medium.cpp.o.d -o CMakeFiles/mp3.dir/src/fonts/medium.cpp.o -c /home/adam/Documents/Projects/mp3-player/src/fonts/medium.cpp
 
 CMakeFiles/mp3.dir/src/fonts/medium.cpp.i: cmake_force
@@ -145,7 +173,7 @@ CMakeFiles/mp3.dir/src/fonts/medium.cpp.s: cmake_force
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.i: cmake_force
@@ -159,7 +187,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdl
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c.i: cmake_force
@@ -173,7 +201,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gp
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.c.i: cmake_force
@@ -187,7 +215,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platfo
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.c.i: cmake_force
@@ -201,7 +229,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_pa
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/claim.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/claim.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/claim.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/claim.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/claim.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/claim.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/claim.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/claim.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/claim.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/claim.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/claim.c.i: cmake_force
@@ -215,7 +243,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/claim
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.c.i: cmake_force
@@ -229,7 +257,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sy
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i: cmake_force
@@ -243,7 +271,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_sp
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c.i: cmake_force
@@ -256,7 +284,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq_handler_chain.S.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq_handler_chain.S.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq_handler_chain.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building ASM object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq_handler_chain.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building ASM object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq_handler_chain.S.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq_handler_chain.S.o   -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq_handler_chain.S
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq_handler_chain.S.i: cmake_force
@@ -270,7 +298,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_sync/sem.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_sync/sem.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_sync/sem.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_sync/sem.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_sync/sem.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_sync/sem.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_sync/sem.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_sync/sem.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_sync/sem.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_sync/sem.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_sync/sem.c.i: cmake_force
@@ -284,7 +312,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_sync/sem.c.s: c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_sync/lock_core.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_sync/lock_core.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_sync/lock_core.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_sync/lock_core.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_sync/lock_core.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_sync/lock_core.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_sync/lock_core.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_sync/lock_core.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_sync/lock_core.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_sync/lock_core.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_sync/lock_core.c.i: cmake_force
@@ -298,7 +326,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_sync/lock_core.
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_sync/mutex.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_sync/mutex.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_sync/mutex.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_sync/mutex.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_sync/mutex.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_sync/mutex.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_sync/mutex.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_sync/mutex.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_sync/mutex.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_sync/mutex.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_sync/mutex.c.i: cmake_force
@@ -312,7 +340,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_sync/mutex.c.s:
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_sync/critical_section.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_sync/critical_section.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_sync/critical_section.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_sync/critical_section.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_sync/critical_section.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_sync/critical_section.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_sync/critical_section.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_sync/critical_section.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_sync/critical_section.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_sync/critical_section.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_sync/critical_section.c.i: cmake_force
@@ -326,7 +354,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_sync/critical_s
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.c.i: cmake_force
@@ -340,7 +368,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.c.s: 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_time/timeout_helper.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_time/timeout_helper.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_time/timeout_helper.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_time/timeout_helper.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_time/timeout_helper.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_time/timeout_helper.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_time/timeout_helper.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_time/timeout_helper.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_time/timeout_helper.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_time/timeout_helper.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_time/timeout_helper.c.i: cmake_force
@@ -354,7 +382,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_time/timeout_he
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.c.i: cmake_force
@@ -368,7 +396,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/t
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_util/datetime.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_util/datetime.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_util/datetime.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_util/datetime.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_util/datetime.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_util/datetime.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_util/datetime.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_util/datetime.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_util/datetime.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_util/datetime.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_util/datetime.c.i: cmake_force
@@ -382,7 +410,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_util/datetime.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_util/pheap.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_util/pheap.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_util/pheap.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_util/pheap.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_util/pheap.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_util/pheap.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_util/pheap.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_util/pheap.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_util/pheap.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_util/pheap.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_util/pheap.c.i: cmake_force
@@ -396,7 +424,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_util/pheap.c.s:
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_util/queue.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_util/queue.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_util/queue.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_util/queue.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_util/queue.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_util/queue.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_util/queue.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_util/queue.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_util/queue.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_util/queue.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_util/queue.c.i: cmake_force
@@ -410,7 +438,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_util/queue.c.s:
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/uart.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/uart.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/uart.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/uart.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/uart.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/uart.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/uart.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/uart.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/uart.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/uart.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/uart.c.i: cmake_force
@@ -424,7 +452,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/ua
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/clocks.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/clocks.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/clocks.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/clocks.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/clocks.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/clocks.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/clocks.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/clocks.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/clocks.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/clocks.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/clocks.c.i: cmake_force
@@ -438,7 +466,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c.i: cmake_force
@@ -452,7 +480,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_vreg/vreg.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_vreg/vreg.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_vreg/vreg.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_vreg/vreg.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_vreg/vreg.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_vreg/vreg.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_vreg/vreg.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_vreg/vreg.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_vreg/vreg.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_vreg/vreg.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_vreg/vreg.c.i: cmake_force
@@ -466,7 +494,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_vreg/vr
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/watchdog.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/watchdog.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/watchdog.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/watchdog.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/watchdog.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/watchdog.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/watchdog.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/watchdog.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/watchdog.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/watchdog.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/watchdog.c.i: cmake_force
@@ -480,7 +508,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdo
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.c.i: cmake_force
@@ -494,7 +522,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/t
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom.c.i: cmake_force
@@ -508,7 +536,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/boo
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom_lock.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom_lock.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom_lock.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom_lock.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom_lock.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom_lock.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom_lock.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom_lock.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom_lock.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom_lock.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom_lock.c.i: cmake_force
@@ -522,7 +550,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/boo
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_boot_lock/boot_lock.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_boot_lock/boot_lock.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_boot_lock/boot_lock.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_boot_lock/boot_lock.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_boot_lock/boot_lock.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_boot_lock/boot_lock.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_boot_lock/boot_lock.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_boot_lock/boot_lock.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_boot_lock/boot_lock.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_boot_lock/boot_lock.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_boot_lock/boot_lock.c.i: cmake_force
@@ -536,7 +564,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_boot_lo
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_flash/flash.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_flash/flash.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_flash/flash.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_flash/flash.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_flash/flash.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_flash/flash.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_flash/flash.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_flash/flash.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_flash/flash.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_flash/flash.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_flash/flash.c.i: cmake_force
@@ -550,7 +578,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_flash/flash
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/xosc.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/xosc.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/xosc.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/xosc.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/xosc.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/xosc.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/xosc.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/xosc.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/xosc.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/xosc.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/xosc.c.i: cmake_force
@@ -563,7 +591,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/xo
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_divider/divider.S.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_divider/divider.S.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_divider/divider.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building ASM object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_divider/divider.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building ASM object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_divider/divider.S.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_divider/divider.S.o   -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_divider/divider.S
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_divider/divider.S.i: cmake_force
@@ -577,7 +605,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_divider
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.c.i: cmake_force
@@ -591,7 +619,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/run
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init.c.i: cmake_force
@@ -605,7 +633,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_ini
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i: cmake_force
@@ -619,7 +647,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_ini
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i: cmake_force
@@ -632,7 +660,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_ini
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building ASM object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building ASM object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o   -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.i: cmake_force
@@ -645,7 +673,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bit_ops/bit
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_divider/divider_hardware.S.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_divider/divider_hardware.S.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_divider/divider_hardware.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building ASM object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_divider/divider_hardware.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building ASM object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_divider/divider_hardware.S.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_divider/divider_hardware.S.o   -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_divider/divider_hardware.S
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_divider/divider_hardware.S.i: cmake_force
@@ -658,7 +686,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_divider/div
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_aeabi_rp2040.S.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_aeabi_rp2040.S.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_aeabi_rp2040.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building ASM object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_aeabi_rp2040.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building ASM object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_aeabi_rp2040.S.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_aeabi_rp2040.S.o   -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_aeabi_rp2040.S
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_aeabi_rp2040.S.i: cmake_force
@@ -672,7 +700,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/doub
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp2040.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp2040.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.i: cmake_force
@@ -686,7 +714,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/doub
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_math.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_math.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_math.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_math.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_math.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_math.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_math.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_math.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_math.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_math.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_math.c.i: cmake_force
@@ -699,7 +727,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/doub
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building ASM object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building ASM object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o   -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.i: cmake_force
@@ -712,7 +740,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/doub
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building ASM object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building ASM object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o   -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.i: cmake_force
@@ -725,7 +753,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_int64_ops/p
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_aeabi_rp2040.S.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_aeabi_rp2040.S.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_aeabi_rp2040.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building ASM object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_aeabi_rp2040.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building ASM object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_aeabi_rp2040.S.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_aeabi_rp2040.S.o   -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_aeabi_rp2040.S
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_aeabi_rp2040.S.i: cmake_force
@@ -739,7 +767,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.i: cmake_force
@@ -753,7 +781,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_math.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_math.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_math.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_math.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_math.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_math.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_math.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_math.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_math.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_math.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_math.c.i: cmake_force
@@ -766,7 +794,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building ASM object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building ASM object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o   -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.i: cmake_force
@@ -780,7 +808,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.c.i: cmake_force
@@ -793,7 +821,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/mall
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building ASM object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building ASM object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o   -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.i: cmake_force
@@ -807,7 +835,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_mem_ops/mem
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_atomic/atomic.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_atomic/atomic.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_atomic/atomic.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_atomic/atomic.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_atomic/atomic.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_atomic/atomic.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_atomic/atomic.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_atomic/atomic.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_atomic/atomic.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_atomic/atomic.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_atomic/atomic.c.i: cmake_force
@@ -821,7 +849,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_atomic/atom
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp.i: cmake_force
@@ -835,7 +863,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i: cmake_force
@@ -849,7 +877,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_bi
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c.i: cmake_force
@@ -862,7 +890,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/prin
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_crt0/crt0.S.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_crt0/crt0.S.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_crt0/crt0.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building ASM object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_crt0/crt0.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building ASM object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_crt0/crt0.S.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_crt0/crt0.S.o   -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_crt0/crt0.S
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_crt0/crt0.S.i: cmake_force
@@ -876,7 +904,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_crt0/crt0.S
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_clib_interface/newlib_interface.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_clib_interface/newlib_interface.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_clib_interface/newlib_interface.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_clib_interface/newlib_interface.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_clib_interface/newlib_interface.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_clib_interface/newlib_interface.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_clib_interface/newlib_interface.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_clib_interface/newlib_interface.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_clib_interface/newlib_interface.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_clib_interface/newlib_interface.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_clib_interface/newlib_interface.c.i: cmake_force
@@ -890,7 +918,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_clib_interf
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.c.i: cmake_force
@@ -904,7 +932,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.c.i: cmake_force
@@ -918,7 +946,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/r
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.i: cmake_force
@@ -932,7 +960,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/s
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i: cmake_force
@@ -946,7 +974,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/s
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.i: cmake_force
@@ -960,7 +988,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/u
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/flash.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/flash.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/flash.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/flash.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/flash.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/flash.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/flash.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/flash.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/flash.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/flash.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/flash.c.i: cmake_force
@@ -974,7 +1002,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/f
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xip_cache/xip_cache.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xip_cache/xip_cache.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xip_cache/xip_cache.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xip_cache/xip_cache.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xip_cache/xip_cache.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xip_cache/xip_cache.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xip_cache/xip_cache.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xip_cache/xip_cache.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xip_cache/xip_cache.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xip_cache/xip_cache.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xip_cache/xip_cache.c.i: cmake_force
@@ -988,7 +1016,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xip_cac
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o: /home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i: cmake_force
@@ -1002,7 +1030,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspbe
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o: /home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i: cmake_force
@@ -1016,7 +1044,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspbe
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.c.o: /home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.c.i: cmake_force
@@ -1030,7 +1058,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.c.s
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_control.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_control.c.o: /home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_control.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_control.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_control.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_control.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_control.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_control.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_control.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_control.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_control.c.i: cmake_force
@@ -1044,7 +1072,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_con
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.c.o: /home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.c.i: cmake_force
@@ -1058,7 +1086,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/aud
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.c.o: /home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.c.i: cmake_force
@@ -1072,7 +1100,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_d
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_device.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_device.c.o: /home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_device.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_device.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_device.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_device.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_device.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_device.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_device.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_device.c.i: cmake_force
@@ -1086,7 +1114,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_d
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o: /home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_rt_device.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_rt_device.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i: cmake_force
@@ -1100,7 +1128,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_r
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/hid/hid_device.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/hid/hid_device.c.o: /home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/hid/hid_device.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/hid/hid_device.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/hid/hid_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/hid/hid_device.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/hid/hid_device.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/hid/hid_device.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/hid/hid_device.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/hid/hid_device.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/hid/hid_device.c.i: cmake_force
@@ -1114,7 +1142,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/hid/hid_d
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/midi/midi_device.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/midi/midi_device.c.o: /home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/midi/midi_device.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/midi/midi_device.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/midi/midi_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/midi/midi_device.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/midi/midi_device.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/midi/midi_device.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/midi/midi_device.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/midi/midi_device.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/midi/midi_device.c.i: cmake_force
@@ -1128,7 +1156,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/midi/midi
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/msc/msc_device.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/msc/msc_device.c.o: /home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/msc/msc_device.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/msc/msc_device.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/msc/msc_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/msc/msc_device.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/msc/msc_device.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/msc/msc_device.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/msc/msc_device.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/msc/msc_device.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/msc/msc_device.c.i: cmake_force
@@ -1142,7 +1170,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/msc/msc_d
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ecm_rndis_device.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ecm_rndis_device.c.o: /home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ecm_rndis_device.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ecm_rndis_device.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ecm_rndis_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ecm_rndis_device.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ecm_rndis_device.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ecm_rndis_device.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ecm_rndis_device.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ecm_rndis_device.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ecm_rndis_device.c.i: cmake_force
@@ -1156,7 +1184,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ecm_r
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ncm_device.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ncm_device.c.o: /home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ncm_device.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ncm_device.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ncm_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ncm_device.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ncm_device.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ncm_device.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ncm_device.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ncm_device.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ncm_device.c.i: cmake_force
@@ -1170,7 +1198,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ncm_d
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o: /home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/usbtmc/usbtmc_device.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/usbtmc/usbtmc_device.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i: cmake_force
@@ -1184,7 +1212,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/usbtmc/us
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.c.o: /home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.c.i: cmake_force
@@ -1198,7 +1226,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/ve
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/video/video_device.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/video/video_device.c.o: /home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/video/video_device.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/video/video_device.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/video/video_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/video/video_device.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/video/video_device.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/video/video_device.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/video/video_device.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/video/video_device.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/video/video_device.c.i: cmake_force
@@ -1212,7 +1240,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/video/vid
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.c.o: /home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.c.i: cmake_force
@@ -1226,7 +1254,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.c.s: cmake
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.c.o: /home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.c.i: cmake_force
@@ -1240,7 +1268,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fif
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i: cmake_force
@@ -1254,7 +1282,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/extras/src/rp2_common/pico_audio_i2s/audio_i2s.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/extras/src/rp2_common/pico_audio_i2s/audio_i2s.c.o: /home/adam/.pico-sdk/sdk/2.1.1/extras/src/rp2_common/pico_audio_i2s/audio_i2s.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/extras/src/rp2_common/pico_audio_i2s/audio_i2s.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/extras/src/rp2_common/pico_audio_i2s/audio_i2s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/extras/src/rp2_common/pico_audio_i2s/audio_i2s.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/extras/src/rp2_common/pico_audio_i2s/audio_i2s.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/extras/src/rp2_common/pico_audio_i2s/audio_i2s.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/extras/src/rp2_common/pico_audio_i2s/audio_i2s.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/extras/src/rp2_common/pico_audio_i2s/audio_i2s.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/extras/src/rp2_common/pico_audio_i2s/audio_i2s.c.i: cmake_force
@@ -1268,7 +1296,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/extras/src/rp2_common/pico_audi
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_dma/dma.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_dma/dma.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_dma/dma.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_dma/dma.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_dma/dma.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_dma/dma.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_dma/dma.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_dma/dma.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_dma/dma.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_dma/dma.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_dma/dma.c.i: cmake_force
@@ -1282,7 +1310,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_dma/dma
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pio/pio.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pio/pio.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pio/pio.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pio/pio.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pio/pio.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pio/pio.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pio/pio.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pio/pio.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pio/pio.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pio/pio.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pio/pio.c.i: cmake_force
@@ -1296,7 +1324,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pio/pio
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_audio/audio.cpp.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_audio/audio.cpp.o: /home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_audio/audio.cpp
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_audio/audio.cpp.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building CXX object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_audio/audio.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building CXX object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_audio/audio.cpp.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_audio/audio.cpp.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_audio/audio.cpp.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_audio/audio.cpp.o -c /home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_audio/audio.cpp
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_audio/audio.cpp.i: cmake_force
@@ -1309,7 +1337,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_audio/au
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_audio/audio_utils.S.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_audio/audio_utils.S.o: /home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_audio/audio_utils.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building ASM object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_audio/audio_utils.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building ASM object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_audio/audio_utils.S.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_audio/audio_utils.S.o   -c /home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_audio/audio_utils.S
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_audio/audio_utils.S.i: cmake_force
@@ -1323,7 +1351,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_audio/au
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_util_buffer/buffer.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_util_buffer/buffer.c.o: /home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_util_buffer/buffer.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_util_buffer/buffer.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_util_buffer/buffer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_util_buffer/buffer.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_util_buffer/buffer.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_util_buffer/buffer.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_util_buffer/buffer.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_util_buffer/buffer.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_util_buffer/buffer.c.i: cmake_force
@@ -1337,7 +1365,7 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_util_buf
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c.o: CMakeFiles/mp3.dir/flags.make
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c.o"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c
 
 CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c.i: cmake_force
@@ -1348,11 +1376,223 @@ CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c.s"
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c.s
 
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ffsystem.c.o: CMakeFiles/mp3.dir/flags.make
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ffsystem.c.o: /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/ff15/source/ffsystem.c
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ffsystem.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ffsystem.c.o"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ffsystem.c.o -MF CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ffsystem.c.o.d -o CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ffsystem.c.o -c /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/ff15/source/ffsystem.c
+
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ffsystem.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ffsystem.c.i"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/ff15/source/ffsystem.c > CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ffsystem.c.i
+
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ffsystem.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ffsystem.c.s"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/ff15/source/ffsystem.c -o CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ffsystem.c.s
+
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ffunicode.c.o: CMakeFiles/mp3.dir/flags.make
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ffunicode.c.o: /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/ff15/source/ffunicode.c
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ffunicode.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ffunicode.c.o"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ffunicode.c.o -MF CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ffunicode.c.o.d -o CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ffunicode.c.o -c /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/ff15/source/ffunicode.c
+
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ffunicode.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ffunicode.c.i"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/ff15/source/ffunicode.c > CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ffunicode.c.i
+
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ffunicode.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ffunicode.c.s"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/ff15/source/ffunicode.c -o CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ffunicode.c.s
+
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ff.c.o: CMakeFiles/mp3.dir/flags.make
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ff.c.o: /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/ff15/source/ff.c
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ff.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ff.c.o"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ff.c.o -MF CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ff.c.o.d -o CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ff.c.o -c /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/ff15/source/ff.c
+
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ff.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ff.c.i"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/ff15/source/ff.c > CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ff.c.i
+
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ff.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ff.c.s"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/ff15/source/ff.c -o CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ff.c.s
+
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/sd_spi.c.o: CMakeFiles/mp3.dir/flags.make
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/sd_spi.c.o: /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/sd_driver/sd_spi.c
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/sd_spi.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/sd_spi.c.o"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/sd_spi.c.o -MF CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/sd_spi.c.o.d -o CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/sd_spi.c.o -c /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/sd_driver/sd_spi.c
+
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/sd_spi.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/sd_spi.c.i"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/sd_driver/sd_spi.c > CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/sd_spi.c.i
+
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/sd_spi.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/sd_spi.c.s"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/sd_driver/sd_spi.c -o CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/sd_spi.c.s
+
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/demo_logging.c.o: CMakeFiles/mp3.dir/flags.make
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/demo_logging.c.o: /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/sd_driver/demo_logging.c
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/demo_logging.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/demo_logging.c.o"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/demo_logging.c.o -MF CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/demo_logging.c.o.d -o CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/demo_logging.c.o -c /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/sd_driver/demo_logging.c
+
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/demo_logging.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/demo_logging.c.i"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/sd_driver/demo_logging.c > CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/demo_logging.c.i
+
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/demo_logging.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/demo_logging.c.s"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/sd_driver/demo_logging.c -o CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/demo_logging.c.s
+
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/spi.c.o: CMakeFiles/mp3.dir/flags.make
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/spi.c.o: /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/sd_driver/spi.c
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/spi.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building C object CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/spi.c.o"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/spi.c.o -MF CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/spi.c.o.d -o CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/spi.c.o -c /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/sd_driver/spi.c
+
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/spi.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/spi.c.i"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/sd_driver/spi.c > CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/spi.c.i
+
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/spi.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/spi.c.s"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/sd_driver/spi.c -o CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/spi.c.s
+
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/sd_card.c.o: CMakeFiles/mp3.dir/flags.make
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/sd_card.c.o: /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/sd_driver/sd_card.c
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/sd_card.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building C object CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/sd_card.c.o"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/sd_card.c.o -MF CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/sd_card.c.o.d -o CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/sd_card.c.o -c /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/sd_driver/sd_card.c
+
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/sd_card.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/sd_card.c.i"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/sd_driver/sd_card.c > CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/sd_card.c.i
+
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/sd_card.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/sd_card.c.s"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/sd_driver/sd_card.c -o CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/sd_card.c.s
+
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/crc.c.o: CMakeFiles/mp3.dir/flags.make
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/crc.c.o: /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/sd_driver/crc.c
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/crc.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building C object CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/crc.c.o"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/crc.c.o -MF CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/crc.c.o.d -o CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/crc.c.o -c /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/sd_driver/crc.c
+
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/crc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/crc.c.i"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/sd_driver/crc.c > CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/crc.c.i
+
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/crc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/crc.c.s"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/sd_driver/crc.c -o CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/crc.c.s
+
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/glue.c.o: CMakeFiles/mp3.dir/flags.make
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/glue.c.o: /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/src/glue.c
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/glue.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building C object CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/glue.c.o"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/glue.c.o -MF CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/glue.c.o.d -o CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/glue.c.o -c /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/src/glue.c
+
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/glue.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/glue.c.i"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/src/glue.c > CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/glue.c.i
+
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/glue.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/glue.c.s"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/src/glue.c -o CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/glue.c.s
+
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/f_util.c.o: CMakeFiles/mp3.dir/flags.make
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/f_util.c.o: /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/src/f_util.c
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/f_util.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building C object CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/f_util.c.o"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/f_util.c.o -MF CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/f_util.c.o.d -o CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/f_util.c.o -c /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/src/f_util.c
+
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/f_util.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/f_util.c.i"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/src/f_util.c > CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/f_util.c.i
+
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/f_util.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/f_util.c.s"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/src/f_util.c -o CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/f_util.c.s
+
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/ff_stdio.c.o: CMakeFiles/mp3.dir/flags.make
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/ff_stdio.c.o: /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/src/ff_stdio.c
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/ff_stdio.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building C object CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/ff_stdio.c.o"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/ff_stdio.c.o -MF CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/ff_stdio.c.o.d -o CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/ff_stdio.c.o -c /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/src/ff_stdio.c
+
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/ff_stdio.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/ff_stdio.c.i"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/src/ff_stdio.c > CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/ff_stdio.c.i
+
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/ff_stdio.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/ff_stdio.c.s"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/src/ff_stdio.c -o CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/ff_stdio.c.s
+
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/my_debug.c.o: CMakeFiles/mp3.dir/flags.make
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/my_debug.c.o: /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/src/my_debug.c
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/my_debug.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building C object CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/my_debug.c.o"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/my_debug.c.o -MF CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/my_debug.c.o.d -o CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/my_debug.c.o -c /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/src/my_debug.c
+
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/my_debug.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/my_debug.c.i"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/src/my_debug.c > CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/my_debug.c.i
+
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/my_debug.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/my_debug.c.s"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/src/my_debug.c -o CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/my_debug.c.s
+
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/rtc.c.o: CMakeFiles/mp3.dir/flags.make
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/rtc.c.o: /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/src/rtc.c
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/rtc.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building C object CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/rtc.c.o"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/rtc.c.o -MF CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/rtc.c.o.d -o CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/rtc.c.o -c /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/src/rtc.c
+
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/rtc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/rtc.c.i"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/src/rtc.c > CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/rtc.c.i
+
+CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/rtc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/rtc.c.s"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/src/rtc.c -o CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/rtc.c.s
+
+CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_spi/spi.c.o: CMakeFiles/mp3.dir/flags.make
+CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_spi/spi.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_spi/spi.c
+CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_spi/spi.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_spi/spi.c.o"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_spi/spi.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_spi/spi.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_spi/spi.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_spi/spi.c
+
+CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_spi/spi.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_spi/spi.c.i"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_spi/spi.c > CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_spi/spi.c.i
+
+CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_spi/spi.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_spi/spi.c.s"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_spi/spi.c -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_spi/spi.c.s
+
+CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_rtc/rtc.c.o: CMakeFiles/mp3.dir/flags.make
+CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_rtc/rtc.c.o: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_rtc/rtc.c
+CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_rtc/rtc.c.o: CMakeFiles/mp3.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Building C object CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_rtc/rtc.c.o"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_rtc/rtc.c.o -MF CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_rtc/rtc.c.o.d -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_rtc/rtc.c.o -c /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_rtc/rtc.c
+
+CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_rtc/rtc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_rtc/rtc.c.i"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_rtc/rtc.c > CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_rtc/rtc.c.i
+
+CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_rtc/rtc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_rtc/rtc.c.s"
+	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_rtc/rtc.c -o CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_rtc/rtc.c.s
+
 # Object files for target mp3
 mp3_OBJECTS = \
 "CMakeFiles/mp3.dir/main.cpp.o" \
 "CMakeFiles/mp3.dir/src/oled.cpp.o" \
 "CMakeFiles/mp3.dir/src/audio.cpp.o" \
+"CMakeFiles/mp3.dir/src/sdcard.cpp.o" \
+"CMakeFiles/mp3.dir/src/hw_config.c.o" \
 "CMakeFiles/mp3.dir/src/fonts/small.cpp.o" \
 "CMakeFiles/mp3.dir/src/fonts/medium.cpp.o" \
 "CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.o" \
@@ -1441,7 +1681,22 @@ mp3_OBJECTS = \
 "CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_audio/audio.cpp.o" \
 "CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_audio/audio_utils.S.o" \
 "CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_util_buffer/buffer.c.o" \
-"CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c.o"
+"CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c.o" \
+"CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ffsystem.c.o" \
+"CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ffunicode.c.o" \
+"CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ff.c.o" \
+"CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/sd_spi.c.o" \
+"CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/demo_logging.c.o" \
+"CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/spi.c.o" \
+"CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/sd_card.c.o" \
+"CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/crc.c.o" \
+"CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/glue.c.o" \
+"CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/f_util.c.o" \
+"CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/ff_stdio.c.o" \
+"CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/my_debug.c.o" \
+"CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/rtc.c.o" \
+"CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_spi/spi.c.o" \
+"CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_rtc/rtc.c.o"
 
 # External object files for target mp3
 mp3_EXTERNAL_OBJECTS =
@@ -1449,6 +1704,8 @@ mp3_EXTERNAL_OBJECTS =
 mp3.elf: CMakeFiles/mp3.dir/main.cpp.o
 mp3.elf: CMakeFiles/mp3.dir/src/oled.cpp.o
 mp3.elf: CMakeFiles/mp3.dir/src/audio.cpp.o
+mp3.elf: CMakeFiles/mp3.dir/src/sdcard.cpp.o
+mp3.elf: CMakeFiles/mp3.dir/src/hw_config.c.o
 mp3.elf: CMakeFiles/mp3.dir/src/fonts/small.cpp.o
 mp3.elf: CMakeFiles/mp3.dir/src/fonts/medium.cpp.o
 mp3.elf: CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.o
@@ -1538,11 +1795,26 @@ mp3.elf: CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico
 mp3.elf: CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_audio/audio_utils.S.o
 mp3.elf: CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_util_buffer/buffer.c.o
 mp3.elf: CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c.o
+mp3.elf: CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ffsystem.c.o
+mp3.elf: CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ffunicode.c.o
+mp3.elf: CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/ff15/source/ff.c.o
+mp3.elf: CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/sd_spi.c.o
+mp3.elf: CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/demo_logging.c.o
+mp3.elf: CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/spi.c.o
+mp3.elf: CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/sd_card.c.o
+mp3.elf: CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/sd_driver/crc.c.o
+mp3.elf: CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/glue.c.o
+mp3.elf: CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/f_util.c.o
+mp3.elf: CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/ff_stdio.c.o
+mp3.elf: CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/my_debug.c.o
+mp3.elf: CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/rtc.c.o
+mp3.elf: CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_spi/spi.c.o
+mp3.elf: CMakeFiles/mp3.dir/home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_rtc/rtc.c.o
 mp3.elf: CMakeFiles/mp3.dir/build.make
 mp3.elf: pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/bs2_default_padded_checksummed.S.o
 mp3.elf: /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_crt0/rp2040/memmap_default.ld
 mp3.elf: CMakeFiles/mp3.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Linking CXX executable mp3.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/adam/Documents/Projects/mp3-player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Linking CXX executable mp3.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mp3.dir/link.txt --verbose=$(VERBOSE)
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-objdump -h /home/adam/Documents/Projects/mp3-player/build/mp3.elf > mp3.dis
 	/home/adam/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-objdump -d /home/adam/Documents/Projects/mp3-player/build/mp3.elf >> mp3.dis

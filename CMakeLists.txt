@@ -42,9 +42,16 @@ add_executable(mp3
     main.cpp
     src/oled.cpp
     src/audio.cpp
+    src/sdcard.cpp
+    src/hw_config.c
     src/fonts/small.cpp
     src/fonts/medium.cpp
     )
+
+# add the FatFs library
+add_subdirectory(
+    lib/FatFs/FatFs_SPI build
+)
 
 pico_set_program_name(mp3 "mp3")
 pico_set_program_version(mp3 "0.1")
@@ -53,14 +60,13 @@ pico_set_program_version(mp3 "0.1")
 pico_enable_stdio_uart(mp3 0)
 pico_enable_stdio_usb(mp3 1)
 
-# Add the standard library to the build
+# Add the library to the build
 target_link_libraries(mp3
         pico_stdlib
         pico_audio_i2s
+        hardware_i2c
+        FatFs_SPI
         )
-
-# Other Libraries
-target_link_libraries(mp3 pico_stdlib hardware_i2c)
 
 # Add the standard include files to the build
 target_include_directories(mp3 PRIVATE
