@@ -4529,6 +4529,9 @@ CMakeFiles/mp3.dir/lib/FatFs/FatFs_SPI/src/rtc.c.o: /home/adam/Documents/Project
   /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/include/util.h
 
 CMakeFiles/mp3.dir/main.cpp.o: /home/adam/Documents/Projects/mp3-player/main.cpp \
+  /home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_audio/include/pico/audio.h \
+  /home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_util_buffer/include/pico/util/buffer.h \
+  /home/adam/.pico-sdk/sdk/2.1.1/extras/src/rp2_common/pico_audio_i2s/include/pico/audio_i2s.h \
   /home/adam/.pico-sdk/sdk/2.1.1/src/boards/include/boards/pico.h \
   /home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_base_headers/include/pico.h \
   /home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_base_headers/include/pico/assert.h \
@@ -4539,6 +4542,7 @@ CMakeFiles/mp3.dir/main.cpp.o: /home/adam/Documents/Projects/mp3-player/main.cpp
   /home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_time/include/pico/time.h \
   /home/adam/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
   /home/adam/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
+  /home/adam/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/clocks.h \
   /home/adam/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
   /home/adam/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/i2c.h \
   /home/adam/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h \
@@ -4550,6 +4554,7 @@ CMakeFiles/mp3.dir/main.cpp.o: /home/adam/Documents/Projects/mp3-player/main.cpp
   /home/adam/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
   /home/adam/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/timer.h \
   /home/adam/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/uart.h \
+  /home/adam/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/clocks.h \
   /home/adam/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/i2c.h \
   /home/adam/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/interp.h \
   /home/adam/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/io_bank0.h \
@@ -4566,12 +4571,15 @@ CMakeFiles/mp3.dir/main.cpp.o: /home/adam/Documents/Projects/mp3-player/main.cpp
   /home/adam/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/include/pico/platform/cpu_regs.h \
   /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
   /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
+  /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/include/hardware/clocks.h \
   /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/include/hardware/gpio.h \
   /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/include/hardware/i2c.h \
   /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/include/hardware/irq.h \
   /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pio/include/hardware/pio.h \
   /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pio/include/hardware/pio_instructions.h \
   /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_resets/include/hardware/resets.h \
+  /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/include/hardware/sync.h \
+  /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/include/hardware/sync/spin_lock.h \
   /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/include/hardware/timer.h \
   /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/include/hardware/uart.h \
   /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_compiler/include/pico/platform/compiler.h \
@@ -4581,19 +4589,28 @@ CMakeFiles/mp3.dir/main.cpp.o: /home/adam/Documents/Projects/mp3-player/main.cpp
   /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h \
   /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/_ansi.h \
   /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/_newlib_version.h \
+  /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/alloca.h \
   /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/assert.h \
   /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/c++/14.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/c++config.h \
   /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/c++/14.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/cpu_defines.h \
   /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/c++/14.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/os_defines.h \
+  /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/c++/14.2.1/bits/std_abs.h \
   /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/c++/14.2.1/cassert \
+  /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/c++/14.2.1/cstdlib \
   /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/c++/14.2.1/pstl/pstl_config.h \
+  /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/c++/14.2.1/stdlib.h \
   /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/machine/_default_types.h \
   /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/machine/_types.h \
   /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/machine/ieeefp.h \
+  /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/machine/stdlib.h \
   /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/newlib.h \
   /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/stdint.h \
   /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/stdio.h \
+  /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/stdlib.h \
+  /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/string.h \
+  /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/strings.h \
   /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/_intsup.h \
+  /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/_locale.h \
   /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/_stdint.h \
   /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/_types.h \
   /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/cdefs.h \
@@ -4602,6 +4619,7 @@ CMakeFiles/mp3.dir/main.cpp.o: /home/adam/Documents/Projects/mp3-player/main.cpp
   /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/lock.h \
   /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/reent.h \
   /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/stdio.h \
+  /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/string.h \
   /home/adam/.pico-sdk/toolchain/14_2_Rel1/lib/gcc/arm-none-eabi/14.2.1/include/stdarg.h \
   /home/adam/.pico-sdk/toolchain/14_2_Rel1/lib/gcc/arm-none-eabi/14.2.1/include/stdbool.h \
   /home/adam/.pico-sdk/toolchain/14_2_Rel1/lib/gcc/arm-none-eabi/14.2.1/include/stddef.h \
@@ -4613,6 +4631,9 @@ CMakeFiles/mp3.dir/main.cpp.o: /home/adam/Documents/Projects/mp3-player/main.cpp
   /home/adam/Documents/Projects/mp3-player/src/sdcard.h
 
 CMakeFiles/mp3.dir/src/audio.cpp.o: /home/adam/Documents/Projects/mp3-player/src/audio.cpp \
+  /home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_audio/include/pico/audio.h \
+  /home/adam/.pico-sdk/sdk/2.1.1/extras/src/common/pico_util_buffer/include/pico/util/buffer.h \
+  /home/adam/.pico-sdk/sdk/2.1.1/extras/src/rp2_common/pico_audio_i2s/include/pico/audio_i2s.h \
   /home/adam/.pico-sdk/sdk/2.1.1/src/boards/include/boards/pico.h \
   /home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_base_headers/include/pico.h \
   /home/adam/.pico-sdk/sdk/2.1.1/src/common/pico_base_headers/include/pico/assert.h \
@@ -4677,19 +4698,28 @@ CMakeFiles/mp3.dir/src/audio.cpp.o: /home/adam/Documents/Projects/mp3-player/src
   /home/adam/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h \
   /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/_ansi.h \
   /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/_newlib_version.h \
+  /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/alloca.h \
   /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/assert.h \
   /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/c++/14.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/c++config.h \
   /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/c++/14.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/cpu_defines.h \
   /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/c++/14.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/os_defines.h \
+  /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/c++/14.2.1/bits/std_abs.h \
   /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/c++/14.2.1/cassert \
+  /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/c++/14.2.1/cstdlib \
   /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/c++/14.2.1/pstl/pstl_config.h \
+  /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/c++/14.2.1/stdlib.h \
   /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/machine/_default_types.h \
   /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/machine/_types.h \
   /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/machine/ieeefp.h \
+  /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/machine/stdlib.h \
   /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/newlib.h \
   /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/stdint.h \
   /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/stdio.h \
+  /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/stdlib.h \
+  /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/string.h \
+  /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/strings.h \
   /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/_intsup.h \
+  /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/_locale.h \
   /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/_stdint.h \
   /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/_types.h \
   /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/cdefs.h \
@@ -4698,17 +4728,16 @@ CMakeFiles/mp3.dir/src/audio.cpp.o: /home/adam/Documents/Projects/mp3-player/src
   /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/lock.h \
   /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/reent.h \
   /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/stdio.h \
+  /home/adam/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/string.h \
   /home/adam/.pico-sdk/toolchain/14_2_Rel1/lib/gcc/arm-none-eabi/14.2.1/include/stdarg.h \
   /home/adam/.pico-sdk/toolchain/14_2_Rel1/lib/gcc/arm-none-eabi/14.2.1/include/stdbool.h \
   /home/adam/.pico-sdk/toolchain/14_2_Rel1/lib/gcc/arm-none-eabi/14.2.1/include/stddef.h \
   /home/adam/.pico-sdk/toolchain/14_2_Rel1/lib/gcc/arm-none-eabi/14.2.1/include/stdint.h \
   generated/pico_base/pico/config_autogen.h \
   generated/pico_base/pico/version.h \
-  pico_extras/src/rp2_common/pico_audio_i2s/audio_i2s.pio.h \
   /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/ff15/source/ff.h \
   /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/ff15/source/ffconf.h \
   /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/include/f_util.h \
-  /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/include/rtc.h \
   /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/sd_driver/hw_config.h \
   /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/sd_driver/sd_card.h \
   /home/adam/Documents/Projects/mp3-player/lib/FatFs/FatFs_SPI/sd_driver/spi.h \

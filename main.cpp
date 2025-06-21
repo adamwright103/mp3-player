@@ -4,6 +4,7 @@
 #include "src/oled.h"
 #include "src/audio.h"
 #include "src/sdcard.h"
+#include <string.h>
 
 #define BTN_PIN 7
 #define DEBOUNCE_TIME_MS 150
@@ -40,12 +41,25 @@ int main()
 
     gpio_set_irq_enabled_with_callback(BTN_PIN, GPIO_IRQ_EDGE_FALL, true, &button_callback);
 
-    sleep_ms(15000);
+    // Wait for Enter key from USB serial connection
+    while (getchar_timeout_us(0) != 's')
+    {
+        printf(".");
+        sleep_ms(500);
+    }
 
     oled_init();  // Initialize the OLED display
     oled_clear(); // Clear the display buffer
 
     printf("starting\n");
+
+    // Initialize audio system
+    // if (!audio_init())
+    // {
+    //     printf("Failed to initialize audio system\n");
+    //     return -1;
+    // }
+
     char playlistFile[256];
     if (!getFirstPlaylistFile("playlists/Bangers.txt", playlistFile, sizeof(playlistFile)))
     {
@@ -54,6 +68,13 @@ int main()
     }
 
     printf("Playing file: %s\n", playlistFile);
+
+    // // Play the WAV file
+    // if (!audio_play_wav(playlistFile))
+    // {
+    //     printf("Failed to play audio file\n");
+    //     return -1;
+    // }
 
     int i = 0;
     uint8_t sin_data[7][7]{
@@ -67,13 +88,26 @@ int main()
 
     uint16_t offset = 0;
 
-    sdTest();
+    char *song_name = strtok(playlistFile, "---");
+    char *artist_name = strtok(NULL, "---");
+
+    if (artist_name)
+    {
+        char *dot_wav = strstr(artist_name, ".wav");
+        if (dot_wav)
+        {
+            *dot_wav = '\0';
+        }
+    }
 
     while (true)
     {
         oled_battery(battery_level);
-        oled_print_song("WANT NEED LOVE", offset);
-        oled_print_artist("Prospa, Dimension", offset);
+
+        // Parse song and artist from playlistFile
+
+        oled_print_song(song_name ? song_name : playlistFile, offset);
+        oled_print_artist(artist_name ? artist_name : "", offset);
         oled_print_visualiser(sin_data[offset % 7]);
         offset++;
 

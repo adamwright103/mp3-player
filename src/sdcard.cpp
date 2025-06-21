@@ -16,7 +16,7 @@ void sdTest()
     if (FR_OK != fr)
         printf("f_mount error: %s (%d)\n", FRESULT_str(fr), fr);
     FIL fil;
-    const char *const filename = "filename.txt";
+    const char *const filename = "playlists/Bangers.txt";
     fr = f_open(&fil, filename, FA_OPEN_APPEND | FA_WRITE);
     if (FR_OK != fr && FR_EXIST != fr)
         printf("f_open(%s) error: %s (%d)\n", filename, FRESULT_str(fr), fr);
@@ -29,6 +29,39 @@ void sdTest()
     {
         printf("f_close error: %s (%d)\n", FRESULT_str(fr), fr);
     }
+
+    fr = f_open(&fil, filename, FA_READ);
+    if (FR_OK != fr)
+    {
+        printf("f_open(%s) error: %s (%d)\n", filename, FRESULT_str(fr), fr);
+    }
+    // Read one line from the file
+    char lineBuffer[256];
+    if (f_gets(lineBuffer, sizeof(lineBuffer), &fil) != nullptr)
+    {
+        // Remove trailing newline character if present
+        lineBuffer[strcspn(lineBuffer, "\r\n")] = '\0';
+        printf("Read line from %s: %s\n", filename, lineBuffer);
+    }
+    else
+    {
+        printf("Failed to read line from %s\n", filename);
+    }
+
+    // Close the file
+    fr = f_close(&fil);
+    if (FR_OK != fr)
+    {
+        printf("f_close error: %s (%d)\n", FRESULT_str(fr), fr);
+    }
+
+    // write the songname to playlists/ex.txt
+    fr = f_open(&fil, "playlists/ex.txt", FA_WRITE);
+    if (f_printf(&fil, "Hello, world!\n") < 0)
+    {
+        printf("f_printf failed\n");
+    }
+
     f_unmount(pSD->pcName);
 
     printf("finishing test");
@@ -39,42 +72,28 @@ bool getFirstPlaylistFile(const char *playlistPath, char *outputBuffer, size_t b
     sd_card_t *pSD = sd_get_by_num(0);
     FRESULT fr = f_mount(&pSD->fatfs, pSD->pcName, 1);
     if (FR_OK != fr)
-    {
         printf("f_mount error: %s (%d)\n", FRESULT_str(fr), fr);
-        return false;
-    }
 
     FIL fil;
     fr = f_open(&fil, playlistPath, FA_READ);
+
     if (FR_OK != fr)
     {
         printf("f_open(%s) error: %s (%d)\n", playlistPath, FRESULT_str(fr), fr);
-        return false;
     }
 
-    printf("3\n");
-    // Read the first line into the output buffer
-    if (f_gets(outputBuffer, bufferSize, &fil) == nullptr)
+    if (f_gets(outputBuffer, bufferSize, &fil) != nullptr)
     {
-        printf("f_gets failed\n");
-        f_close(&fil);
-        return false;
+        // Remove trailing newline character if present
+        outputBuffer[strcspn(outputBuffer, "\r\n")] = '\0';
+        printf("Read line from %s: %s\n", playlistPath, outputBuffer);
     }
-
-    printf("4\n");
-    // Close the file
-    fr = f_close(&fil);
-    printf("5\n");
-    if (FR_OK != fr)
+    else
     {
-        printf("f_close error: %s (%d)\n", FRESULT_str(fr), fr);
+        printf("Failed to read line from %s\n", playlistPath);
         return false;
     }
-    printf("6\n");
 
-    // Remove trailing newline character if present
-    outputBuffer[strcspn(outputBuffer, "\r\n")] = '\0';
-    printf("First playlist file: %s\n", outputBuffer);
-
+    f_unmount(pSD->pcName);
     return true;
 }
