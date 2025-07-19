@@ -53,12 +53,7 @@ int main()
 
     printf("starting\n");
 
-    // Initialize audio system
-    // if (!audio_init())
-    // {
-    //     printf("Failed to initialize audio system\n");
-    //     return -1;
-    // }
+    sleep_ms(1000);
 
     char playlistFile[256];
     if (!getFirstPlaylistFile("playlists/Bangers.txt", playlistFile, sizeof(playlistFile)))
@@ -67,14 +62,25 @@ int main()
         return -1;
     }
 
+    printf("Playlist file: %s\n", playlistFile);
+
+    sleep_ms(1000);
+
+    // Initialize audio system
+    audio_buffer_pool *ap = audio_init();
+
+    printf("done audio init\n");
+
+    sleep_ms(1000);
+
     printf("Playing file: %s\n", playlistFile);
 
-    // // Play the WAV file
-    // if (!audio_play_wav(playlistFile))
-    // {
-    //     printf("Failed to play audio file\n");
-    //     return -1;
-    // }
+    // Play the WAV file
+    if (!audio_play_wav(ap, playlistFile))
+    {
+        printf("Failed to play audio file\n");
+        return -1;
+    }
 
     int i = 0;
     uint8_t sin_data[7][7]{
