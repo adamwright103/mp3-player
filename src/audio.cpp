@@ -97,8 +97,6 @@ bool audio_play_wav(struct audio_buffer_pool *ap, const char *file_path)
     struct audio_buffer *buffer = take_audio_buffer(ap, true);
     int16_t *samples = (int16_t *)buffer->buffer->bytes;
 
-    printf("here!\n");
-
     for (uint i = 0; i < buffer->max_sample_count; i++)
     {
       samples[i] = (vol * sine_wave_table[pos >> 16u]) >> 8u;
@@ -109,6 +107,6 @@ bool audio_play_wav(struct audio_buffer_pool *ap, const char *file_path)
     buffer->sample_count = buffer->max_sample_count;
     give_audio_buffer(ap, buffer);
   }
-  puts("\n");
+  puts(".");
   return true;
 }

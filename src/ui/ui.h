@@ -1,0 +1,52 @@
+#ifndef UI_H
+#define UI_H
+
+#include "pico/stdlib.h"
+#include "../constants.h"
+
+class Ui
+{
+public:
+  enum Mode
+  {
+    ALBUM_SELECT,
+    SONG_SELECT,
+    PLAYING,
+  };
+
+  enum Page : uint8_t
+  {
+    PAGE_0 = 0,
+    PAGE_1,
+    PAGE_2,
+    PAGE_3,
+    PAGE_4,
+    PAGE_5,
+    PAGE_6,
+    PAGE_7,
+  };
+
+private:
+  Mode mode_;
+  bool charging_;
+  uint charge_;
+
+protected:
+  static uint8_t buffer[OLED_BUFFER_SIZE];
+
+public:
+  Ui(Mode mode);
+  virtual ~Ui() {}
+  virtual void onActivate() const = 0;
+  virtual void onDeactivate() const = 0;
+
+  Mode getMode() const { return mode_; }
+  void init() const;
+  void sendCmd(uint8_t cmd) const;
+  void sendData(uint8_t *data, uint len) const;
+  void display() const;
+  void display(Page page) const;
+  void drawBattery() const;
+};
+
+#endif // UIMODE_H

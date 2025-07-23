@@ -37,16 +37,16 @@ set(PICO_CXX_ENABLE_RTTI 1)
 pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
-
+file(GLOB_RECURSE SRC_FILES 
+    ${CMAKE_CURRENT_LIST_DIR}/src/*.c 
+    ${CMAKE_CURRENT_LIST_DIR}/src/*.cpp
+)
 add_executable(mp3 
     main.cpp
-    src/oled.cpp
-    src/audio.cpp
-    src/sdcard.cpp
-    src/hw_config.c
-    src/fonts/small.cpp
-    src/fonts/medium.cpp
-    )
+    ${SRC_FILES}
+)
+target_compile_definitions(mp3 PRIVATE PICO_MAX_SHARED_IRQ_HANDLERS=8)
+
 
 # add the FatFs library
 add_subdirectory(
