@@ -15,11 +15,11 @@ public:
   Playing() : Ui(PLAYING), artist_("Artist Name"), songName_("Song Title") {}
   ~Playing() override {}
 
-  void onActivate() const override;
-  void onDeactivate() const override;
+  void onActivate() override;
+  void onDeactivate() override;
 
-  void drawArtist(uint16_t offset) const;
-  void drawSongName(uint16_t offset) const;
+  void drawArtist() const;
+  void drawSongName() const;
   void drawVisualizer(const uint8_t data[7]) const;
 };
 

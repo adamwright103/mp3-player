@@ -3,6 +3,7 @@
 
 #include "pico/stdlib.h"
 #include "../constants.h"
+#include <string>
 
 class Ui
 {
@@ -30,6 +31,7 @@ private:
   Mode mode_;
   bool charging_;
   uint charge_;
+  uint offset_;
 
 protected:
   static uint8_t buffer[OLED_BUFFER_SIZE];
@@ -37,8 +39,8 @@ protected:
 public:
   Ui(Mode mode);
   virtual ~Ui() {}
-  virtual void onActivate() const = 0;
-  virtual void onDeactivate() const = 0;
+  virtual void onActivate() = 0;
+  virtual void onDeactivate() = 0;
 
   Mode getMode() const { return mode_; }
   void init() const;
@@ -46,7 +48,10 @@ public:
   void sendData(uint8_t *data, uint len) const;
   void display() const;
   void display(Page page) const;
+
   void drawBattery() const;
+  void drawSmallText(std::string text, Page page) const;
+  void drawMediumText(std::string text, Page page) const;
 };
 
 #endif // UIMODE_H

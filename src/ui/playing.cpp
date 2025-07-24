@@ -13,129 +13,25 @@ const uint8_t Playing::sinData_[7][7] = {
     {39, 5, 5, 39, 81, 100, 81},
     {81, 39, 5, 5, 39, 81, 100}};
 
-void Playing::onActivate() const
+void Playing::onActivate()
 {
-  drawArtist(0);
-  drawSongName(0);
+  drawArtist();
+  drawSongName();
   drawVisualizer(sinData_[0]);
 }
 
-void Playing::onDeactivate() const
+void Playing::onDeactivate()
 {
 }
 
-void Playing::drawArtist(uint16_t offset) const
+void Playing::drawArtist() const
 {
-  const int max_chars = OLED_WIDTH / FONT_WIDTH_S;
-  const unsigned int len = artist_.size();
-
-  // Early return if the string fits without scrolling
-  if (len <= max_chars)
-  {
-    uint8_t start_col = (OLED_WIDTH - len * FONT_WIDTH_S) / 2;
-
-    for (size_t i = 0; i < len; i++)
-    {
-      const uint8_t *char_bitmap = getCharBitmapS(artist_[i]);
-      if (!char_bitmap)
-        continue;
-
-      for (uint8_t col = 0; col < FONT_WIDTH_S; col++)
-      {
-        buffer[OLED_WIDTH * Ui::PAGE_7 + start_col + i * FONT_WIDTH_S + col] = char_bitmap[col];
-      }
-    }
-
-    display(Ui::PAGE_7);
-    return;
-  }
-
-  // Handle scrolling
-  uint16_t modulo = len * FONT_WIDTH_S - OLED_WIDTH;
-  offset = offset % (modulo + 30);
-  offset = offset < 20 ? 0 : offset - 20;
-  if (offset > modulo)
-    offset = modulo;
-
-  for (size_t i = 0; i < len; i++)
-  {
-    const uint8_t *char_bitmap = getCharBitmapS(artist_[i]);
-    if (!char_bitmap)
-      continue;
-
-    int base_col = i * FONT_WIDTH_S - offset;
-    for (uint8_t col = 0; col < FONT_WIDTH_S; col++)
-    {
-      int col_pos = base_col + col;
-      if (col_pos >= 0 && col_pos < OLED_WIDTH)
-      {
-        buffer[OLED_WIDTH * Ui::PAGE_7 + col_pos] = char_bitmap[col];
-      }
-    }
-  }
-
-  display(Ui::PAGE_7);
+  drawSmallText(artist_, Ui::PAGE_7);
 }
 
-void Playing::drawSongName(uint16_t offset) const
+void Playing::drawSongName() const
 {
-  const int max_chars = OLED_WIDTH / FONT_WIDTH_M;
-  uint len = songName_.size();
-
-  // string is short enough so printing centered
-  if (len <= max_chars)
-  {
-    uint8_t start_col = (OLED_WIDTH - len * FONT_WIDTH_M) / 2; // Center the text
-
-    for (size_t i = 0; i < len; i++)
-    {
-      const uint16_t *char_bitmap = getCharBitmapM(songName_[i]);
-      if (char_bitmap)
-      {
-        for (uint8_t col = 0; col < FONT_WIDTH_M; col++)
-        {
-          // writing top half of the character to page 5
-          buffer[OLED_WIDTH * Ui::PAGE_5 + start_col + i * FONT_WIDTH_M + col] = char_bitmap[col];
-
-          // writing the bottom half of the character to page 6
-          buffer[OLED_WIDTH * Ui::PAGE_6 + start_col + i * FONT_WIDTH_M + col] = char_bitmap[col] >> 8;
-        }
-      }
-    }
-
-    display(Ui::PAGE_5);
-    display(Ui::PAGE_6);
-    return;
-  }
-
-  // for scrolling, we let the screen stay at start and end for 20 cycles (20 * 50ms = 1s)
-  uint16_t modulo = len * FONT_WIDTH_M - OLED_WIDTH;
-  offset = offset % (modulo + 30);
-  offset = offset < 20 ? 0 : offset - 20;
-  offset = offset < modulo ? offset : modulo;
-
-  for (size_t i = 0; i < len; i++)
-  {
-    const uint16_t *char_bitmap = getCharBitmapM(songName_[i]);
-    if (char_bitmap)
-    {
-      for (uint8_t col = 0; col < FONT_WIDTH_M; col++)
-      {
-        int col_pos = i * FONT_WIDTH_M + col - offset;
-        if (col_pos >= 0 && col_pos < OLED_WIDTH)
-        {
-          // writing top half of the character to page 5
-          buffer[OLED_WIDTH * Ui::PAGE_5 + col_pos] = char_bitmap[col];
-
-          // writing the bottom half of the character to page 6
-          buffer[OLED_WIDTH * Ui::PAGE_6 + col_pos] = char_bitmap[col] >> 8;
-        }
-      }
-    }
-  }
-
-  display(Ui::PAGE_5);
-  display(Ui::PAGE_6);
+  drawMediumText(songName_, Ui::PAGE_5);
 }
 
 void Playing::drawVisualizer(const uint8_t data[7]) const

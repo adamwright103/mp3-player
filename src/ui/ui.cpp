@@ -1,13 +1,18 @@
 #include "ui.h"
 #include "../constants.h"
 #include "../app.h"
+#include "../fonts/small.h"
+#include "../fonts/medium.h"
 #include "pico/stdlib.h"
 #include "hardware/i2c.h"
+#include <string>
 #include <cstring>
+
+using namespace std;
 
 uint8_t Ui::buffer[OLED_BUFFER_SIZE] = {0};
 
-Ui::Ui(Mode mode) : mode_(mode), charging_(false), charge_(100)
+Ui::Ui(Mode mode) : mode_(mode), charging_(false), charge_(100), offset_(0)
 {
   memset(buffer, 0, sizeof(buffer));
   // every mode will show the battery, so we set up the outline now
@@ -99,4 +104,121 @@ void Ui::drawBattery() const
   }
 
   display(Ui::PAGE_0);
+}
+
+void Ui::drawSmallText(std::string text, Page page) const
+{
+  const int max_chars = OLED_WIDTH / FONT_WIDTH_S;
+  const unsigned int len = text.size();
+
+  // Early return if the string fits without scrolling
+  if (len <= max_chars)
+  {
+    uint8_t start_col = (OLED_WIDTH - len * FONT_WIDTH_S) / 2;
+
+    for (size_t i = 0; i < len; i++)
+    {
+      const uint8_t *char_bitmap = getCharBitmapS(text[i]);
+      if (!char_bitmap)
+        continue;
+
+      for (uint8_t col = 0; col < FONT_WIDTH_S; col++)
+      {
+        buffer[OLED_WIDTH * page + start_col + i * FONT_WIDTH_S + col] = char_bitmap[col];
+      }
+    }
+
+    display(page);
+    return;
+  }
+
+  // Handle scrolling
+  uint16_t modulo = len * FONT_WIDTH_S - OLED_WIDTH;
+  uint16_t offset = offset_ % (modulo + 30);
+  offset = offset < 20 ? 0 : offset - 20;
+  if (offset > modulo)
+    offset = modulo;
+
+  for (size_t i = 0; i < len; i++)
+  {
+    const uint8_t *char_bitmap = getCharBitmapS(text[i]);
+    if (!char_bitmap)
+      continue;
+
+    int base_col = i * FONT_WIDTH_S - offset;
+    for (uint8_t col = 0; col < FONT_WIDTH_S; col++)
+    {
+      int col_pos = base_col + col;
+      if (col_pos >= 0 && col_pos < OLED_WIDTH)
+      {
+        buffer[OLED_WIDTH * page + col_pos] = char_bitmap[col];
+      }
+    }
+  }
+
+  display(page);
+}
+
+// prints text to page and page + 1
+void Ui::drawMediumText(string text, Page page) const
+{
+  if (page == PAGE_7)
+    return;
+  const int max_chars = OLED_WIDTH / FONT_WIDTH_M;
+  uint len = text.size();
+
+  // string is short enough so printing centered
+  if (len <= max_chars)
+  {
+    uint8_t start_col = (OLED_WIDTH - len * FONT_WIDTH_M) / 2; // Center the text
+
+    for (size_t i = 0; i < len; i++)
+    {
+      const uint16_t *char_bitmap = getCharBitmapM(text[i]);
+      if (char_bitmap)
+      {
+        for (uint8_t col = 0; col < FONT_WIDTH_M; col++)
+        {
+          // writing top half of the character to page 5
+          buffer[OLED_WIDTH * page + start_col + i * FONT_WIDTH_M + col] = char_bitmap[col];
+
+          // writing the bottom half of the character to page 6
+          buffer[OLED_WIDTH * (page + 1) + start_col + i * FONT_WIDTH_M + col] = char_bitmap[col] >> 8;
+        }
+      }
+    }
+
+    display(page);
+    display(static_cast<Page>(page + 1));
+    return;
+  }
+
+  // for scrolling, we let the screen stay at start and end for 20 cycles (20 * 50ms = 1s)
+  uint16_t modulo = len * FONT_WIDTH_M - OLED_WIDTH;
+  uint offset = offset_ % (modulo + 30);
+  offset = offset < 20 ? 0 : offset - 20;
+  offset = offset < modulo ? offset : modulo;
+
+  for (size_t i = 0; i < len; i++)
+  {
+    const uint16_t *char_bitmap = getCharBitmapM(text[i]);
+    if (char_bitmap)
+    {
+      for (uint8_t col = 0; col < FONT_WIDTH_M; col++)
+      {
+        int col_pos = i * FONT_WIDTH_M + col - offset;
+        if (col_pos >= 0 && col_pos < OLED_WIDTH)
+        {
+          // writing top half of the character to page 5
+          buffer[OLED_WIDTH * page + col_pos] = char_bitmap[col];
+
+          // writing the bottom half of the character to page 6
+          buffer[OLED_WIDTH * (page + 1) + col_pos] = char_bitmap[col] >> 8;
+        }
+      }
+    }
+  }
+
+  display(page);
+  display(static_cast<Page>(page + 1));
 }
