@@ -1,8 +1,8 @@
 #ifndef ALBUMSELECT_H
 #define ALBUMSELECT_H
 
-#include "ui.h"
-#include "../types/node.h"
+#include "../ui.h"
+#include "src/types/node.h"
 #include <string>
 
 class AlbumSelect : public Ui
@@ -22,7 +22,7 @@ public:
 
   Node<std::string> *growAlbumList();
   void deleteAlbumList();
-  std::string getAlbumName() const { return currentAlbum_ ? currentAlbum_->data : ""; }
+  inline std::string getAlbumName() const { return currentAlbum_ ? currentAlbum_->data : ""; }
 };
 
 #endif // ALBUMSELECT_H

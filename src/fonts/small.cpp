@@ -1,11 +1,11 @@
-#include <stdio.h>
 #include <stdint.h>
 #include <string.h>
-#include "small.h"
+#include "font.h"
+#include "../constants.h"
 
 // bitmap data of font
 // sourced from https://github.com/lynniemagoo/oled-font-pack/blob/master/fonts/6x8/small-font-6x8.js
-static const uint8_t fontData[FONT_NUM_CHARS_S][FONT_WIDTH_S] = {
+const uint8_t fontData[FONT_NUM_CHARS_S][FONT_WIDTH_S] = {
     {0x00, 0x00, 0x00, 0x00, 0x00, 0x00}, // space
     {0x00, 0x00, 0x00, 0x2f, 0x00, 0x00}, // !
     {0x00, 0x00, 0x07, 0x00, 0x07, 0x00}, // "
@@ -100,13 +100,18 @@ static const uint8_t fontData[FONT_NUM_CHARS_S][FONT_WIDTH_S] = {
     {0x00, 0x00, 0x10, 0x7c, 0x82, 0x00}, // {
     {0x00, 0x00, 0x00, 0xff, 0x00, 0x00}, // |
     {0x00, 0x00, 0x82, 0x7c, 0x10, 0x00}, // }
-    {0x00, 0x00, 0x06, 0x09, 0x09, 0x06}  // ~
+    {0x00, 0x00, 0x06, 0x09, 0x09, 0x06}, // ~
+    {0x00, 0x7e, 0xdf, 0xb5, 0xcf, 0x7e}  // unknown char
 };
 
 // Get bitmap for character
 const uint8_t *getCharBitmapS(char c)
 {
-    if (c < ' ' || c > '\177')
-        return NULL; // unsupported
-    return fontData[c - ' '];
+    return c < ' ' || c > '\177' ? fontData[FONT_NUM_CHARS_S - 1] : fontData[c - ' '];
 }
+
+const Font smallFont = {
+    .width = FONT_WIDTH_S,
+    .height = FONT_HEIGHT_S,
+    .data = fontData,
+    .get_bitmap = (const void *(*)(char))getCharBitmapS};

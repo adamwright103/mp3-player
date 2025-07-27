@@ -5,7 +5,6 @@
 #include "src/app.h"
 #include <string.h>
 
-volatile int battery_level = 100;
 volatile bool button_enabled = true; // Flag to enable/disable button
 
 void button_callback(uint gpio, uint32_t events)

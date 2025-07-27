@@ -1,6 +1,6 @@
 #include "app.h"
-#include "ui/playing.h"
-#include "ui/albumselect.h"
+#include "ui/modes/playing.h"
+#include "ui/modes/albumselect.h"
 #include <stdio.h>
 
 App::App()
@@ -40,6 +40,7 @@ void App::changeMode(Ui::Mode mode)
 
   if (currentMode_)
   {
+    currentMode_->clearDisplay();
     currentMode_->onActivate();
   }
 }

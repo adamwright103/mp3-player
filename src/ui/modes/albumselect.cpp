@@ -1,18 +1,19 @@
 #include "albumselect.h"
-#include "ui.h"
-#include "../types/node.h"
-#include "../fonts/medium.h"
+#include "../ui.h"
+#include "src/types/node.h"
+#include "src/fonts/record.h"
 #include <string>
 
 using namespace std;
 
 AlbumSelect::AlbumSelect() : Ui(ALBUM_SELECT)
 {
-  currentAlbum_ = growAlbumList();
+  currentAlbum_ = nullptr;
 }
 
 void AlbumSelect::onActivate()
 {
+  currentAlbum_ = growAlbumList();
   drawAlbumArt();
   drawAlbumName();
 }
@@ -24,7 +25,15 @@ void AlbumSelect::onDeactivate()
 
 void AlbumSelect::drawAlbumArt() const
 {
-  // TODO add record symbol and left/right select arrows on pages 1-5
+  uint8_t offset = OLED_WIDTH / 2 - RECORD_WIDTH / 2;
+  for (uint8_t page = PAGE_1; page <= PAGE_5; page++)
+  {
+    for (uint8_t col = 0; col < RECORD_WIDTH; col++)
+    {
+      Ui::buffer[OLED_WIDTH * page + col + offset] = recordBitmap[page - 1][col];
+    }
+    display(static_cast<Ui::Page>(page));
+  }
 }
 
 void AlbumSelect::drawAlbumName() const
@@ -35,7 +44,7 @@ void AlbumSelect::drawAlbumName() const
 Node<string> *AlbumSelect::growAlbumList()
 {
   static const string fakeAlbums[5] = {
-      "Blue",
+      "Blues",
       "White",
       "Grey",
       "Beige",
@@ -58,12 +67,18 @@ Node<string> *AlbumSelect::growAlbumList()
 
 void AlbumSelect::deleteAlbumList()
 {
+  if (!currentAlbum_)
+    return;
+
+  Node<string> *head = currentAlbum_;
   Node<string> *current = currentAlbum_;
-  while (current)
+
+  do
   {
     Node<string> *next = current->next;
     delete current;
     current = next;
-  }
+  } while (current != head);
+
   currentAlbum_ = nullptr;
 }

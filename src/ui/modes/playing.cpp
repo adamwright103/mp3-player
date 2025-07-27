@@ -1,7 +1,6 @@
 #include "playing.h"
-#include "ui.h"
-#include "../fonts/medium.h"
-#include "../fonts/small.h"
+#include "../ui.h"
+#include "src/fonts/font.h"
 #include <string.h>
 
 const uint8_t Playing::sinData_[7][7] = {

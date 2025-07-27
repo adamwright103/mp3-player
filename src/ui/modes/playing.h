@@ -1,7 +1,7 @@
 #ifndef PLAYING_H
 #define PLAYING_H
 
-#include "ui.h"
+#include "../ui.h"
 #include <string>
 
 class Playing : public Ui

@@ -1,8 +1,7 @@
 #include "ui.h"
-#include "../constants.h"
-#include "../app.h"
-#include "../fonts/small.h"
-#include "../fonts/medium.h"
+#include "src/constants.h"
+#include "src/app.h"
+#include "src/fonts/font.h"
 #include "pico/stdlib.h"
 #include "hardware/i2c.h"
 #include <string>
@@ -14,16 +13,8 @@ uint8_t Ui::buffer[OLED_BUFFER_SIZE] = {0};
 
 Ui::Ui(Mode mode) : mode_(mode), charging_(false), charge_(100), offset_(0)
 {
-  memset(buffer, 0, sizeof(buffer));
-  // every mode will show the battery, so we set up the outline now
-  buffer[OLED_WIDTH - 1] = 0x3c;
-  buffer[OLED_WIDTH - 2] = 0x3C;
-  buffer[OLED_WIDTH - 3] = 0xFF;
-  buffer[OLED_WIDTH - 4] = 0x81;
-  buffer[OLED_WIDTH - 21] = 0xFF;
-  buffer[OLED_WIDTH - 20] = 0x81;
-
   init();
+  clearDisplay();
   drawBattery();
 }
 
@@ -91,6 +82,19 @@ void Ui::display(Page page) const
   sendData(&buffer[OLED_WIDTH * page], OLED_WIDTH);
 }
 
+void Ui::clearDisplay() const
+{
+  memset(buffer, 0, sizeof(buffer));
+  // every mode will show the battery, so we set up the outline now
+  buffer[OLED_WIDTH - 1] = 0x3c;
+  buffer[OLED_WIDTH - 2] = 0x3C;
+  buffer[OLED_WIDTH - 3] = 0xFF;
+  buffer[OLED_WIDTH - 4] = 0x81;
+  buffer[OLED_WIDTH - 21] = 0xFF;
+  buffer[OLED_WIDTH - 20] = 0x81;
+  drawBattery();
+}
+
 void Ui::drawBattery() const
 {
   uint8_t filled_pixels = (charge_ * 15) / 100; // battery display is 20px wide
@@ -108,6 +112,7 @@ void Ui::drawBattery() const
 
 void Ui::drawSmallText(std::string text, Page page) const
 {
+  const Font *font = &smallFont;
   const int max_chars = OLED_WIDTH / FONT_WIDTH_S;
   const unsigned int len = text.size();
 
@@ -118,9 +123,7 @@ void Ui::drawSmallText(std::string text, Page page) const
 
     for (size_t i = 0; i < len; i++)
     {
-      const uint8_t *char_bitmap = getCharBitmapS(text[i]);
-      if (!char_bitmap)
-        continue;
+      const uint8_t *char_bitmap = static_cast<const uint8_t *>(font->get_bitmap(text[i]));
 
       for (uint8_t col = 0; col < FONT_WIDTH_S; col++)
       {
@@ -141,9 +144,7 @@ void Ui::drawSmallText(std::string text, Page page) const
 
   for (size_t i = 0; i < len; i++)
   {
-    const uint8_t *char_bitmap = getCharBitmapS(text[i]);
-    if (!char_bitmap)
-      continue;
+    const uint8_t *char_bitmap = static_cast<const uint8_t *>(font->get_bitmap(text[i]));
 
     int base_col = i * FONT_WIDTH_S - offset;
     for (uint8_t col = 0; col < FONT_WIDTH_S; col++)
@@ -164,6 +165,7 @@ void Ui::drawMediumText(string text, Page page) const
 {
   if (page == PAGE_7)
     return;
+  const Font *font = &mediumFont;
   const int max_chars = OLED_WIDTH / FONT_WIDTH_M;
   uint len = text.size();
 
@@ -174,17 +176,13 @@ void Ui::drawMediumText(string text, Page page) const
 
     for (size_t i = 0; i < len; i++)
     {
-      const uint16_t *char_bitmap = getCharBitmapM(text[i]);
-      if (char_bitmap)
+      const uint16_t *char_bitmap = static_cast<const uint16_t *>(font->get_bitmap(text[i]));
+      for (uint8_t col = 0; col < FONT_WIDTH_M; col++)
       {
-        for (uint8_t col = 0; col < FONT_WIDTH_M; col++)
-        {
-          // writing top half of the character to page 5
-          buffer[OLED_WIDTH * page + start_col + i * FONT_WIDTH_M + col] = char_bitmap[col];
+        buffer[OLED_WIDTH * page + start_col + i * FONT_WIDTH_M + col] = char_bitmap[col];
 
-          // writing the bottom half of the character to page 6
-          buffer[OLED_WIDTH * (page + 1) + start_col + i * FONT_WIDTH_M + col] = char_bitmap[col] >> 8;
-        }
+        // writing the bottom half of the character to page 6
+        buffer[OLED_WIDTH * (page + 1) + start_col + i * FONT_WIDTH_M + col] = char_bitmap[col] >> 8;
       }
     }
 
@@ -201,20 +199,17 @@ void Ui::drawMediumText(string text, Page page) const
 
   for (size_t i = 0; i < len; i++)
   {
-    const uint16_t *char_bitmap = getCharBitmapM(text[i]);
-    if (char_bitmap)
+    const uint16_t *char_bitmap = static_cast<const uint16_t *>(font->get_bitmap(text[i]));
+    for (uint16_t col = 0; col < FONT_WIDTH_M; col++)
     {
-      for (uint8_t col = 0; col < FONT_WIDTH_M; col++)
+      int col_pos = i * FONT_WIDTH_M + col - offset;
+      if (col_pos >= 0 && col_pos < OLED_WIDTH)
       {
-        int col_pos = i * FONT_WIDTH_M + col - offset;
-        if (col_pos >= 0 && col_pos < OLED_WIDTH)
-        {
-          // writing top half of the character to page 5
-          buffer[OLED_WIDTH * page + col_pos] = char_bitmap[col];
+        // writing top half of the character to page 5
+        buffer[OLED_WIDTH * page + col_pos] = char_bitmap[col];
 
-          // writing the bottom half of the character to page 6
-          buffer[OLED_WIDTH * (page + 1) + col_pos] = char_bitmap[col] >> 8;
-        }
+        // writing the bottom half of the character to page 6
+        buffer[OLED_WIDTH * (page + 1) + col_pos] = char_bitmap[col] >> 8;
       }
     }
   }

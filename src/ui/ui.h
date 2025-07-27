@@ -48,6 +48,7 @@ public:
   void sendData(uint8_t *data, uint len) const;
   void display() const;
   void display(Page page) const;
+  void clearDisplay() const;
 
   void drawBattery() const;
   void drawSmallText(std::string text, Page page) const;
