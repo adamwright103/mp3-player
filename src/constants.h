@@ -6,7 +6,9 @@
 #define SD_SCK_PIN 2
 #define SD_MOSI_PIN 3
 #define SD_MISO_PIN 4
+#define LEFT_BTN_PIN 6
 #define HOME_BTN_PIN 7
+#define RIGHT_BTN_PIN 8
 #define OLED_SDA_PIN 18
 #define OLED_SCL_PIN 19
 

@@ -21,6 +21,9 @@ public:
   void drawArtist() const;
   void drawSongName() const;
   void drawVisualizer(const uint8_t data[7]) const;
+
+  void onLeftButtonPress() override;
+  void onRightButtonPress() override;
 };
 
 #endif // PLAYING_H

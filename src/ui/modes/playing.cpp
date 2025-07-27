@@ -58,3 +58,15 @@ void Playing::drawVisualizer(const uint8_t data[7]) const
   display(Ui::PAGE_3);
   display(Ui::PAGE_4);
 }
+
+void Playing::onLeftButtonPress()
+{
+  charge_ = charge_ > 10 ? charge_ - 10 : 0;
+  drawBattery();
+}
+
+void Playing::onRightButtonPress()
+{
+  charge_ = charge_ < 90 ? charge_ + 10 : 100;
+  drawBattery();
+}

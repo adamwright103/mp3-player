@@ -44,10 +44,10 @@ void AlbumSelect::drawAlbumName() const
 Node<string> *AlbumSelect::growAlbumList()
 {
   static const string fakeAlbums[5] = {
-      "Blues",
+      "Blue",
       "White",
       "Grey",
-      "Beige",
+      "Pink",
       "Pink"};
 
   deleteAlbumList();
@@ -57,10 +57,12 @@ Node<string> *AlbumSelect::growAlbumList()
   for (uint8_t i = 1; i < 5; i++)
   {
     current->next = new Node<string>(fakeAlbums[i]);
+    current->next->prev = current;
     current = current->next;
   }
 
   current->next = head;
+  head->prev = current;
 
   return head;
 }
@@ -81,4 +83,22 @@ void AlbumSelect::deleteAlbumList()
   } while (current != head);
 
   currentAlbum_ = nullptr;
+}
+
+void AlbumSelect::onLeftButtonPress()
+{
+  if (!currentAlbum_)
+    return;
+
+  currentAlbum_ = currentAlbum_->prev;
+  drawAlbumName();
+}
+
+void AlbumSelect::onRightButtonPress()
+{
+  if (!currentAlbum_)
+    return;
+
+  currentAlbum_ = currentAlbum_->next;
+  drawAlbumName();
 }

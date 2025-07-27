@@ -3,40 +3,50 @@
 #include "hardware/i2c.h"
 #include "src/constants.h"
 #include "src/app.h"
+#include "src/ui/ui.h"
 #include <string.h>
+#include <map>
 
-volatile bool button_enabled = true; // Flag to enable/disable button
+std::map<uint, volatile bool> buttons = {
+    {LEFT_BTN_PIN, true},
+    {HOME_BTN_PIN, true},
+    {RIGHT_BTN_PIN, true}};
+
+App *app = nullptr;
 
 void button_callback(uint gpio, uint32_t events)
 {
-    if (gpio != HOME_BTN_PIN || !button_enabled)
+    if (!buttons[gpio] || !app)
         return;
 
-    button_enabled = false;
+    app->onButtonPress(gpio);
 
-    battery_level -= 10;
-    if (battery_level < 0)
-    {
-        battery_level = 100;
-    }
+    buttons[gpio] = false;
+    uint *gpio_ptr = new uint(gpio);
 
-    add_alarm_in_ms(DEBOUNCE_TIME_MS, [](alarm_id_t, void *) -> int64_t
+    add_alarm_in_ms(DEBOUNCE_TIME_MS, [](alarm_id_t, void *user_data) -> int64_t
                     {
-        button_enabled = true;
-        return 0; }, nullptr, false);
+                        uint gpio = *reinterpret_cast<uint *>(user_data);
+                        buttons[gpio] = true;
+                        delete reinterpret_cast<uint *>(user_data);
+                        return 0; }, gpio_ptr, false);
 }
 
 int main()
 {
     stdio_init_all();
 
-    gpio_init(HOME_BTN_PIN);
-    gpio_set_dir(HOME_BTN_PIN, GPIO_IN);
-    gpio_pull_up(HOME_BTN_PIN);
+    app = new App();
 
-    gpio_set_irq_enabled_with_callback(HOME_BTN_PIN, GPIO_IRQ_EDGE_FALL, true, &button_callback);
+    const uint buttonPins[] = {LEFT_BTN_PIN, HOME_BTN_PIN, RIGHT_BTN_PIN};
 
-    App *app = new App();
+    for (uint8_t pin : buttonPins)
+    {
+        gpio_init(pin);
+        gpio_set_dir(pin, GPIO_IN);
+        gpio_pull_up(pin);
+        gpio_set_irq_enabled_with_callback(pin, GPIO_IRQ_EDGE_FALL, true, &button_callback);
+    }
 
     while (true)
     {

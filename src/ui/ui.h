@@ -30,11 +30,11 @@ public:
 private:
   Mode mode_;
   bool charging_;
-  uint charge_;
   uint offset_;
 
 protected:
   static uint8_t buffer[OLED_BUFFER_SIZE];
+  uint charge_;
 
 public:
   Ui(Mode mode);
@@ -42,17 +42,22 @@ public:
   virtual void onActivate() = 0;
   virtual void onDeactivate() = 0;
 
-  Mode getMode() const { return mode_; }
+  inline Mode getMode() const { return mode_; }
   void init() const;
   void sendCmd(uint8_t cmd) const;
   void sendData(uint8_t *data, uint len) const;
+
   void display() const;
   void display(Page page) const;
-  void clearDisplay() const;
+  void clearBuffer() const;
+  void clearBuffer(Page page) const;
 
   void drawBattery() const;
   void drawSmallText(std::string text, Page page) const;
   void drawMediumText(std::string text, Page page) const;
+
+  virtual void onLeftButtonPress() = 0;
+  virtual void onRightButtonPress() = 0;
 };
 
 #endif // UIMODE_H

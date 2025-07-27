@@ -14,7 +14,7 @@ uint8_t Ui::buffer[OLED_BUFFER_SIZE] = {0};
 Ui::Ui(Mode mode) : mode_(mode), charging_(false), charge_(100), offset_(0)
 {
   init();
-  clearDisplay();
+  clearBuffer();
   drawBattery();
 }
 
@@ -82,7 +82,7 @@ void Ui::display(Page page) const
   sendData(&buffer[OLED_WIDTH * page], OLED_WIDTH);
 }
 
-void Ui::clearDisplay() const
+void Ui::clearBuffer() const
 {
   memset(buffer, 0, sizeof(buffer));
   // every mode will show the battery, so we set up the outline now
@@ -93,6 +93,12 @@ void Ui::clearDisplay() const
   buffer[OLED_WIDTH - 21] = 0xFF;
   buffer[OLED_WIDTH - 20] = 0x81;
   drawBattery();
+}
+
+void Ui::clearBuffer(Page page) const
+{
+  memset(&buffer[OLED_WIDTH * page], 0, OLED_WIDTH);
+  display(page);
 }
 
 void Ui::drawBattery() const
@@ -115,6 +121,8 @@ void Ui::drawSmallText(std::string text, Page page) const
   const Font *font = &smallFont;
   const int max_chars = OLED_WIDTH / FONT_WIDTH_S;
   const unsigned int len = text.size();
+
+  clearBuffer(page);
 
   // Early return if the string fits without scrolling
   if (len <= max_chars)
@@ -168,6 +176,9 @@ void Ui::drawMediumText(string text, Page page) const
   const Font *font = &mediumFont;
   const int max_chars = OLED_WIDTH / FONT_WIDTH_M;
   uint len = text.size();
+
+  clearBuffer(page);
+  clearBuffer(static_cast<Page>(page + 1));
 
   // string is short enough so printing centered
   if (len <= max_chars)

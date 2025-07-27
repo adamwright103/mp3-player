@@ -12,9 +12,10 @@ private:
 public:
   App();
   App(Ui::Mode mode);
-  ~App() { delete currentMode_; }
+  ~App();
 
   void changeMode(Ui::Mode mode);
+  void onButtonPress(uint gpio);
 };
 
 #endif // APP_H

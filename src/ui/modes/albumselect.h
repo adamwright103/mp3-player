@@ -23,6 +23,9 @@ public:
   Node<std::string> *growAlbumList();
   void deleteAlbumList();
   inline std::string getAlbumName() const { return currentAlbum_ ? currentAlbum_->data : ""; }
+
+  void onLeftButtonPress() override;
+  void onRightButtonPress() override;
 };
 
 #endif // ALBUMSELECT_H
