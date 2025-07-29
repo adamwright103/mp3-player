@@ -1,6 +1,7 @@
 #ifndef UI_H
 #define UI_H
 
+#include "drivers/sd.h"
 #include "pico/stdlib.h"
 #include "../constants.h"
 #include <string>
@@ -34,6 +35,7 @@ private:
 
 protected:
   static uint8_t buffer[OLED_BUFFER_SIZE];
+  static Sd *sd_;
   uint charge_;
 
 public:

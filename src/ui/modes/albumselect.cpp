@@ -3,6 +3,7 @@
 #include "src/types/node.h"
 #include "src/fonts/record.h"
 #include <string>
+#include <stdio.h>
 
 using namespace std;
 
@@ -14,6 +15,7 @@ AlbumSelect::AlbumSelect() : Ui(ALBUM_SELECT)
 void AlbumSelect::onActivate()
 {
   currentAlbum_ = growAlbumList();
+  drawBattery();
   drawAlbumArt();
   drawAlbumName();
 }

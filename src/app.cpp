@@ -3,15 +3,15 @@
 #include "ui/modes/albumselect.h"
 #include <stdio.h>
 
-App::App()
-{
-  currentMode_ = nullptr;
-  changeMode(Ui::ALBUM_SELECT);
-}
+App::App() : App(Ui::ALBUM_SELECT) {}
 
 App::App(Ui::Mode mode)
 {
+  currentMode_ = new Playing();
+  currentMode_->init();
+  delete currentMode_;
   currentMode_ = nullptr;
+
   changeMode(mode);
 }
 
@@ -35,21 +35,23 @@ void App::changeMode(Ui::Mode mode)
   switch (mode)
   {
   case Ui::PLAYING:
+    printf("Changing mode to Playing\n");
     currentMode_ = new Playing();
     break;
 
   case Ui::ALBUM_SELECT:
+    printf("Changing mode to AlbumSelect\n");
     currentMode_ = new AlbumSelect();
     break;
 
   default:
+    printf("err chaning mode, we dont know where we are\n");
     currentMode_ = nullptr;
     break;
   }
 
   if (currentMode_)
   {
-    currentMode_->clearBuffer();
     currentMode_->onActivate();
   }
 }

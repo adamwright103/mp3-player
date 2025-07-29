@@ -36,6 +36,16 @@ int main()
 {
     stdio_init_all();
 
+    while (true)
+    {
+        printf("press s to start\n");
+        char c = getchar_timeout_us(1000 * 1000);
+        if (c == 's' || c == 'S')
+        {
+            break;
+        }
+    }
+
     app = new App();
 
     const uint buttonPins[] = {LEFT_BTN_PIN, HOME_BTN_PIN, RIGHT_BTN_PIN};

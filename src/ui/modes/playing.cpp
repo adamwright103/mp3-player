@@ -14,6 +14,7 @@ const uint8_t Playing::sinData_[7][7] = {
 
 void Playing::onActivate()
 {
+  drawBattery();
   drawArtist();
   drawSongName();
   drawVisualizer(sinData_[0]);

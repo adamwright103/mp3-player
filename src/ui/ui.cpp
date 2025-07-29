@@ -6,16 +6,16 @@
 #include "hardware/i2c.h"
 #include <string>
 #include <cstring>
+#include <stdio.h>
 
 using namespace std;
 
 uint8_t Ui::buffer[OLED_BUFFER_SIZE] = {0};
+Sd *Ui::sd_ = nullptr;
 
 Ui::Ui(Mode mode) : mode_(mode), charging_(false), charge_(100), offset_(0)
 {
-  init();
   clearBuffer();
-  drawBattery();
 }
 
 void Ui::init() const
@@ -41,6 +41,10 @@ void Ui::init() const
   {
     sendCmd(cmd);
   }
+
+  sd_ = new Sd();
+
+  sd_->mount();
 }
 
 void Ui::sendCmd(uint8_t cmd) const
@@ -92,7 +96,6 @@ void Ui::clearBuffer() const
   buffer[OLED_WIDTH - 4] = 0x81;
   buffer[OLED_WIDTH - 21] = 0xFF;
   buffer[OLED_WIDTH - 20] = 0x81;
-  drawBattery();
 }
 
 void Ui::clearBuffer(Page page) const
