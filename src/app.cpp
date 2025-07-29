@@ -7,11 +7,8 @@ App::App() : App(Ui::ALBUM_SELECT) {}
 
 App::App(Ui::Mode mode)
 {
-  currentMode_ = new Playing();
-  currentMode_->init();
-  delete currentMode_;
+  Ui::init();
   currentMode_ = nullptr;
-
   changeMode(mode);
 }
 
@@ -42,6 +39,10 @@ void App::changeMode(Ui::Mode mode)
   case Ui::ALBUM_SELECT:
     printf("Changing mode to AlbumSelect\n");
     currentMode_ = new AlbumSelect();
+
+    printf("Current album: %s\n",
+           static_cast<AlbumSelect *>(currentMode_)->getAlbumName().c_str());
+
     break;
 
   default:

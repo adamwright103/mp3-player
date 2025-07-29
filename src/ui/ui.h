@@ -45,9 +45,9 @@ public:
   virtual void onDeactivate() = 0;
 
   inline Mode getMode() const { return mode_; }
-  void init() const;
-  void sendCmd(uint8_t cmd) const;
-  void sendData(uint8_t *data, uint len) const;
+  static void init();
+  static void sendCmd(uint8_t cmd);
+  static void sendData(uint8_t *data, uint len);
 
   void display() const;
   void display(Page page) const;

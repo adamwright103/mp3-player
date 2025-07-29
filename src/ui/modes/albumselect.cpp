@@ -7,14 +7,14 @@
 
 using namespace std;
 
-AlbumSelect::AlbumSelect() : Ui(ALBUM_SELECT)
-{
-  currentAlbum_ = nullptr;
-}
+Node<std::string> *AlbumSelect::currentAlbum_ = nullptr;
 
 void AlbumSelect::onActivate()
 {
-  currentAlbum_ = growAlbumList();
+  if (!currentAlbum_)
+  {
+    currentAlbum_ = sd_->getAlbums();
+  }
   drawBattery();
   drawAlbumArt();
   drawAlbumName();
@@ -22,7 +22,6 @@ void AlbumSelect::onActivate()
 
 void AlbumSelect::onDeactivate()
 {
-  deleteAlbumList();
 }
 
 void AlbumSelect::drawAlbumArt() const
@@ -40,51 +39,10 @@ void AlbumSelect::drawAlbumArt() const
 
 void AlbumSelect::drawAlbumName() const
 {
-  drawMediumText(currentAlbum_ ? currentAlbum_->data : "No Albums", Ui::PAGE_6);
-}
+  string name = currentAlbum_ ? currentAlbum_->data : "No Albums.txt";
+  name = name.substr(0, name.size() - 4);
 
-Node<string> *AlbumSelect::growAlbumList()
-{
-  static const string fakeAlbums[5] = {
-      "Blue",
-      "White",
-      "Grey",
-      "Pink",
-      "Pink"};
-
-  deleteAlbumList();
-
-  Node<string> *head = new Node<string>(fakeAlbums[0]);
-  Node<string> *current = head;
-  for (uint8_t i = 1; i < 5; i++)
-  {
-    current->next = new Node<string>(fakeAlbums[i]);
-    current->next->prev = current;
-    current = current->next;
-  }
-
-  current->next = head;
-  head->prev = current;
-
-  return head;
-}
-
-void AlbumSelect::deleteAlbumList()
-{
-  if (!currentAlbum_)
-    return;
-
-  Node<string> *head = currentAlbum_;
-  Node<string> *current = currentAlbum_;
-
-  do
-  {
-    Node<string> *next = current->next;
-    delete current;
-    current = next;
-  } while (current != head);
-
-  currentAlbum_ = nullptr;
+  drawMediumText(name, Ui::PAGE_6);
 }
 
 void AlbumSelect::onLeftButtonPress()

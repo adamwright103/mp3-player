@@ -8,11 +8,11 @@
 class AlbumSelect : public Ui
 {
 private:
-  Node<std::string> *currentAlbum_; // circular linked list of albums
+  static Node<std::string> *currentAlbum_;
 
 public:
-  AlbumSelect();
-  ~AlbumSelect() override { delete currentAlbum_; }
+  AlbumSelect() : Ui(ALBUM_SELECT) {};
+  ~AlbumSelect() {};
 
   void onActivate() override;
   void onDeactivate() override;
@@ -20,8 +20,6 @@ public:
   void drawAlbumArt() const;
   void drawAlbumName() const;
 
-  Node<std::string> *growAlbumList();
-  void deleteAlbumList();
   inline std::string getAlbumName() const { return currentAlbum_ ? currentAlbum_->data : ""; }
 
   void onLeftButtonPress() override;

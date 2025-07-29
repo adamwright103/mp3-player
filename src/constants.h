@@ -24,6 +24,7 @@
 #define SD_SPI_PORT spi0
 #define SD_SPI_BAUD_RATE 2500 * 1000
 #define SD_PC_NAME "0:"
+#define ALBUM_DIR "albums/"
 
 #define DEBOUNCE_TIME_MS 150
 

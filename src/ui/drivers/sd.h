@@ -1,9 +1,11 @@
 #ifndef SD_H
 #define SD_H
 
+#include "src/types/node.h"
 #include "hw_config.h"
 #include "pico/stdlib.h"
 #include <string>
+#include <vector>
 
 class Sd
 {
@@ -19,6 +21,7 @@ public:
   void unmount();
   inline bool isMounted() const { return mounted_; }
   bool readFile(std::string filename, char *buffer, size_t bufferSize) const;
+  Node<std::string> *getAlbums() const;
 };
 
 #endif // SD_H

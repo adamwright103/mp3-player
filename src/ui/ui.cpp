@@ -18,7 +18,7 @@ Ui::Ui(Mode mode) : mode_(mode), charging_(false), charge_(100), offset_(0)
   clearBuffer();
 }
 
-void Ui::init() const
+void Ui::init()
 {
   i2c_init(OLED_I2C_PORT, OLED_CLK_FREQ);
 
@@ -47,13 +47,13 @@ void Ui::init() const
   sd_->mount();
 }
 
-void Ui::sendCmd(uint8_t cmd) const
+void Ui::sendCmd(uint8_t cmd)
 {
   uint8_t data[2] = {0x00, cmd}; // 0x00 indicates command mode
   i2c_write_blocking(OLED_I2C_PORT, OLED_ADR, data, sizeof(data), false);
 }
 
-void Ui::sendData(uint8_t *data, uint len) const
+void Ui::sendData(uint8_t *data, uint len)
 {
   uint8_t buf[17];
   buf[0] = 0x40; // Control byte for data
