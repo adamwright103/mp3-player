@@ -9,7 +9,7 @@ public:
   Node<T> *next;
   Node<T> *prev;
 
-  Node(const T &value) : data(value), next(nullptr) {}
+  Node(const T &value) : data(value), next(nullptr), prev(nullptr) {}
 };
 
 #endif // NODE_H

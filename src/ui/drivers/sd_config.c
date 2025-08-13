@@ -40,7 +40,7 @@ socket, which SPI it is driven by, and how it is wired.
 // Hardware Configuration of SPI "objects"
 // Note: multiple SD cards can be driven by one SPI if they use different slave
 // selects.
-static spi_t spis[] = {  // One for each SPI.
+static spi_t spis[1] = {  // One for each SPI.
     {
         .hw_inst = spi0,  // SPI component
         .miso_gpio = SD_MISO_PIN, // GPIO number (not pin number)
@@ -51,14 +51,14 @@ static spi_t spis[] = {  // One for each SPI.
 };
 
 // Hardware Configuration of the SD Card "objects"
-static sd_card_t sd_cards[] = {  // One for each SD card
+static sd_card_t sd_cards[1] = {  // One for each SD card
     {
         .pcName = SD_PC_NAME,   // Name used to mount device
         .spi = &spis[0],  // Pointer to the SPI driving this card
         .ss_gpio = SD_SS_PIN,    // The SPI slave select GPIO for this SD card
         .use_card_detect = false,
-        .card_detect_gpio = 13,   // Card detect
-        .card_detected_true = 1  // What the GPIO read returns when a card is
+        .card_detect_gpio = 0,   // Card detect
+        .card_detected_true = -1  // What the GPIO read returns when a card is
                                  // present. Use -1 if there is no card detect.
     }};
 

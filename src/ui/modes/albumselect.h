@@ -24,6 +24,7 @@ public:
 
   void onLeftButtonPress() override;
   void onRightButtonPress() override;
+  void *onHomeButtonPress() override;
 };
 
 #endif // ALBUMSELECT_H

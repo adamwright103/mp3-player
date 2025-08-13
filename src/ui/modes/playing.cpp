@@ -1,7 +1,8 @@
 #include "playing.h"
-#include "../ui.h"
 #include "src/fonts/font.h"
+#include "src/constants.h"
 #include <string.h>
+#include <stdio.h>
 
 const uint8_t Playing::sinData_[7][7] = {
     {100, 81, 39, 5, 5, 39, 81},
@@ -12,12 +13,20 @@ const uint8_t Playing::sinData_[7][7] = {
     {39, 5, 5, 39, 81, 100, 81},
     {81, 39, 5, 5, 39, 81, 100}};
 
+Playing::Playing() : Ui(PLAYING), artist_("Artist Name"), songName_("Song Title")
+{
+}
+
 void Playing::onActivate()
 {
   drawBattery();
   drawArtist();
   drawSongName();
   drawVisualizer(sinData_[0]);
+
+  printf("activated\n");
+
+  startPlaying();
 }
 
 void Playing::onDeactivate()
@@ -60,6 +69,10 @@ void Playing::drawVisualizer(const uint8_t data[7]) const
   display(Ui::PAGE_4);
 }
 
+void Playing::startPlaying() const
+{
+}
+
 void Playing::onLeftButtonPress()
 {
   charge_ = charge_ > 10 ? charge_ - 10 : 0;
@@ -70,4 +83,9 @@ void Playing::onRightButtonPress()
 {
   charge_ = charge_ < 90 ? charge_ + 10 : 100;
   drawBattery();
+}
+
+void *Playing::onHomeButtonPress()
+{
+  return nullptr;
 }

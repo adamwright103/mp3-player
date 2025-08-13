@@ -9,7 +9,7 @@ App::App(Ui::Mode mode)
 {
   Ui::init();
   currentMode_ = nullptr;
-  changeMode(mode);
+  changeMode(mode, nullptr);
 }
 
 App::~App()
@@ -18,31 +18,27 @@ App::~App()
   {
     currentMode_->onDeactivate();
     delete currentMode_;
+    currentMode_ = nullptr;
   }
 }
 
-void App::changeMode(Ui::Mode mode)
+void App::changeMode(Ui::Mode mode, void *data)
 {
   if (currentMode_)
   {
     currentMode_->onDeactivate();
     delete currentMode_;
+    currentMode_ = nullptr;
   }
 
   switch (mode)
   {
   case Ui::PLAYING:
-    printf("Changing mode to Playing\n");
     currentMode_ = new Playing();
     break;
 
   case Ui::ALBUM_SELECT:
-    printf("Changing mode to AlbumSelect\n");
     currentMode_ = new AlbumSelect();
-
-    printf("Current album: %s\n",
-           static_cast<AlbumSelect *>(currentMode_)->getAlbumName().c_str());
-
     break;
 
   default:
@@ -50,10 +46,10 @@ void App::changeMode(Ui::Mode mode)
     currentMode_ = nullptr;
     break;
   }
-
   if (currentMode_)
   {
     currentMode_->onActivate();
+    printf("activated\n");
   }
 }
 
@@ -68,10 +64,10 @@ void App::onButtonPress(uint gpio)
     }
     break;
   case HOME_BTN_PIN:
-    changeMode(
-        currentMode_ && currentMode_->getMode() == Ui::ALBUM_SELECT
-            ? Ui::PLAYING
-            : Ui::ALBUM_SELECT);
+    if (currentMode_)
+    {
+      currentMode_->onHomeButtonPress();
+    }
     break;
   case RIGHT_BTN_PIN:
     if (currentMode_)

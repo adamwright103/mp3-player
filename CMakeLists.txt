@@ -63,7 +63,6 @@ pico_enable_stdio_usb(mp3 1)
 # Add the library to the build
 target_link_libraries(mp3
         pico_stdlib
-        pico_audio_i2s
         hardware_i2c
         FatFs_SPI
         )

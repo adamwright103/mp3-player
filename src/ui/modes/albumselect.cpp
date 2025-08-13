@@ -7,13 +7,16 @@
 
 using namespace std;
 
-Node<std::string> *AlbumSelect::currentAlbum_ = nullptr;
+Node<string> *AlbumSelect::currentAlbum_ = nullptr;
 
 void AlbumSelect::onActivate()
 {
   if (!currentAlbum_)
   {
-    currentAlbum_ = sd_->getAlbums();
+    // currentAlbum_ = sd_->getAlbums();
+    currentAlbum_ = new Node<string>("Bangers.txt");
+    currentAlbum_->next = currentAlbum_;
+    currentAlbum_->prev = currentAlbum_;
   }
   drawBattery();
   drawAlbumArt();
@@ -61,4 +64,19 @@ void AlbumSelect::onRightButtonPress()
 
   currentAlbum_ = currentAlbum_->next;
   drawAlbumName();
+}
+
+void *AlbumSelect::onHomeButtonPress()
+{
+  Node<string> *currentSong = sd_->getSongs(currentAlbum_ ? currentAlbum_->data : "");
+
+  // while (currentSong)
+  // {
+  //   printf("Song: %s\n", currentSong->data.c_str());
+  //   currentSong = currentSong->next;
+  //   if (currentSong)
+  //     delete currentSong->prev;
+  // }
+
+  return nullptr;
 }

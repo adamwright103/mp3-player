@@ -14,7 +14,7 @@ public:
   App(Ui::Mode mode);
   ~App();
 
-  void changeMode(Ui::Mode mode);
+  void changeMode(Ui::Mode mode, void *data);
   void onButtonPress(uint gpio);
 };
 

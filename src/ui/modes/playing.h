@@ -4,15 +4,18 @@
 #include "../ui.h"
 #include <string>
 
+#define BLOCK_SIZE 16
+
 class Playing : public Ui
 {
 private:
   std::string artist_;
   std::string songName_;
+
   static const uint8_t sinData_[7][7];
 
 public:
-  Playing() : Ui(PLAYING), artist_("Artist Name"), songName_("Song Title") {}
+  Playing();
   ~Playing() override {}
 
   void onActivate() override;
@@ -22,8 +25,11 @@ public:
   void drawSongName() const;
   void drawVisualizer(const uint8_t data[7]) const;
 
+  void startPlaying() const;
+
   void onLeftButtonPress() override;
   void onRightButtonPress() override;
+  void *onHomeButtonPress() override;
 };
 
 #endif // PLAYING_H

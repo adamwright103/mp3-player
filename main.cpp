@@ -1,11 +1,12 @@
-#include <stdio.h>
 #include "pico/stdlib.h"
 #include "hardware/i2c.h"
+#include "hardware/clocks.h"
 #include "src/constants.h"
 #include "src/app.h"
 #include "src/ui/ui.h"
 #include <string.h>
 #include <map>
+#include <stdio.h>
 
 std::map<uint, volatile bool> buttons = {
     {LEFT_BTN_PIN, true},
@@ -13,6 +14,8 @@ std::map<uint, volatile bool> buttons = {
     {RIGHT_BTN_PIN, true}};
 
 App *app = nullptr;
+
+#define CPU_CLOCK_SPEED_KHZ 141120
 
 void button_callback(uint gpio, uint32_t events)
 {
@@ -45,6 +48,9 @@ int main()
             break;
         }
     }
+    set_sys_clock_khz(CPU_CLOCK_SPEED_KHZ, true);
+
+    printf("Current clock speed: %lu Hz\n", clock_get_hz(clk_sys));
 
     app = new App();
 

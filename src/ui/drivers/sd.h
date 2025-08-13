@@ -22,6 +22,7 @@ public:
   inline bool isMounted() const { return mounted_; }
   bool readFile(std::string filename, char *buffer, size_t bufferSize) const;
   Node<std::string> *getAlbums() const;
+  Node<std::string> *getSongs(std::string albumFileName) const;
 };
 
 #endif // SD_H

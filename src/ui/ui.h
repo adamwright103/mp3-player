@@ -60,6 +60,7 @@ public:
 
   virtual void onLeftButtonPress() = 0;
   virtual void onRightButtonPress() = 0;
+  virtual void *onHomeButtonPress() = 0;
 };
 
 #endif // UIMODE_H

@@ -15,8 +15,13 @@ void Sd::mount()
   {
     pSd_ = sd_get_by_num(0);
     FRESULT fr = f_mount(&pSd_->fatfs, pSd_->pcName, 1);
+    if (fr != FR_OK)
+    {
+      printf("f_mount(%s) error: %s (%d)\n", pSd_->pcName, FRESULT_str(fr), fr);
+      return;
+    }
     mounted_ = (fr == FR_OK);
-    printf("mounted: %d\n", mounted_);
+    pSd_->mounted = true;
   }
 }
 
@@ -28,7 +33,7 @@ void Sd::unmount()
   }
 }
 
-bool Sd::readFile(std::string filename, char *buffer, size_t bufferSize) const
+bool Sd::readFile(string filename, char *buffer, size_t bufferSize) const
 {
   if (!mounted_)
   {
@@ -106,8 +111,58 @@ Node<string> *Sd::getAlbums() const
   }
 
   // we want a circular linked list for our carasoul
-  tail->next = head;
-  head->prev = tail;
+  if (head)
+  {
+    tail->next = head;
+    head->prev = tail;
+  }
 
+  f_closedir(&dir);
+
+  return head;
+}
+
+Node<string> *Sd::getSongs(string albumFileName) const
+{
+  if (!mounted_)
+    return nullptr;
+
+  string path = string(ALBUM_DIR) + albumFileName;
+
+  FIL fil;
+  FRESULT fr = f_open(&fil, path.c_str(), FA_READ);
+  if (fr != FR_OK)
+  {
+    printf("f_open(%s) error: %s (%d)\n", path.c_str(), FRESULT_str(fr), fr);
+    return nullptr;
+  }
+
+  Node<string> *head = nullptr;
+  Node<string> *tail = nullptr;
+
+  char buffer[256] = {0};
+  while (f_gets(buffer, sizeof(buffer), &fil))
+  {
+    buffer[strcspn(buffer, "\r\n")] = '\0';
+    if (strlen(buffer) == 0)
+      continue;
+
+    printf("Read song: %s\n", buffer);
+
+    Node<string> *node = new Node<string>(buffer);
+    if (!head)
+    {
+      head = node;
+      tail = node;
+    }
+    else
+    {
+      tail->next = node;
+      node->prev = tail;
+      tail = node;
+    }
+  }
+
+  f_close(&fil);
   return head;
 }
