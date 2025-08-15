@@ -2,11 +2,11 @@
 
 This project is an MP3 player built using the RP2040-based Raspberry Pi Pico microcontroller. It features an OLED screen for display and control, a PCM5102 DAC for high-quality audio output, and a microSD card reader for storage.
 
-## What I Learned
+## What I am learning
 
 ### Embedded Systems Development
 
-- **Microcontroller Programming**: I learnt much more programming the Raspberry Pi Pico compared to some of my other projects using an arduino. I minimised my use of libraries to learn how each peripheral communicates, I used I2C, I2S, and a custom programable I/O. I also learnt more about real time opperating systems, expanding on what I had learnt in school.
+- **Microcontroller Programming**: I am delving much deeper into programming on the Raspberry Pi Pico compared to some of my other projects using an arduino. This project is written in C++ using the pico SDK, where as I was using MicroPython and lots of premade librarys before. I minimised my use of libraries to learn how each peripheral communicates, I used I2C, I2S, and a custom programable I/O. I also learnt more about real time opperating systems, expanding on what I had learnt at university.
 
 ### Real-Time Systems
 
@@ -28,16 +28,7 @@ This project is an MP3 player built using the RP2040-based Raspberry Pi Pico mic
 
 ## Setup
 
-1. **Pin Diagram**
-
-   - **OLED Display**:
-     - GPIO 18 -> SDA
-     - GPIO 19 -> SCL
-
-   - **DAC (PCM5102)**:
-     - GPIO 10 -> BCK
-     - GPIO 11 -> LCK
-     - GPIO 12 -> DIN
+1. **Pin Out**
 
    - **MicroSD Reader**:
      - GPIO 1 -> CS
@@ -45,10 +36,24 @@ This project is an MP3 player built using the RP2040-based Raspberry Pi Pico mic
      - GPIO 3 -> MOSI
      - GPIO 4 -> MISO
 
-2. **Software**:
+   - **User Input Buttons**:
+     - GPIO 6 -> Left Button
+     - GPIO 7 -> Home Button
+     - GPIO 8 -> Right Button
+
+   - **DAC (PCM5102)**:
+     - GPIO 10 -> DIN
+     - GPIO 11 -> LRCLK
+     - GPIO 12 -> BCK
+
+   - **OLED Display**:
+     - GPIO 18 -> SDA
+     - GPIO 19 -> SCL
+
+1. **Software**:
    - Install the Pico SDK.
    - Clone this repository and configure the project using CMake.
-   - Flash the .uf2 to the pico in bootloader mode
+   - Flash the .uf2 to the pico in bootloader mode over usb cable
 
 ## License
 
