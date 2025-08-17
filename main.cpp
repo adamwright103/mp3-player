@@ -4,13 +4,13 @@
 #include "src/constants.h"
 #include "src/app.h"
 #include "src/ui/ui.h"
+#include "src/ui/drivers/i2s.h"
 #include <string.h>
 #include <map>
 #include <stdio.h>
 #include <math.h>
 
 #define CPU_CLOCK_SPEED_KHZ 200000 // set to default 200 MHz for now
-#define DMA_BUFFER_SIZE 64
 #define DATA_BUFFER_SIZE 8 * DMA_BUFFER_SIZE
 
 std::map<uint, volatile bool> buttons = {
@@ -18,15 +18,20 @@ std::map<uint, volatile bool> buttons = {
     {HOME_BTN_PIN, true},
     {RIGHT_BTN_PIN, true}};
 
-uint16_t data_table[DATA_BUFFER_SIZE];
-uint16_t dma_buffer_a[DMA_BUFFER_SIZE];
-uint16_t dma_buffer_b[DMA_BUFFER_SIZE];
-uint16_t output_buffer[2 * DMA_BUFFER_SIZE] = {0};
-
-int channel_a;
-int channel_b;
+int16_t data_table[DATA_BUFFER_SIZE];
+int16_t output_buffer[2 * DMA_BUFFER_SIZE] = {0};
 uint16_t idx_a = 0;
 uint16_t idx_b = DMA_BUFFER_SIZE;
+
+I2S_Config i2sConfig = {
+    .sample_rate = 44100,     // Default sample rate
+    .bits_per_sample = 16,    // Only 16 bits per sample supported
+    .channels = 1,            // mono audio
+    .data_pin = I2S_DATA_PIN, // data pin
+    .lrck_pin = I2S_LRCK_PIN, // Left/Right clock pin
+    .bck_pin = I2S_BCK_PIN    // Bit clock pin
+};
+I2S i2s;
 
 App *app = nullptr;
 
@@ -48,36 +53,36 @@ void __isr button_callback(uint gpio, uint32_t events)
                         return 0; }, gpio_ptr, false);
 }
 
-void __isr dma_handler()
+void __isr i2s_dma_handler()
 {
     uint32_t ints = dma_hw->ints1; // Read the interrupt status for channel 1
-    dma_hw->ints1 = (1u << channel_a) | (1u << channel_b);
+    dma_hw->ints1 = (1u << i2s.channel_a) | (1u << i2s.channel_b);
 
-    if (ints & (1u << channel_a))
+    if (ints & (1u << i2s.channel_a))
     {
         // Channel A completed so refilling
         idx_a = (idx_a + DMA_BUFFER_SIZE) % (DATA_BUFFER_SIZE / 2);
-        memcpy(dma_buffer_a, &data_table[idx_a], DMA_BUFFER_SIZE * 2);
+        memcpy(i2s.buffer_a, &data_table[idx_a], DMA_BUFFER_SIZE * 2);
 
         // reset channel A r/w addr
-        dma_hw->ch[channel_a].read_addr = (uintptr_t)dma_buffer_a;
-        dma_hw->ch[channel_a].write_addr = (uintptr_t)output_buffer;
+        dma_hw->ch[i2s.channel_a].read_addr = (uintptr_t)i2s.buffer_a;
+        dma_hw->ch[i2s.channel_a].write_addr = (uintptr_t)output_buffer;
 
         // start channel B
-        dma_hw->ch[channel_b].ctrl_trig |= DMA_CH0_CTRL_TRIG_EN_BITS;
+        dma_hw->ch[i2s.channel_b].ctrl_trig |= DMA_CH0_CTRL_TRIG_EN_BITS;
     }
-    if (ints & (1u << channel_b))
+    else if (ints & (1u << i2s.channel_b))
     {
         // Channel B completed so refilling
         idx_b = ((idx_b + DMA_BUFFER_SIZE) % (DATA_BUFFER_SIZE / 2)) + (DATA_BUFFER_SIZE / 2);
-        memcpy(dma_buffer_b, &data_table[idx_b], DMA_BUFFER_SIZE * 2);
+        memcpy(i2s.buffer_b, &data_table[idx_b], DMA_BUFFER_SIZE * 2);
 
         // reset channel B r/w addr
-        dma_hw->ch[channel_b].read_addr = (uintptr_t)dma_buffer_b;
-        dma_hw->ch[channel_b].write_addr = (uintptr_t)(output_buffer + DMA_BUFFER_SIZE);
+        dma_hw->ch[i2s.channel_b].read_addr = (uintptr_t)i2s.buffer_b;
+        dma_hw->ch[i2s.channel_b].write_addr = (uintptr_t)(output_buffer + DMA_BUFFER_SIZE);
 
         // start channel A
-        dma_hw->ch[channel_a].ctrl_trig |= DMA_CH0_CTRL_TRIG_EN_BITS;
+        dma_hw->ch[i2s.channel_a].ctrl_trig |= DMA_CH0_CTRL_TRIG_EN_BITS;
     }
 }
 
@@ -118,47 +123,8 @@ int main()
         data_table[i] = i % 3;
     }
 
-    memcpy(dma_buffer_a, &data_table[0], DMA_BUFFER_SIZE * 2);
-    memcpy(dma_buffer_b, &data_table[DMA_BUFFER_SIZE], DMA_BUFFER_SIZE * 2);
-
-    channel_a = dma_claim_unused_channel(true);
-    channel_b = dma_claim_unused_channel(true);
-
-    // we setup a to read from the sin_table and write to the output_buffer
-    // on completion it will chain to channel_b which will read from output_buffer
-    dma_channel_config ca = dma_channel_get_default_config(channel_a);
-    channel_config_set_transfer_data_size(&ca, DMA_SIZE_16);
-    channel_config_set_read_increment(&ca, true);
-    channel_config_set_write_increment(&ca, true);
-
-    dma_channel_configure(
-        channel_a,
-        &ca,
-        output_buffer,   // write address
-        dma_buffer_a,    // read address
-        DMA_BUFFER_SIZE, // transfer count (16 bits per transfer)
-        false            // don't start yet
-    );
-
-    dma_channel_config cb = dma_channel_get_default_config(channel_b);
-    channel_config_set_transfer_data_size(&cb, DMA_SIZE_16);
-    channel_config_set_read_increment(&cb, true);
-    channel_config_set_write_increment(&cb, true);
-
-    dma_channel_configure(
-        channel_b,
-        &cb,
-        &output_buffer[DMA_BUFFER_SIZE], // write address
-        dma_buffer_b,                    // read address
-        DMA_BUFFER_SIZE,                 // transfer count (16 bits per transfer)
-        false                            // don't start yet
-    );
-
-    // irq setup, we enable an irq on line 1 on completion
-    irq_set_exclusive_handler(DMA_IRQ_1, dma_handler);
-    irq_set_enabled(DMA_IRQ_1, true);
-    dma_hw->inte1 |= (1u << channel_a) | (1u << channel_b);
-    dma_hw->ch[channel_a].ctrl_trig |= DMA_CH0_CTRL_TRIG_EN_BITS;
+    i2s_int(&i2s, &i2sConfig, i2s_dma_handler, output_buffer);
+    i2s_start(&i2s);
 
     printf("starting Ping-Pong DMA, press q to stop...\n");
 
@@ -173,12 +139,15 @@ int main()
 
     printf("Stopping DMA\n");
 
-    // stops dma ping pong and clears IRQs
-    dma_channel_abort(channel_a);
-    dma_channel_abort(channel_b);
-    dma_channel_set_irq1_enabled(channel_a, false);
-    dma_channel_set_irq1_enabled(channel_b, false);
-    dma_hw->ints1 = (1u << channel_a) | (1u << channel_b);
+    i2s_stop(&i2s);
+
+    printf("Output buffer contents:\n");
+    for (size_t i = 0; i < 2 * DMA_BUFFER_SIZE; ++i)
+    {
+        printf("%d ", output_buffer[i]);
+        if ((i + 1) % 16 == 0)
+            printf("\n"); // Print 16 values per line for readability
+    }
 
     while (true)
     {

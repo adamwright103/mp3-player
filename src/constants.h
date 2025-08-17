@@ -12,8 +12,8 @@
 #define RIGHT_BTN_PIN 8
 
 #define I2S_DATA_PIN 10
-#define I2S_BCK_PIN 11
-#define I2S_LRCK_PIN 12
+#define I2S_LRCK_PIN 11
+#define I2S_BCK_PIN 12
 
 #define OLED_SDA_PIN 18
 #define OLED_SCL_PIN 19
