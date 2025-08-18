@@ -1,6 +1,10 @@
 #ifndef CONSTANTS_H
 #define CONSTANTS_H
 
+// ------ System defaults ------
+#define CPU_CLOCK_SPEED_KHZ 200000
+#define DEBOUNCE_TIME_MS 150
+
 // ---------- Pin out ----------
 #define SD_SS_PIN 1
 #define SD_SCK_PIN 2
@@ -11,9 +15,14 @@
 #define HOME_BTN_PIN 7
 #define RIGHT_BTN_PIN 8
 
-#define I2S_DATA_PIN 10
-#define I2S_LRCK_PIN 11
-#define I2S_BCK_PIN 12
+// TODO revert to these we are just going to test with the LEDS
+// #define I2S_DATA_PIN 10
+// #define I2S_LRCK_PIN 11
+// #define I2S_BCK_PIN 12
+
+#define I2S_DATA_PIN 0
+#define I2S_LRCK_PIN 28
+#define I2S_BCK_PIN 29
 
 #define OLED_SDA_PIN 18
 #define OLED_SCL_PIN 19
@@ -31,8 +40,6 @@
 #define SD_SPI_BAUD_RATE 2500 * 1000
 #define SD_PC_NAME "0:"
 #define ALBUM_DIR "albums/"
-
-#define DEBOUNCE_TIME_MS 150
 
 // ----------- Fonts -----------
 

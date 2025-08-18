@@ -25,9 +25,8 @@ endif()
 # ====================================================================================
 set(PICO_BOARD pico CACHE STRING "Board type")
 
-# Pull in Raspberry Pi Pico SDK and extras (must be before project) 
+# Pull in Raspberry Pi Pico SDK (must be before project) 
 include(pico_sdk_import.cmake)
-include(pico_extras_import.cmake)
 
 project(mp3 C CXX ASM)
 
@@ -36,7 +35,7 @@ set(PICO_CXX_ENABLE_RTTI 1)
 # Initialise the Raspberry Pi Pico SDK
 pico_sdk_init()
 
-# Add executable. Default name is the project name, version 0.1
+# Add executable. Default name is the project name
 file(GLOB_RECURSE SRC_FILES 
     ${CMAKE_CURRENT_LIST_DIR}/src/*.c 
     ${CMAKE_CURRENT_LIST_DIR}/src/*.cpp
@@ -46,6 +45,13 @@ add_executable(mp3
     ${SRC_FILES}
 )
 target_compile_definitions(mp3 PRIVATE PICO_MAX_SHARED_IRQ_HANDLERS=8)
+
+
+# Generates PIO header files from all .pio files in the src/ui/drivers directory
+file(GLOB PIO_FILES
+    ${CMAKE_CURRENT_LIST_DIR}/src/ui/drivers/*.pio
+)
+pico_generate_pio_header(${PROJECT_NAME} ${PIO_FILES})
 
 
 # add the FatFs library
@@ -64,6 +70,7 @@ pico_enable_stdio_usb(mp3 1)
 target_link_libraries(mp3
         pico_stdlib
         hardware_i2c
+        hardware_pio
         FatFs_SPI
         )
 

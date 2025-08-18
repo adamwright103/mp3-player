@@ -10,7 +10,6 @@
 #include <stdio.h>
 #include <math.h>
 
-#define CPU_CLOCK_SPEED_KHZ 200000 // set to default 200 MHz for now
 #define DATA_BUFFER_SIZE 8 * DMA_BUFFER_SIZE
 
 std::map<uint, volatile bool> buttons = {
@@ -123,7 +122,7 @@ int main()
         data_table[i] = i % 3;
     }
 
-    i2s_int(&i2s, &i2sConfig, i2s_dma_handler, output_buffer);
+    i2s_init(&i2s, &i2sConfig, i2s_dma_handler, output_buffer);
     i2s_start(&i2s);
 
     printf("starting Ping-Pong DMA, press q to stop...\n");

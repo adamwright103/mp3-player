@@ -1,10 +1,12 @@
 #include "i2s.h"
 #include "hardware/clocks.h"
 #include "hardware/dma.h"
+#include "i2s.pio.h"
+#include <stdio.h>
 
 #define DATA_BUFFER_SIZE = 8 * DMA_BUFFER_SIZE
 
-void i2s_int(I2S *i2s, I2S_Config *config, void (*dmaHandler)(), int16_t output[2 * DMA_BUFFER_SIZE])
+void i2s_init(I2S *i2s, I2S_Config *config, void (*dmaHandler)(), int16_t output[2 * DMA_BUFFER_SIZE])
 {
     // set all i2s values
     i2s->config = config;
@@ -15,6 +17,20 @@ void i2s_int(I2S *i2s, I2S_Config *config, void (*dmaHandler)(), int16_t output[
 
     // Initialize DMA for I2S data transfer
     dma_init(i2s);
+
+    // setup our PIO
+    bool rc = pio_claim_free_sm_and_add_program_for_gpio_range(&i2s_program, &i2s->pio, &i2s->sm, &i2s->prgm_offset, i2s->config->bck_pin, 1, true);
+    if (!rc)
+    {
+        printf("Failed to claim PIO state machine for I2S\n");
+        return;
+    }
+    printf("I2S claimed PIO[%d], sm[%d], with offset of %d \n", PIO_NUM(i2s->pio), i2s->sm, i2s->prgm_offset);
+
+    pio_init(i2s);
+
+    printf("I2S claimed PIO[%d], sm[%d], with offset of %d \n", PIO_NUM(i2s->pio), i2s->sm, i2s->prgm_offset);
+    i2s->initialized = true;
 }
 
 void dma_init(I2S *i2s)
@@ -57,12 +73,29 @@ void dma_init(I2S *i2s)
     irq_set_enabled(DMA_IRQ_1, true);
 }
 
+void pio_init(I2S *i2s) {
+    pio_gpio_init(i2s->pio, i2s->config->bck_pin);
+    pio_sm_set_consecutive_pindirs(i2s->pio, i2s->sm, i2s->config->bck_pin, 1, true);
+    pio_sm_config c = i2s_program_get_default_config(i2s->prgm_offset);
+    sm_config_set_set_pins(&c, i2s->config->bck_pin, 1);
+    pio_sm_init(i2s->pio, i2s->sm, i2s->prgm_offset, &c);
+    i2s_program_init(i2s->pio, i2s->sm, i2s->prgm_offset, i2s->config->bck_pin);
+}
+
 void i2s_start(I2S *i2s)
 {
-    // Configure I2S pins
-    // gpio_set_function(i2s->config->data_pin, GPIO_FUNC_I2S);
-    // gpio_set_function(i2s->config->lrck_pin, GPIO_FUNC_I2S);
-    // gpio_set_function(i2s->config->bck_pin, GPIO_FUNC_I2S);
+    if (!i2s->initialized)
+    {
+        printf("I2S not initialized. You must call i2s_init() first.\n");
+        return;
+    }
+
+    // Writing our delay of n+1 clk cycles per blink to pio TX FIFO
+    pio_sm_set_enabled(i2s->pio, i2s->sm, true);
+    uint freq_hz = 4;
+    i2s->pio->txf[i2s->sm] = (CPU_CLOCK_SPEED_KHZ*500 / (freq_hz)) - 3;
+
+    printf("blinking at %d Hz\n", freq_hz);
 
     // Start DMA channel A
     dma_hw->ch[i2s->channel_a].ctrl_trig |= DMA_CH0_CTRL_TRIG_EN_BITS;
