@@ -1,36 +1,40 @@
-;
-; Copyright (c) 2020 Raspberry Pi (Trading) Ltd.
-;
-; SPDX-License-Identifier: BSD-3-Clause
-;
+.pio_version 0  
 
-; SET pin 0 should be mapped to your LED GPIO
+.program bck
+    pull block
+    out y, 32
+.wrap_target
+    mov x, y          ; Reseting Delay
+    set pins, 0       ; LED off
+offloop:
+    jmp x-- offloop   ; Delay for y+1 clk cycles
+    mov x, y          ; Reseting Delay
+    set pins, 1       ; LED on
+onloop:
+    jmp x-- onloop    ; Delay for y+1 clk cycles
+    irq 0             ; Signal lrclk program on pio irq line 0
+.wrap
 
-.pio_version 0 // only requires PIO version 0
-
-.program i2s
+.program blink
     pull block
     out y, 32
 .wrap_target
     mov x, y
-    set pins, 1   ; Turn LED on
-lp1:
-    jmp x-- lp1   ; Delay for (x + 1) cycles, x is a 32 bit number
-    mov x, y
-    set pins, 0   ; Turn LED off
-lp2:
-    jmp x-- lp2   ; Delay for the same number of cycles again
-.wrap             ; Blink forever!
+    mov pins, !pins
+lp:
+    jmp x-- lp
+.wrap
 
-
-% c-sdk {
-// this is a raw helper function for use by the user which sets up the GPIO output, and configures the SM to output on a particular pin
-
-void i2s_program_init(PIO pio, uint sm, uint offset, uint pin) {
-   pio_gpio_init(pio, pin);
-   pio_sm_set_consecutive_pindirs(pio, sm, pin, 1, true);
-   pio_sm_config c = i2s_program_get_default_config(offset);
-   sm_config_set_set_pins(&c, pin, 1);
-   pio_sm_init(pio, sm, offset, &c);
-}
-%}
+.program lrclk
+.wrap_target
+    set x, 31         ; the number of bck cycles per word (L/R)
+    set pins, 1
+onloop:
+    wait 1 irq 0      ; Block until BCK raises irq 0
+    jmp x-- onloop    ; reloop, counting for 32 BCK cycles
+    set x, 31
+    set pins, 0
+offloop:
+    wait 1 irq 0      ; Block until BCK raises irq 0
+    jmp x-- offloop   ; reloop until we recieved 5 IRQs
+.wrap

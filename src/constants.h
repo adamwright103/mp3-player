@@ -17,12 +17,12 @@
 
 // TODO revert to these we are just going to test with the LEDS
 // #define I2S_DATA_PIN 10
-// #define I2S_LRCK_PIN 11
+// #define I2S_LRCLK_PIN 11
 // #define I2S_BCK_PIN 12
 
 #define I2S_DATA_PIN 0
-#define I2S_LRCK_PIN 28
-#define I2S_BCK_PIN 29
+#define I2S_BCK_PIN 28
+#define I2S_LRCLK_PIN 29
 
 #define OLED_SDA_PIN 18
 #define OLED_SCL_PIN 19

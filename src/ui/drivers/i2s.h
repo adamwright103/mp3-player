@@ -7,6 +7,19 @@
 
 #define DMA_BUFFER_SIZE 64
 
+struct I2S_Program_t;
+typedef enum {
+    PRGM_BCK = 0,   // Bit clock
+    PRGM_LRCLK,     // Left/Right clock
+
+    PRGM_COUNT      // Must be last, array size
+} I2S_ProgramType;
+typedef struct I2S_Program_t
+{
+  uint offset; // Offset in PIO instruction memory
+  uint sm;     // State machine number
+} I2S_Program;
+
 typedef struct I2S_Config_t
 {
   int sample_rate;     // Sample rate in Hz
@@ -14,7 +27,7 @@ typedef struct I2S_Config_t
   int channels;        // Number of audio channels (e.g., 1 for mono, 2 for stereo)
 
   uint data_pin; // Data GPIO pin for I2S
-  uint lrck_pin; // Left/Right clock GPIO pin for I2S
+  uint lrclk_pin; // Left/Right clock GPIO pin for I2S
   uint bck_pin;  // Bit clock pin for GPIO I2S
 } I2S_Config;
 
@@ -34,9 +47,9 @@ typedef struct I2S_t
   void (*dmaHandler)(void); // DMA handler function to handle double buffer
 
   PIO pio; // PIO instance for I2S
-  uint sm; // State machine for pio
-  uint prgm_offset; // Program offset in pio instruction memory
+  I2S_Program prgm[PRGM_COUNT]; // PIO programs for I2S
 } I2S;
+
 
 #ifdef __cplusplus
 extern "C"

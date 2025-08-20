@@ -14,7 +14,7 @@ void AlbumSelect::onActivate()
   if (!currentAlbum_)
   {
     // currentAlbum_ = sd_->getAlbums();
-    currentAlbum_ = new Node<string>("Bangers.txt");
+    currentAlbum_ = new Node<string>("White.txt");
     currentAlbum_->next = currentAlbum_;
     currentAlbum_->prev = currentAlbum_;
   }

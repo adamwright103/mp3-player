@@ -23,12 +23,12 @@ uint16_t idx_a = 0;
 uint16_t idx_b = DMA_BUFFER_SIZE;
 
 I2S_Config i2sConfig = {
-    .sample_rate = 44100,     // Default sample rate
-    .bits_per_sample = 16,    // Only 16 bits per sample supported
-    .channels = 1,            // mono audio
-    .data_pin = I2S_DATA_PIN, // data pin
-    .lrck_pin = I2S_LRCK_PIN, // Left/Right clock pin
-    .bck_pin = I2S_BCK_PIN    // Bit clock pin
+    .sample_rate = 44100,       // Default sample rate
+    .bits_per_sample = 16,      // Only 16 bits per sample supported
+    .channels = 1,              // mono audio
+    .data_pin = I2S_DATA_PIN,   // data pin
+    .lrclk_pin = I2S_LRCLK_PIN, // Left/Right clock pin
+    .bck_pin = I2S_BCK_PIN      // Bit clock pin
 };
 I2S i2s;
 
