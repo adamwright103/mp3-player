@@ -1,40 +1,48 @@
 .pio_version 0  
 
+; this will oscilate at delay + 4 pio clk cycles, where delay is set in the TX FIFO
 .program bck
     pull block
-    out y, 32
+    out y 32
 .wrap_target
-    mov x, y          ; Reseting Delay
-    set pins, 0       ; LED off
+    mov x y          ; Reseting Delay
+    set pins 0       ; LED off
 offloop:
     jmp x-- offloop   ; Delay for y+1 clk cycles
-    mov x, y          ; Reseting Delay
-    set pins, 1       ; LED on
+    mov x y [1]      ; Reseting Delay
+    set pins 1       ; LED on
 onloop:
     jmp x-- onloop    ; Delay for y+1 clk cycles
-    irq 0             ; Signal lrclk program on pio irq line 0
-.wrap
-
-.program blink
-    pull block
-    out y, 32
-.wrap_target
-    mov x, y
-    mov pins, !pins
-lp:
-    jmp x-- lp
+    irq 4             ; Signal lrclk program on pio irq line 4
 .wrap
 
 .program lrclk
 .wrap_target
-    set x, 31         ; the number of bck cycles per word (L/R)
-    set pins, 1
-onloop:
-    wait 1 irq 0      ; Block until BCK raises irq 0
-    jmp x-- onloop    ; reloop, counting for 32 BCK cycles
-    set x, 31
-    set pins, 0
-offloop:
-    wait 1 irq 0      ; Block until BCK raises irq 0
-    jmp x-- offloop   ; reloop until we recieved 5 IRQs
+    set x 31          ; the number of bck cycles per word (L/R)
+    set pins 1
+rightlp:
+    wait 1 irq 4      ; Block until BCK raises irq 4
+    irq 5             ; Signal dout program on pio irq line 5
+    jmp x-- rightlp   ; reloop, counting for 32 BCK cycles
+    set x 31
+    set pins 0
+leftlp:
+    wait 1 irq 4      ; Block until BCK raises irq 4
+    irq 5             ; Signal dout program on pio irq line 5
+    jmp x-- leftlp    ; reloop until we recieved 5 IRQs
+.wrap
+
+.program dout
+.wrap_target
+    pull block           ; Load 32-bit word into OSR
+    mov x osr             
+rightlp:
+    out pins, 1          ; Shift 1 bit out of OSR → pin
+    wait 1 irq 5         ; Sync with BCK
+    jmp !osre, rightlp   ; Keep looping while OSR still has bits
+    mov osr x            ; Reload same word
+leftlp:
+    out pins, 1
+    wait 1 irq 5
+    jmp !osre, leftlp    ; Loop until OSR is empty again
 .wrap

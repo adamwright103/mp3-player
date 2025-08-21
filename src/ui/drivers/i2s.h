@@ -11,6 +11,7 @@ struct I2S_Program_t;
 typedef enum {
     PRGM_BCK = 0,   // Bit clock
     PRGM_LRCLK,     // Left/Right clock
+    PRGM_DOUT,      // Data output
 
     PRGM_COUNT      // Must be last, array size
 } I2S_ProgramType;

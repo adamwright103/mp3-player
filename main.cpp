@@ -134,6 +134,10 @@ int main()
         {
             break;
         }
+        else if (c >= '0' && c <= '9')
+        {
+            i2s.pio->txf[i2s.prgm[PRGM_DOUT].sm] = 0x81010101;
+        }
     }
 
     printf("Stopping DMA\n");

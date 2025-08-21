@@ -62,60 +62,73 @@ void dma_init(I2S *i2s)
     irq_set_enabled(DMA_IRQ_1, true);
 }
 
-void pio_init(I2S *i2s) {
-    // claim bit clock state machines with our program
+void pio_init(I2S *i2s)
+{
+    // =============================
+    //           BCK INIT
+    // =============================
     if (!pio_claim_free_sm_and_add_program_for_gpio_range(
-        &bck_program,
-        &i2s->pio,
-        &i2s->prgm[PRGM_BCK].sm,
-        &i2s->prgm[PRGM_BCK].offset, 
-        i2s->config->bck_pin, 
-        1, 
-        true
-    ))
+            &bck_program,
+            &i2s->pio,
+            &i2s->prgm[PRGM_BCK].sm,
+            &i2s->prgm[PRGM_BCK].offset,
+            i2s->config->bck_pin,
+            1,
+            true))
     {
-        printf("Failed to claim PIO state machine for I2S\n");
+        printf("Failed to claim PIO state machine for BCK\n");
         return;
     }
-    printf("I2S claimed PIO[%d], sm[%d], with offset of %d \n", PIO_NUM(i2s->pio), i2s->prgm[0].sm, i2s->prgm[0].offset);
-
-    // init bit clock PIO
     pio_gpio_init(i2s->pio, i2s->config->bck_pin);
     pio_sm_set_consecutive_pindirs(i2s->pio, i2s->prgm[PRGM_BCK].sm, i2s->config->bck_pin, 1, true);
     pio_sm_config c_bck = bck_program_get_default_config(i2s->prgm[PRGM_BCK].offset);
     sm_config_set_set_pins(&c_bck, i2s->config->bck_pin, 1);
     pio_sm_init(i2s->pio, i2s->prgm[PRGM_BCK].sm, i2s->prgm[PRGM_BCK].offset, &c_bck);
 
-    // claim left/right clock state machines with our program
+    // =============================
+    //          LRCLK INIT
+    // =============================
     if (!pio_claim_free_sm_and_add_program_for_gpio_range(
-        &lrclk_program,
-        &i2s->pio,
-        &i2s->prgm[PRGM_LRCLK].sm,
-        &i2s->prgm[PRGM_LRCLK].offset, 
-        i2s->config->lrclk_pin, 
-        1, 
-        true
-    ))
+            &lrclk_program,
+            &i2s->pio,
+            &i2s->prgm[PRGM_LRCLK].sm,
+            &i2s->prgm[PRGM_LRCLK].offset,
+            i2s->config->lrclk_pin,
+            1,
+            true))
     {
         printf("Failed to claim PIO state machine for LRCLK\n");
         return;
     }
-    printf("LRCLK claimed PIO[%d], sm[%d], with offset of %d \n",
-           PIO_NUM(i2s->pio),
-           i2s->prgm[PRGM_LRCLK].sm,
-           i2s->prgm[PRGM_LRCLK].offset);
-
-    // init LRCLK PIO
     pio_gpio_init(i2s->pio, i2s->config->lrclk_pin);
-    pio_sm_set_consecutive_pindirs(i2s->pio,
-                                   i2s->prgm[PRGM_LRCLK].sm,
-                                   i2s->config->lrclk_pin,
-                                   1,
-                                   true);
-
+    pio_sm_set_consecutive_pindirs(i2s->pio, i2s->prgm[PRGM_LRCLK].sm, i2s->config->lrclk_pin, 1, true);
     pio_sm_config c_lrclk = lrclk_program_get_default_config(i2s->prgm[PRGM_LRCLK].offset);
     sm_config_set_set_pins(&c_lrclk, i2s->config->lrclk_pin, 1);
     pio_sm_init(i2s->pio, i2s->prgm[PRGM_LRCLK].sm, i2s->prgm[PRGM_LRCLK].offset, &c_lrclk);
+
+    // =============================
+    //          DOUT INIT
+    // =============================
+    if (!pio_claim_free_sm_and_add_program_for_gpio_range(
+            &dout_program,
+            &i2s->pio,
+            &i2s->prgm[PRGM_DOUT].sm,
+            &i2s->prgm[PRGM_DOUT].offset,
+            i2s->config->data_pin,
+            1,
+            true))
+    {
+        printf("Failed to claim PIO state machine for DOUT\n");
+        return;
+    }
+    pio_gpio_init(i2s->pio, i2s->config->data_pin);
+    pio_sm_set_consecutive_pindirs(i2s->pio, i2s->prgm[PRGM_DOUT].sm, i2s->config->data_pin, 1, true);
+    pio_sm_config c_dout = dout_program_get_default_config(i2s->prgm[PRGM_DOUT].offset);
+    sm_config_set_out_pins(&c_dout, i2s->config->data_pin, 1); // data out pin
+    sm_config_set_fifo_join(&c_dout, PIO_FIFO_JOIN_TX);        // join FIFOs for streaming samples
+    sm_config_set_out_shift(&c_dout, false, false, 32);        // get msb first
+
+    pio_sm_init(i2s->pio, i2s->prgm[PRGM_DOUT].sm, i2s->prgm[PRGM_DOUT].offset, &c_dout);
 }
 
 void i2s_start(I2S *i2s)
@@ -128,8 +141,9 @@ void i2s_start(I2S *i2s)
 
     pio_sm_set_enabled(i2s->pio, i2s->prgm[PRGM_BCK].sm, true);
     pio_sm_set_enabled(i2s->pio, i2s->prgm[PRGM_LRCLK].sm, true);
+    pio_sm_set_enabled(i2s->pio, i2s->prgm[PRGM_DOUT].sm, true);
     uint freq_hz = 4;
-    i2s->pio->txf[i2s->prgm[PRGM_BCK].sm] = (CPU_CLOCK_SPEED_KHZ*500 / (freq_hz)) - 3;
+    i2s->pio->txf[i2s->prgm[PRGM_BCK].sm] = (CPU_CLOCK_SPEED_KHZ * 500 / (freq_hz)) - 3;
 
     printf("blinking at %d Hz\n", freq_hz);
 
@@ -149,4 +163,5 @@ void i2s_stop(I2S *i2s)
     // stop PIO
     pio_sm_set_enabled(i2s->pio, i2s->prgm[PRGM_BCK].sm, false);
     pio_sm_set_enabled(i2s->pio, i2s->prgm[PRGM_LRCLK].sm, false);
+    pio_sm_set_enabled(i2s->pio, i2s->prgm[PRGM_DOUT].sm, false);
 }

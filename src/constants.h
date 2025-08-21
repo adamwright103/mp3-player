@@ -2,7 +2,7 @@
 #define CONSTANTS_H
 
 // ------ System defaults ------
-#define CPU_CLOCK_SPEED_KHZ 200000
+#define CPU_CLOCK_SPEED_KHZ 133 * 1000
 #define DEBOUNCE_TIME_MS 150
 
 // ---------- Pin out ----------
